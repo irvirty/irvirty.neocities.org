@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Art / Irvirty</title>
+
+<meta name="description" content="
+Art.
+">
+<meta name="keywords" content="
+art,
+">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- style -->
+<link rel="preload" href="../css/main.css" as="style">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="preload" href="../css/auto.css" as="style">
+<link rel="stylesheet" type="text/css" href="../css/auto.css">
+
+<link rel="preload" href="../css/style.css" as="style">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<!-- // style -->
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="../css/noscript.css">
+</noscript>
+
+</head>
+<body>
+
+<!-- Navigation HTML part v.1.0.1 -->
+<header>
+<div class="wrapper3">
+<div class="margin2"></div>
+
+<div id="topNav" class="topNav">
+<nav>
+
+<span class="countMenuItem"></span>
+<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../index.html" title="index / nav 1"><img class="logo2 reduceLight" src="../img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+
+<span id="navMenu" class="navMenu">
+<!-- links in nav -->
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/search/">Search</a>
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../main/art.html">Art</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/links.html">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/microblog.html">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/css/">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni"  style="padding-right: 0;" href="../main/website-templates.html">Templates</a>
+<!-- // links in nav -->
+</span>
+
+<div class="dropdownMenuContentWrapper">
+<div class="dropdownMenuContent">
+<a id="dropdownMenuButton" class="dropdownMenuButton inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="#" onclick="fuMDropdownButton();return false;">☰ Menu</a>
+
+<div id="dropdownMenu" class="dropdownMenu">
+<div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
+<!-- links for show in dropdown (duplicate) -->
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/search/">Search</a>
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../main/art.html">Art</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/links.html">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/microblog.html">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../main/css/">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni"  style="padding-right: 0;" href="../main/website-templates.html">Templates</a>
+<!-- // links for show in dropdown (duplicate) -->
+</div>
+</div>
+
+</div>
+</div>
+
+<!--<span class="countMenuItem"></span>
+<a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="../" title="../ (Up)">List (up)</a>
+
+<span class="countMenuItem"></span>
+<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/main/site-search.html" role="search">
+<input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">
+</form>-->
+
+</nav>
+</div>
+
+</div>
+</header>
+<!-- // Navigation HTML -->
+
+<!-- content -->
+<main class="content">
+
+<h1 class="tCenter op">Art, image</h1>
+<!--<div class="tCenter margin2List smaller op">text</div>-->
+
+<div id="printBlog"></div>
+
+
+</main>
+<!--// content -->
+
+<footer id="footer"></footer>
+
+<script src="../js/main.js"></script>
+
+<!--<script src="../js/main.js"></script>-->
+
+<!-- Blog -->
+<script src="../data/artJsonVar.js"></script>
+<script>
+// fresh config in script.js
+let blogConfig = {
+"postLimit":"8", // number
+"embedStatus":"", // off
+"multiEmbedStatus":"", // on
+"tagListStatus":"", // off
+"tagListLimit":"", // number
+"targetOption":"", // blank
+"bottomMsg":`
+<!-- text -->
+`, // text
+"display":"galleryStretch", //
+"timeStatus":"", // off
+"usernameStatus":"off", // on, off
+};
+</script>
+
+<script src="/projects/microblog-1/script.js" onload="blog('printBlog', artJsonVar, 'wrapper', './art.html', blogConfig)"></script>
+<!-- // Blog -->
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search (Neocities) / Irvirty</title>
+
+<meta name="description" content="
+Search for sites hosted on the Neocities hosting platform using Google Programmable Search Engine and tags with redirection to Neocities.
+">
+<meta name="keywords" content="
+search,
+">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- style -->
+<link rel="preload" href="../../css/main.css" as="style">
+<link rel="stylesheet" href="../../css/main.css" type="text/css">
+<link rel="preload" href="../../css/auto.css" as="style">
+<link rel="stylesheet" type="text/css" href="../../css/auto.css">
+
+<link rel="preload" href="../../css/style.css" as="style">
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<!-- // style -->
+
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+</noscript>
+
+</head>
+<body>
+
+<!-- Navigation HTML part v.1.0.1 -->
+<header>
+<div class="wrapper3">
+<div class="margin2"></div>
+
+<div id="topNav" class="topNav">
+<nav>
+
+<span class="countMenuItem"></span>
+<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../../index.html" title="index / nav 1"><img class="logo2 reduceLight" src="../../img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+
+<span id="navMenu" class="navMenu">
+<!-- links in nav -->
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../main/search/">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/art.html">Art</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/links.html">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/microblog.html">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/css/">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni"  style="padding-right: 0;" href="../../main/website-templates.html">Templates</a>
+<!-- // links in nav -->
+<!-- // links in nav -->
+</span>
+
+<div class="dropdownMenuContentWrapper">
+<div class="dropdownMenuContent">
+<a id="dropdownMenuButton" class="dropdownMenuButton inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="#" onclick="fuMDropdownButton();return false;">☰ Menu</a>
+
+<div id="dropdownMenu" class="dropdownMenu">
+<div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
+<!-- links for show in dropdown (duplicate) -->
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../main/search/">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/art.html">Art</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/links.html">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/microblog.html">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../main/css/">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni"  style="padding-right: 0;" href="../../main/website-templates.html">Templates</a>
+<!-- // links in nav -->
+<!-- // links for show in dropdown (duplicate) -->
+</div>
+</div>
+
+</div>
+</div>
+
+<!--<span class="countMenuItem"></span>
+<a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="../" title="../ (Up)">List (up)</a>
+
+<span class="countMenuItem"></span>
+<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/main/site-search.html" role="search">
+<input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">
+</form>-->
+
+</nav>
+</div>
+
+</div>
+</header>
+<!-- // Navigation HTML -->
+
+<!-- content -->
+<main id="searchPage" class="contentCenter">
+
+<h1 class="h2 tCenter op insertIconTitle zero padding">Search (Neocities)</h1>
+<!--<div class="tCenter margin2List smaller op">Search for sites hosted on the Neocities hosting.</div>-->
+
+<div class="margin padding"></div>
+
+<!-- dublicate form index -->
+<!-- search -->
+<div id="form" class="wrapper">
+
+<!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
+<form method="GET" action="./" autocomplete="off" role="search">
+<label class="block op tLeft smaller" for="q"><span class="bold green">✪</span> Neocities search (Google & tag redirect):</label>
+<input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
+
+<!--<input type="hidden" name="sort_by" value="random">-->
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2px;">
+<input class="smaller op tCenter" type="submit" value="Search">
+<!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
+<button class="smaller op tCenter" name="q2" value="l" type="submit">Luck</button>
+<!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
+</div>
+
+</form>
+
+<div class="margin"></div>
+<span id="seachButtons"></span>
+
+<div class="margin"></div>
+<div class="gcse-searchresults-only"></div>
+
+
+<!--<div class="padding3List"></div>
+<div class="tRight small gray">* Spaces are removed</div>-->
+
+</div>
+<!-- // search -->
+
+</main>
+<!--// content -->
+
+<footer id="footer"></footer>
+
+<script src="../../js/main.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

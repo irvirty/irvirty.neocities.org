@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hide show CSS example or dynamic style change</title>
+
+<meta name="description" content="
+Hide show CSS example or dynamic style change
+">
+<meta name="keywords" content="
+CSS, example,
+">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@media(width >= 500px){
+p { color: red; }
+}
+
+@media(width <= 500px){
+p { color: green; }
+}
+
+
+@media(width >= 500px){
+.mobileVersion { display: none; }
+.desktopVersion { display: block; color: red }
+}
+
+@media(width <= 500px){
+.mobileVersion { display: block; color: green; }
+.desktopVersion { display: none; }
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<a class="inlineBlock brand" href="/">index</a>
+<a class="inlineBlock brand" href="../">up ../</a>
+</nav>
+
+<!-- content -->
+<main>
+
+<h1>Hide show CSS example or dynamic style change</h1>
+Resize the window to see the changes, the style is responsive at 500px.
+<hr>
+
+<p>its "p" tag with test text</p>
+<br><br>
+
+<div class="mobileVersion">its "div" with <b>".mobileVersion"</b> - class</div>
+<div class="desktopVersion">its "div" with <b>".desktopVersion"</b> - class</div>
+
+</main>
+<!--// content -->
+
+<footer></footer>
+
+</body>
+</html>
