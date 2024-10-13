@@ -72,8 +72,8 @@ fuMPrintText("footerNav", mFooterNavLinksPrint, '');
 // random bg image (background img with random position)
 function fuMBg(val){
 
-let mBg = fuMRandomItem("bg3.svg bg10.svg bg16.svg");
-let mBgDark = fuMRandomItem("bg3-dark.svg bg10-dark.svg");
+let mBg = fuMRandomItem("bg-circle.svg bg-line-chaotic.svg");
+let mBgDark = fuMRandomItem("bg-circle-d.svg bg-line-chaotic-d.svg");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 
