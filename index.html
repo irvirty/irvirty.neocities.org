@@ -31,6 +31,19 @@ personal, home, page, technology, CSS, microblog, blog, links,
 <style>
 #topHeader { position: relative; }
 
+.siteName {
+position: relative;
+background: var(--bg);
+border-top: 2px dashed color-mix(in srgb, var(--brand) 50%, transparent);
+padding-top: 2px;
+top: -25px;
+width: 100%;
+max-width: 250px;
+margin: 0 auto;
+}
+
+
+
 .headerBannerImg img,
 .headerBannerImg svg {
 display: block;
@@ -126,12 +139,16 @@ opacity: .7;
 </div>
 
 <a href="./img/logo.png"><img class="logo reduceLight marginList" src="./img/logo.png" alt="logo" width="60"></a><br>
-<h1 class="siteName inlineBlock op zero paddingList"><a class="brand" title="Site profile on Neocities" href="https://neocities.org/site/irvirty">Irvirty</a></h1>
 
+<div class="siteName">
+<h1 class="inlineBlock op zero paddingList"><a class="brand" title="Site profile" href="https://neocities.org/site/irvirty">Irvirty</a></h1>
 <div class="paddingList op small">Personal and home page</div>
-<div class="padding2List op wrapperSmall3 tRight">
+
+<div class="paddingList op wrapperSmall3 tRight">
 <span class="xSmall">Status:</span>
 <span class="smaller">emtpy.</span>
+</div>
+
 </div>
 
 <!--<nav class="balance">
