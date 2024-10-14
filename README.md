@@ -4,4 +4,4 @@
 
 # About
 
-Personal and home page. About CSS. Microblog. Links.
+Start and home page.
