@@ -14,7 +14,7 @@ let mFooter = `
 <div class="margin2 padding2"></div>
 
 <footer class="tCenter margin3List small">
-<a class="inlineBlock margin" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
+<a class="inlineBlock margin shadow border padding light2 borderRadius2" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
 
 <div class="padding margin"></div>
 
