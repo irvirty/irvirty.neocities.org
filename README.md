@@ -4,4 +4,4 @@
 
 # About
 
-Personal new tab page and home page.
+Personal start page.
