@@ -4,4 +4,4 @@
 
 # About
 
-Personal start page.
+Home page.
