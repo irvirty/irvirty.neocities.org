@@ -4,4 +4,4 @@
 
 # About
 
-Home page and start page, and a little bit about CSS.
+Home & Start Page, and a little bit about CSS.
