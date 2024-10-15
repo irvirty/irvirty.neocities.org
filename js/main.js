@@ -29,9 +29,10 @@ let mFooter = `
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/main/about.html">About</a>
 <a class="brand inlineBlock padding" title="Bluesky social network" href="https://irvirty.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://irvirty.pages.dev/">Other home</a>
+<a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://neocities.org/site/irvirty">Profile</a>
 <a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
-<span title="Updated" class="op small inlineBlock padding" style="padding-right: 0;">2024</span>
+<span title="Updated" class="op small inlineBlock padding gray" style="padding-right: 0;">2024</span>
 
 </div>
 </nav>
