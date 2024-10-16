@@ -29,7 +29,7 @@ let mFooter = `
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/main/about.html">About</a>
 <a class="brand inlineBlock padding" title="Bluesky social network" href="https://irvirty.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://irvirty.pages.dev/">Other Home</a>
-<a class="brand inlineBlock padding" title="RSS News (update>)" href="https://neocities.org/site/irvirty.rss">RSS</a>
+<a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">RSS</a>
 <a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://neocities.org/site/irvirty">Neocities Profile</a>
 <a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
@@ -74,8 +74,8 @@ fuMPrintText("footerNav", mFooterNavLinksPrint, '');
 // random bg image (background img with random position)
 function fuMBg(val){
 
-let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg");
-let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg");
+let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
+let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 
