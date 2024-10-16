@@ -1,4 +1,4 @@
-// Search v.1.1.0
+// Search v.1.1.1
 
 var lQButtonPrint = ``;
 
@@ -22,12 +22,14 @@ document.getElementById("q").value = q;
 document.getElementsByTagName('title')[0].innerText = q + " - Search / irvirty - Neocities page";
 }
 
-if (q == ''&&q != 'null'){ q = ''; }
+if (q == ''&&q != 'null'){ q = ''; } // ?
 if (q2 == "l"){ q = q + " l"; }
 //if (q == ""){ q = "q"; }
 
 // web redirect
 if (q != ""&&q != undefined&&q != "undefined"&&q != 'null'&&q != null&&q != ''&&sUrlText.indexOf("cache") == -1){
+
+q = q.trim();
 
 var urlList = [];
 
@@ -135,8 +137,9 @@ input.addEventListener("input", updateValueButton);
 function updateValueButton(e) {
 
 qPrint = e.target.value;
+qPrint = qPrint.trim();
 //q = q.replaceAll(' ', '');
-//document.getElementById("q").value = qPrint;
+//document.getElementById("q").value = qPrint.trim();
 
 qPrint = encodeURIComponent(qPrint);
 

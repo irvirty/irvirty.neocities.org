@@ -1,4 +1,4 @@
-// Random link v.1.0.2
+// Main.js v.1.0.3
 
 var conf = [];
 conf["confDomainName"] = "irvirty";
@@ -28,8 +28,9 @@ let mFooter = `
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/main/about.html">About</a>
 <a class="brand inlineBlock padding" title="Bluesky social network" href="https://irvirty.bsky.social">Bluesky</a>
-<a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://irvirty.pages.dev/">Other home</a>
-<a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://neocities.org/site/irvirty">Profile</a>
+<a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://irvirty.pages.dev/">Other Home</a>
+<a class="brand inlineBlock padding" title="RSS News (update>)" href="https://neocities.org/site/irvirty.rss">RSS</a>
+<a class="brand inlineBlock padding" title="Cloudflare Pages" href="https://neocities.org/site/irvirty">Neocities Profile</a>
 <a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
 <span title="Updated" class="op small inlineBlock padding gray" style="padding-right: 0;">2024</span>
@@ -73,8 +74,8 @@ fuMPrintText("footerNav", mFooterNavLinksPrint, '');
 // random bg image (background img with random position)
 function fuMBg(val){
 
-let mBg = fuMRandomItem("bg-circle.svg bg-line-chaotic.svg");
-let mBgDark = fuMRandomItem("bg-circle-d.svg bg-line-chaotic-d.svg");
+let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg");
+let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 
@@ -123,12 +124,13 @@ document.getElementById(id).innerHTML = text;
 }
 
 
-// Navigation JS part v.1.2.1
+// Navigation JS part v.1.3.1
+
 if (conf == undefined){
 var conf = [];
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
-conf["confMenuItemAverageWidth"] = 130;
+conf["confMenuItemAverageWidth"] = 120;
 }
 
 // nav v.2.0.0 in test
@@ -178,41 +180,52 @@ display: none !important;
 
 // button
 const dropdownButton = document.getElementById("dropdownMenuButton");
-const dropdownMenu = document.getElementById("dropdownMenu");
+let dropdownMenu = document.getElementById("dropdownMenu");
 const topNav = document.getElementById("topNav");
 
 function fuMDropdownButton(){
-
 //https://stackoverflow.com/questions/64487640/javascript-show-hide-div-onclick
 if (dropdownMenu.style.display === "block") {
 dropdownMenu.style.display = "none";
-dropdownButton.textContent = "☰ Menu";
+if (dropdownButton != null){
+dropdownButton.innerHTML = `☰ Menu`;
+}
 } else {
 dropdownMenu.style.display = "block";
-dropdownButton.textContent = "☶ Menu";
+if (dropdownButton != null){
+dropdownButton.innerHTML = `☶ Menu`;
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
 //dropdownMenu.classList.toggle("showDropdownMenu");
 }
+}
 
 
 // out area click
-if (dropdownMenu != null){
 //https://stackoverflow.com/questions/36695438/detect-click-outside-div-using-javascript
-window.addEventListener('click', function(e){ 
-
-if (topNav.contains(e.target)){
-    // Clicked in box
+window.addEventListener('click', function(e){
+dropdownMenu = document.getElementById("dropdownMenu");
+if (topNav.contains(e.target) == true){
+// Clicked in box
 } else {
-    // Clicked outside the box
 dropdownMenu.style.display = "none";
 //dropdownMenu.classList.remove("showDropdownMenu");
-dropdownButton.textContent = "☰ Menu";
-  }
-})
+if (dropdownButton != null){
+dropdownButton.innerHTML = `☰ Menu`;
 }
+}
+});
 // end Navigation JS version
+
+
+
+
+
+
+
+
+
 
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random

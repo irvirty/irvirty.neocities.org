@@ -20,7 +20,7 @@ background-attachment: fixed;
 
 :root{
 /* .brand - link, accent color (red, orange, yellow, green, blue, indigo, violet) */
---brandColor: color-mix(in srgb, var(--blue) 80%, var(--indigo));
+--brandColor: color-mix(in srgb, var(--indigo) 80%, var(--green));
 }
 
 .itemLinkAni {
@@ -33,8 +33,7 @@ transition: 1.8s;
 border-bottom: 2px dotted var(--brand);
 }
 
-/* Navigation CSS v.2.1.0 */
-//*Creating navigation in progress, sorry*/
+/* Navigation CSS v.2.2.0 */
 
 .topNav form, .topNav input[type=search] { display: inline-block; }
 .topNav form { width: 100%; max-width: 130px; vertical-align: middle; }
@@ -88,6 +87,14 @@ display: none;
 
 .topNav .dropdownMenuButton { display: none; }
 
+.dropdownMenuButton svg {
+max-width: 14px;
+vertical-align: middle;
+fill: var(--brand) !important;
+stroke: var(--c3) !important;
+}
+
+
 .dropdownMenuColumn {
 text-align: left;
 columns: 120px auto;
@@ -100,4 +107,7 @@ margin-top: var(--padding);
 .dropdownMenuContentWrapper, .dropdownMenuContent { display: inline-block;  }
 .showDropdownMenu { display: block; }
 /* end Navigation CSS */
+
+
+
 
