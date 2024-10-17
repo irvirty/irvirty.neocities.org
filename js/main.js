@@ -31,7 +31,6 @@ let mFooter = `
 <a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">RSS</a>
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
-<a class="brand inlineBlock padding" title="Random site or page" href="https://irvirty.pages.dev/main/search.html?q=rs">Random Site</a>
 <a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
 <span title="Updated" class="op small inlineBlock padding gray" style="padding-right: 0;"><!--2024-->2024</span>
