@@ -27,7 +27,6 @@ let mFooter = `
 </div>
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
-<a class="brand inlineBlock padding" title="Site profile page" href="https://neocities.org/site/irvirty">Neocities Profile</a>
 <a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">RSS</a>
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
