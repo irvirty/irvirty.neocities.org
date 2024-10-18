@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Other / Irvirty</title>
+<title>Microblog / Irvirty</title>
 
 <meta name="description" content="
-Other.
+A page about updating the site and possibly with posts about something else.
 ">
 <meta name="keywords" content="
-things, extension, wallpaper,
+Microblog, updates,
 ">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,9 @@ things, extension, wallpaper,
 <link rel="preload" href="../../css/style.css" as="style">
 <link rel="stylesheet" href="../../css/style.css" type="text/css">
 <!-- // style -->
+
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css" type="text/css">
 
 <noscript>
 <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
@@ -48,9 +51,10 @@ things, extension, wallpaper,
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/search/">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/css/">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/microblog/">Microblog</a>
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../pages/other/">Other</a>
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../pages/microblog/">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/other/">Other</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../../pages/about.html">About</a>
+<!-- // links in nav -->
 <!-- // links in nav -->
 </span>
 
@@ -65,9 +69,10 @@ things, extension, wallpaper,
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/search/">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/css/">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/microblog/">Microblog</a>
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../pages/other/">Other</a>
+<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../../pages/microblog/">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/other/">Other</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../../pages/about.html">About</a>
+<!-- // links in nav -->
 <!-- // links for show in dropdown (duplicate) -->
 </div>
 </div>
@@ -91,38 +96,12 @@ things, extension, wallpaper,
 <!-- // Navigation HTML -->
 
 <!-- content -->
-<main class="content">
+<main id="searchPage" class="content">
 
+<h1 class="tCenter op padding">Microblog</h1>
+<!--<div class="tCenter margin2List smaller op">Search for sites hosted on the Neocities hosting.</div>-->
 
-<h1 class="tCenter op">Other</h1>
-<!--<div class="tCenter op margin3List">text</div>-->
-
-
-<div class="wrapper list">
-
-<div class="paddingList"></div>
-<h2>Extension:</h2>
-<div class="pre">
-<b>New Tab Redirect – Get this Extension for 🦊 Firefox - </b><a class="brand" href="https://addons.mozilla.org/firefox/addon/new-tab-redirect-abc/">https://addons.mozilla.org/firefox/addon/new-tab-redirect-abc/</a>
-
-Note: Own new tab page or a custom page for the new tab page.
-
-<a class="brand m" href="https://addons.mozilla.org/firefox/addon/new-tab-redirect-abc/"><img class="" src="newtab.png" width="50%" alt="img"></a><br>
-</div>
-<hr>
-
-<div class="margin2 padding2"></div>
-
-<div class="paddingList"></div>
-<h2>Wallpaper: Hello World!</h2>
-<a href="hello.png"><img src="hello.png" alt="img"></a>
-<a href="hello2.png"><img src="hello2.png" alt="img"></a>
-<a href="hello3.png"><img src="hello3.png" alt="img"></a>
-<a href="hello4.png"><img src="hello4.png" alt="img"></a>
-
-
-</div>
-
+<div id="printKeep"></div>
 
 </main>
 <!--// content -->
@@ -130,6 +109,71 @@ Note: Own new tab page or a custom page for the new tab page.
 <footer id="footer"></footer>
 
 <script src="../../js/main.js"></script>
+
+<!-- Keep -->
+<script src="../../data/microblog2JsonVar.js"></script>
+<script>
+// Example of data in the file, fresh example in script.js
+if (microblogJsonVar == undefined||microblogJsonVar == ''){
+
+// file microblogJsonVar.js for embed
+var microblogJsonVar = 
+
+[
+    {
+        "id": 251,
+        "text": "test2 text2",
+        "text2": "test2 text2",
+        "text3": "test3 text3",
+        "url": "https:\/\/test2.com",
+        "tag": "#test2 #tag",
+        "time": 1671480576,
+        "rightFooter": ""
+    },
+    {
+        "id": 250,
+        "text": "test text",
+        "text2": "test2 text2",
+        "text3": "test3 text3",
+        "url": "https:\/\/test.com",
+        "tag": "#test #tag",
+        "time": 1668444918,
+        "rightFooter": ""
+
+    }
+];
+// end file microblogJsonVar.js
+
+}
+</script>
+
+<script>
+// fresh config in script.js
+let keepConfig = {
+"postLimit":"", // number, the number of posts per page
+"embedStatus":"", // "off" option
+"multiEmbedStatus":"", // "on" option
+"tagListStatus":"", // "off" option
+"tagListLimit":"", // number
+"targetOption":"", // "blank" option
+"bottomMsg":`
+<div class="tCenter op small">A page about updating the site and possibly with posts about something else.</div>
+`, // text
+"display":"", // gallery - grid, galleryStretch, blog - "text" as title link, all - text, text2, text3
+"timeStatus":"", // off, disable post time (post id)
+"rightFooterStatus":"", // on, off, right footer in data
+"usernameStatus":"on", // on, off
+};
+</script>
+
+<script src="script.js" onload="keep('printKeep', microblog2JsonVar, 'wrapper', './', keepConfig)"></script>
+
+<!--<script src="script.js"></script>
+<script>
+keep('printKeep', microblogJsonVar, 'wrapper', './', keepConfig)
+</script>-->
+
+<!-- // keep -->
 
 </body>
 </html>
