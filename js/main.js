@@ -26,7 +26,7 @@ let mFooter = `
 <span class="gray">Nav:</span> <span id="footerNav"></span><hr>
 </div>
 
-<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/main/about.html">About</a>
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
 <a class="brand inlineBlock padding" title="Site profile page" href="https://neocities.org/site/irvirty">Neocities Profile</a>
 <a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">RSS</a>
