@@ -8,7 +8,6 @@ conf["confMenuItemAverageWidth"] = 120;
 conf["confMenuItemAverageWidth"] = 80;
 
 let mFooter = `
-<span id="style"></span>
 
 <div class="margin2 padding2"></div>
 <div class="margin2 padding2"></div>
@@ -78,7 +77,7 @@ let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.s
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 
-fuMPrintText('style', `
+document.head.insertAdjacentHTML("beforeend", `
 <style>
 @media (prefers-color-scheme: light) {
 body{
@@ -98,7 +97,7 @@ background-attachment: fixed;
 }
 }
 </style>
-`, 'plus');
+`);
 
 
 }
@@ -274,5 +273,9 @@ return newUrl;
 } else { return url; }
 }
 // fu hide file ext
+
+
+//https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentHTML
+
 
 
