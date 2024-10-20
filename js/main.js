@@ -13,13 +13,13 @@ let mFooter = `
 <div class="margin2 padding2"></div>
 
 <footer class="tCenter margin3List small">
-<a class="inlineFlex margin shadow light2 padding1Px border2 borderRadius2 op" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight border2 borderRadius2" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
 
-<div class="padding margin"></div>
+<!--<a class="inlineFlex margin shadow light2 padding1Px border2 borderRadius2 op" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight border2 borderRadius2" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
+<div class="padding margin"></div>-->
 
 <nav>
-<div class="wrapper3 margin2List small tCenter">
 
+<div class="wrapper3 margin2List small tCenter">
 
 <div class="wrapper2 small tLeft">
 <span class="gray">Nav:</span> <span id="footerNav"></span><hr>
@@ -27,11 +27,12 @@ let mFooter = `
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
 <a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
-<a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">RSS</a>
+<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/irvirty.rss">RSS</a>
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
 <a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
-<span title="Updated" class="op small inlineBlock padding gray" style="padding-right: 0;"><!--2024-->2024</span>
+<span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2024</span>
+<a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
 
 </div>
 </nav>
@@ -62,6 +63,17 @@ mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${m
 fuMPrintText("footerNav", mFooterNavLinksPrint, '');
 
 // end footer
+
+
+
+// Device 1.0.0
+conf["confDevice"] = 'none';
+/*if (conf["confDataCollection"] != 'on'){
+conf["confDevice"] = '(disabled, privacy)';
+} else {}*/
+if (navigator.userAgent.search("iPhone|Android|Mobile|Lumia|Phone") != -1){ conf["confDevice"] = 'mobile';  }
+if (navigator.userAgent.search("PlayStation|Xbox|TV|Roku|SmartTV|BRAVIA") != -1){ conf["confDevice"] = 'tv';  }
+if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
 
 
 

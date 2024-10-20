@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>irvirty - Home page</title>
+<title>Irvirty - Home page</title>
 
 <meta name="description" content="
 Home page, and little bit about CSS.
@@ -139,7 +139,7 @@ top: 0;
 <!-- content -->
 <main class="content">
 
-<header id="topHeader" class="block tCenter" style="position: relative;">
+<header id="topHeader" class="block padding1PxList tCenter" style="position: relative;">
 
 <div class="headerBannerImg reduceLight">
 <img src="./img/header-banner.png" alt="header banner">
@@ -150,7 +150,7 @@ top: 0;
 <a href="./img/logo.png"><img class="logo reduceLight marginList" src="./img/logo.png" alt="logo" width="60"></a><br>
 
 <div class="siteName">
-<h1 class="inlineBlock op zero paddingList"><a class="brand" title="profile" href="https://neocities.org/site/irvirty">irvirty</a></h1>
+<h1 class="inlineBlock op zero paddingList uppercase"><a class="brand" title="profile" href="https://neocities.org/site/irvirty">Irvirty</a></h1>
 <div class="paddingList op small">Home Page</div>
 
 <div class="op wrapperSmall3 tRight">
@@ -201,7 +201,42 @@ top: 0;
 </div>
 <!-- // search -->
 
+<div class="margin3 padding3"></div>
 
+<!-- tags -->
+<div class="tCenter">
+
+<div class="bold padding medium">
+<a class="op brand" href="https://neocities.org/browse">Neocities Explore:</a>
+</div>
+
+<div class="margin padding"></div>
+
+<div class="wrapper2 balance small">
+<a class="inlineBlock padding op red" href="https://neocities.org/browse?tag=art">Art</a>
+<a class="inlineBlock padding op yellow" href="https://neocities.org/browse?tag=photography">Photography</a>
+<a class="inlineBlock padding op orange" href="https://neocities.org/browse?tag=writing">Writing</a>
+<a class="inlineBlock padding op green" href="https://neocities.org/browse?tag=blog">Blog</a>
+<a class="inlineBlock padding op indigo" href="https://neocities.org/browse?tag=music">Music</a>
+<a class="inlineBlock padding op red" href="https://neocities.org/browse?tag=video">Video</a>
+<a class="inlineBlock padding op indigo" href="https://neocities.org/browse?tag=personal">Personal</a>
+
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=technology">Technology</a>
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=programming">Programming</a>
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=webdesign">WebDesign</a>
+
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=html">HTML</a>
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=css">CSS</a>
+<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=javascript">JavaScript</a>
+
+<!--<hr>
+<a class="inlineBlock padding blue" href="https://neocities.org/browse">Browse</a>
+<a class="inlineBlock padding blue" href="https://neocities.org/activity">Activity</a>
+<a class="inlineBlock padding blue" href="https://neocities.org/browse?sort_by=random">Random</a>-->
+</div>
+
+</div>
+<!--// tags -->
 
 </main>
 <!--// content -->
@@ -211,6 +246,39 @@ top: 0;
 <script src="./js/main.js"></script>
 
 <script src="./pages/search/script.js"></script>
+
+
+<script>
+// hide top header if mobile
+// local, only this page
+
+if (conf["confDevice"] == 'mobile'){
+var getclick2 = document.getElementById('form');
+document.addEventListener('click', function(event) {
+if (getclick2.contains(event.target)) {
+document.getElementById( 'topHeader' ).style.display = 'none';
+} else {
+document.getElementById( 'topHeader' ).style.display = 'block';
+}
+});
+
+} 
+
+
+/*// redirect "q" to "redirect" script
+var geturl = window.location;
+var url = new URL(geturl);
+var q = url.searchParams.get("q");
+var url = new URL(geturl);
+let sUrlText = String(url);
+const myArray = sUrlText.split("q=");
+if (q != null&&myArray[0].search("cache") == -1&&url.hostname == location.hostname){
+q = encodeURIComponent(q);
+location.href = "/projects/redirects-25/?q=" + q;
+//location.href = fuMHideFileNameExt("./search.html?q=") + q;
+}*/
+
+</script>
 
 </body>
 </html>
