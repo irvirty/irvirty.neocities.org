@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>About / Irvirty</title>
+<title>Redirect page</title>
 
 <meta name="description" content="
-Short information about the site.
+Redirect. !ignoreme
 ">
 <meta name="keywords" content="
-about, page, information,
+redirect,
 ">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,12 +45,12 @@ about, page, information,
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>-->
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" style="padding-right: 0;" href="../pages/about.html">About</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
 <!-- // links in nav -->
 </span>
 
@@ -62,12 +62,12 @@ about, page, information,
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>-->
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" style="padding-right: 0;" href="../pages/about.html">About</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
 <!-- // links for show in dropdown (duplicate) -->
 </div>
 </div>
@@ -79,7 +79,7 @@ about, page, information,
 <a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="../" title="../ (Up)">List (up)</a>
 
 <span class="countMenuItem"></span>
-<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/main/site-search.html" role="search">
+<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/pages/site-search.html" role="search">
 <input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">
 </form>-->
 
@@ -90,40 +90,20 @@ about, page, information,
 </header>
 <!-- // Navigation HTML -->
 
-<h1 class="tCenter op">About</h1>
-<div class="tCenter op margin3List">Short information about the site.</div>
-
-<div class="margin padding"></div>
-
 <!-- content -->
-<main class="contentCenter">
+<main class="content">
 
-<div class="wrapper">
-<div class="light padding3 border borderRadius2">
-<span class="ico">👋</span> Hello!<hr>
-<span class="ico">🌍</span> Europe. He/him. Middle age.<hr>
-<span class="ico">📄</span> I'm here to get inspiration, explore other sites, or find something interesting.<hr>
+<h1 class="tCenter op">Redirect page</h1>
+<!--<div class="tCenter op margin3List">Text.</div>-->
 
-<span class="ico">🌱</span> Now I'm learning English, and JS.<hr>
-<span class="ico">📜</span> My many years of hobbies are web design (HTML, CSS), programming (PHP, JS), and graphic design.<hr>
-<span class="ico">💼</span> I do not provide services now, I am currently learning, and possibly in the future.<hr>
+<script>
+window.location.href = "../";
+window.location.href = window.location.href + '#stopRedirect'; 
+</script>
 
-<span class="ico">🔗</span> Links:
-<a class="inlineBlock padding brand" href="https://irvirty.bsky.social">Bluesky</a>,
-<a class="inlineBlock padding brand" href="https://dribbble.com/irvirty">Dribbble</a>,
-<a class="inlineBlock padding brand" href="https://www.behance.net/irvirty">Behance</a>,
-<a class="inlineBlock padding brand" href="https://codepen.io/irvirty">CodePen</a>,
-<a class="inlineBlock padding brand" href="https://github.com/irvirty">GitHub</a>
-<br><hr>
-<span class="ico">☕</span> I like coffee:
-<a class="inlineBlock padding brand" href="https://buymeacoffee.com/irvirty">Buy Me a coffee</a><hr>
-<span class="ico">📧</span> My email: <a class="inlineBlock padding brand" rel="nofollow" href="mailto:wdvrx5qyp@mozmail.com">wdvrx5qyp@mozmail.com</a><hr>
-<span class="ico">♡</span> Thank you for visiting my page.<hr>
-
-<div class="margin padding"></div>
-
-</div>
-</div>
+<noscript>
+<a class="block padding tCenter" href="../">page</a>
+</noscript>
 
 </main>
 <!--// content -->
@@ -131,7 +111,6 @@ about, page, information,
 <footer id="footer"></footer>
 
 <script src="../js/main.js"></script>
-<!--<script src="./js/script.js"></script>-->
 
 </body>
 </html>

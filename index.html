@@ -35,15 +35,18 @@ homepage, home, page, CSS, links,
 
 .siteName {
 position: relative;
-border-top: 2px dashed color-mix(in srgb, var(--brand) 50%, transparent);
-padding-top: 2px;
+/*padding-top: 2px;*/
 top: -25px;
 width: 100%;
 max-width: 180px;
 margin: 0 auto;
 }
 
-.siteName h1 { background: var(--bg); }
+.siteName h1 {
+border-top: 2px dashed color-mix(in srgb, var(--brand) 20%, transparent);
+background: var(--bg);
+transform: rotate(-12deg);
+}
 
 
 
@@ -65,10 +68,23 @@ z-index: -2;
 opacity: .9;
 }
 
-.headerBannerImg .lDrawing {
+.headerBannerImg .lDailyArt {
 position: relative;
 top: 0;
 }
+
+
+
+.lDailyArt img {
+border: 2px solid var(--d);
+padding: var(--padding);
+border-radius: var(--borderRadius2);
+background-color: var(--l3);
+max-height: 130px;
+margin-bottom: -32px;
+margin-top: var(--margin);
+}
+
 </style>
 
 <noscript>
@@ -91,7 +107,7 @@ top: 0;
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>
+<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>-->
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/microblog/">Microblog</a>
@@ -108,7 +124,7 @@ top: 0;
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>
+<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>-->
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/microblog/">Microblog</a>
@@ -147,16 +163,19 @@ top: 0;
 <header id="topHeader" class="block padding1PxList tCenter" style="position: relative;">
 
 <div class="headerBannerImg reduceLight">
-<img src="./img/header-banner.png" alt="header banner">
-<!--<div class="margin"></div>
-<a href="./drawing.jpg"><img class="light lDrawing shadow4 padding2 margin2 borderRadius2 border4" src="./drawing.jpg" alt="Drawing"></a>-->
+
+<!--<img src="./img/header-banner.png" alt="header banner">-->
+<div class="lDailyArt inlineBlock">
+<a href="./daily-art.jpg"><img src="./daily-art.jpg" alt="Drawing"></a>
+</div>
+
 </div>
 
 <a href="./img/logo.png"><img class="logo reduceLight marginList" src="./img/logo.png" alt="logo" width="60"></a><br>
 
 <div class="siteName">
-<h1 class="inlineBlock op zero paddingList uppercase"><a class="brand" title="profile" href="https://neocities.org/site/irvirty">Irvirty</a></h1>
-<div class="paddingList op small">Home Page</div>
+<h1 class="inlineBlock zero op paddingList uppercase"><a class="brand" title="profile" href="https://neocities.org/site/irvirty" style="position: relative; z-index: 2;">Irvirty</a></h1>
+<div class="paddingList small op" style="position: relative; z-index: 3;">Home Page</div>
 
 <div class="op wrapperSmall3 tRight">
 <span class="xSmall">Status:</span>
