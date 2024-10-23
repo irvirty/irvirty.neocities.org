@@ -58,7 +58,6 @@ max-height: 120px;
 margin: 0 auto;
 margin-bottom: -30px;
 position: relative;
-
 z-index: -2;
 /*border-bottom: 2px dashed var(--cRand2);*/
 }
@@ -86,7 +85,10 @@ margin-bottom: -32px;
 margin-top: var(--margin2);
 }
 
-
+.siteName, #form {
+position: relative;
+top: -25px;
+}
 </style>
 
 <noscript>
@@ -166,10 +168,10 @@ margin-top: var(--margin2);
 
 <div class="headerBannerImg reduceLight">
 
-<!--<img src="./img/header-banner.png" alt="header banner">-->
-<div class="lDailyArt inlineBlock">
+<img src="./img/header-banner.png" alt="header banner">
+<!--<div class="lDailyArt inlineBlock">
 <a href="./daily-art.jpg"><img src="./daily-art.jpg" alt="Drawing"></a>
-</div>
+</div>-->
 
 </div>
 
@@ -194,6 +196,7 @@ margin-top: var(--margin2);
 
 </header>
 
+<div class="margin padding"></div>
 
 <!-- search -->
 <div id="form" class="wrapper">
