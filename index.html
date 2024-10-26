@@ -8,7 +8,8 @@
 Home page, and little bit about CSS.
 ">
 <meta name="keywords" content="
-homepage, home, page, CSS, links,
+webdesign, web, design,
+homepage, home, page, seach, startpage, start, page, newtab, new, tab, CSS, links,
 ">
 
 <link rel="alternate" type="application/rss+xml" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">
@@ -231,41 +232,30 @@ top: -25px;
 
 <div class="margin3 padding3"></div>
 
+
 <!-- tags -->
+<div class="wrapper2">
 <div class="tCenter">
 
 <div class="bold padding medium">
 <a class="op brand" href="https://neocities.org/browse">Neocities Explore:</a>
 </div>
 
-<div class="margin padding"></div>
+<div class="padding"></div>
 
 <div class="wrapper2 balance small">
-<a class="inlineBlock padding op red" href="https://neocities.org/browse?tag=art">Art</a>
-<a class="inlineBlock padding op indigo" href="https://neocities.org/browse?tag=photography">Photography</a>
-<a class="inlineBlock padding op orange" href="https://neocities.org/browse?tag=writing">Writing</a>
-<a class="inlineBlock padding op yellow" href="https://neocities.org/browse?tag=blog">Blog</a>
-<a class="inlineBlock padding op red" href="https://neocities.org/browse?tag=personal">Personal</a>
-<a class="inlineBlock padding op green" href="https://neocities.org/browse?tag=games">Games</a>
-<a class="inlineBlock padding op indigo" href="https://neocities.org/browse?tag=music">Music</a>
-<a class="inlineBlock padding op red" href="https://neocities.org/browse?tag=movies">Movies</a>
-<a class="inlineBlock padding op orange" href="https://neocities.org/browse?tag=books">Books</a>
 
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=technology">Technology</a>
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=webdesign">WebDesign</a>
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=programming">Programming</a>
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=html">HTML</a>
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=css">CSS</a>
-<a class="inlineBlock padding op blue" href="https://neocities.org/browse?tag=javascript">JavaScript</a>
+<span id="printTags"></span>
+<hr>
+<span id="printMode"></span>
 
-<!--<hr>
-<a class="inlineBlock padding blue" href="https://neocities.org/browse">Browse</a>
-<a class="inlineBlock padding blue" href="https://neocities.org/activity">Activity</a>
-<a class="inlineBlock padding blue" href="https://neocities.org/browse?sort_by=random">Random</a>-->
 </div>
 
+</div>
 </div>
 <!--// tags -->
+
+
 
 </main>
 <!--// content -->
@@ -308,5 +298,80 @@ location.href = "/projects/redirects-25/?q=" + q;
 
 </script>
 
+<script>
+
+//window.addEventListener('load', function() {});
+function tagListCloud(mode){
+
+let tagModePrint = "";
+if (mode == undefined||mode == ""){
+mode = localStorage.getItem("tagModeIndexNeoData");
+} else {
+localStorage.setItem("tagModeIndexNeoData", mode);
+}
+
+let tagListColor = `red orange yellow green blue indigo violet`;
+
+let tagList = `
+Art Drawing Photography Writing Blog Poetry Games Music Movies Books Travel
+Comics Sports Beauty Fashion Cute Fun Nature
+Science Education Internet Technology
+Programming WebDesign WebDevelopment HTML CSS JavaScript
+Design Personal Homepage Portfolio Search StartPage NewTab
+`;
+
+let arr = fuMSplit(tagList);
+
+let tagListPrint = "";
+arr.forEach((val, index) => {
+val = val.trim();
+if (val != ""){
+//console.log(val + "=" + index);
+let color = fuMRandomItem(tagListColor);
+let printTagUrl = val.toLowerCase();
+if (mode == "search"){
+tagListPrint += `<a class="inlineBlock padding op ${color}" href="./pages/search?q=${printTagUrl}&tbs=qdr:m">${val}</a>`;
+} else if (mode == "random"){
+tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?sort_by=random&tag=${printTagUrl}">${val}</a>`;
+} else {
+tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?tag=${printTagUrl}">${val}</a>`;
+}
+}
+});
+
+document.getElementById("printTags").innerHTML = tagListPrint;
+
+modeSwitch(mode);
+
+}
+
+tagListCloud("");
+
+function modeSwitch(mode){
+if (mode == "search"){
+tagModePrint = `<span class="op">Mode:</span>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
+<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('search'); return false;">search</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
+} else if (mode == "random"){
+tagModePrint = `<span class="op">Mode:</span>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
+<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
+} else {
+tagModePrint = `<span class="op">Mode:</span>
+<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('special'); return false;">special</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
+}
+
+document.getElementById("printMode").innerHTML = tagModePrint;
+}
+
+
+</script>
+
 </body>
 </html>
+
+

@@ -290,4 +290,65 @@ return newUrl;
 //https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentHTML
 
 
+function fuMRandomItem(text){
+let randomItemsArrList = [];
+let delimiter = ["|", ",", " ", "\r\n", "\r", "\n"];
+let items = "";
+delimiter.forEach((val) => {
+text = String(text.replaceAll(val, "SYMBOLFORSPLIT"));
+});
 
+text = text.split("SYMBOLFORSPLIT");
+let text2 = "";
+text.forEach((val) => {
+if (val.trim != ''&&val != undefined&&val != null){
+randomItemsArrList.push(val);
+}
+});
+
+return randomItemsArrList[fuMRandom(0, Number(randomItemsArrList.length - 1))];
+}
+//console.table(fuMRandomItem(",,,,1 2      ,,,"));
+
+
+
+function fuMInsertHtml(selector, option, text){
+//https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+//option: beforebegin, afterbegin, beforeend, afterend
+
+if (option == "head"){
+if (document.head != null){
+if (option != undefined&&option != ''){
+document.head.insertAdjacentHTML(option, text);
+//alert(opition + 'test');
+} else {
+document.head.insertAdjacentHTML("beforeend", text);
+//alert(option + 'test2');
+}
+} else { console.log("fuMInsertHtml: document head probably null"); }
+
+} else {
+
+if (document.querySelector(selector) != null){
+if (option != undefined&&option != ''){
+document.querySelector(selector).insertAdjacentHTML(option, text);
+//alert(opition + 'test');
+} else {
+document.querySelector(selector).insertAdjacentHTML('afterend', text);
+//alert(option + 'test2');
+}
+} else { console.log("fuMInsertHtml: querySelector probably null"); }
+
+}
+
+}
+
+
+
+function fuMSplit(text){
+let delimiter = ["|", ",", " ", "\r\n", "\r", "\n"];
+delimiter.forEach((val) => {
+text = String(text.replaceAll(val, "SYMBOLFORSPLIT"));
+});
+return text = text.split("SYMBOLFORSPLIT");
+}
