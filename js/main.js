@@ -82,13 +82,39 @@ if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
 
 // CSS
 // random bg image (background img with random position)
-function fuMBg(val){
+function fuMBg(com, img){
 
 let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
 let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 
+if (com == "light"){
+document.head.insertAdjacentHTML("beforeend", `
+<style>
+.reduceLight { filter: brightness(100%); }
+
+body{
+background-image: url("/img/${mBg}");
+background-repeat: repeat;
+background-position: ${mRandBgPos}% ${mRandBgPos2}%;
+background-attachment: fixed;
+}
+</style>
+`);
+} else if (com == "dark"){
+document.head.insertAdjacentHTML("beforeend", `
+<style>
+.reduceLight { filter:brightness(70%); }
+
+body{
+background-image: url("/img/${mBgDark}");
+background-repeat: repeat;
+background-position: ${mRandBgPos}% ${mRandBgPos2}%;
+background-attachment: fixed;
+}
+`);
+} else {
 document.head.insertAdjacentHTML("beforeend", `
 <style>
 @media (prefers-color-scheme: light) {
@@ -110,12 +136,12 @@ background-attachment: fixed;
 }
 </style>
 `);
-
+}
 
 }
 // random bg image
 
-fuMBg()
+fuMBg();
 
 
 

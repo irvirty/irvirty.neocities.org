@@ -201,3 +201,7 @@ document.getElementById('searchPage').classList.add('contentCenter');
 });
 }
 }*/
+
+if (String(location.href).indexOf("/search/") != -1){
+fuMBg("light");
+}
