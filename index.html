@@ -330,7 +330,7 @@ if (val != ""){
 let color = fuMRandomItem(tagListColor);
 let printTagUrl = val.toLowerCase();
 if (mode == "search"){
-tagListPrint += `<a class="inlineBlock padding op ${color}" href="./pages/search?q=${printTagUrl}&tbs=qdr:m">${val}</a>`;
+tagListPrint += `<a class="inlineBlock padding op ${color}" href="./pages/search?q=${printTagUrl}">${val}</a>`;
 } else if (mode == "random"){
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?sort_by=random&tag=${printTagUrl}">${val}</a>`;
 } else {
