@@ -123,98 +123,6 @@ return textOrArr.sort(collator.compare);
 //alert(fuMSort(["772", " 3",  "6",  "7", "77"], "", "arr"));
 
 
-// CSS
-// random bg image (background img with random position)
-function fuMBg(com, img){
-if (conf["confBg"] == 'on'||com == 'on'){
-
-let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
-let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
-let mRandBgPos = fuMRandom(0, 100);
-let mRandBgPos2 = fuMRandom(0, 100);
-if (conf["confThemeEmbed"] == 'light'||com == "light"){
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
-<style>
-/*.reduceLight { filter: brightness(100%); }*/
-body{
-background-image: url("/img/${mBg}");
-background-repeat: repeat;
-background-position: ${mRandBgPos}% ${mRandBgPos2}%;
-background-attachment: fixed;
-}
-</style>
-`);
-} else {
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
-<style>
-/*.reduceLight { filter:brightness(70%); }*/
-body{
-background-image: url("/img/${mBgDark}");
-background-repeat: repeat;
-background-position: ${mRandBgPos}% ${mRandBgPos2}%;
-background-attachment: fixed;
-}
-</style>
-`);
-}
-
-}
-}
-// random bg image
-
-// fonts, external fonts (privacy, data analytics)
-if (conf["confDataCollection"] == 'on'&&conf["confExternalFonts"] == 'auto'||conf["confExternalFonts"] == 'on'){
-
-//document.head.insertAdjacentHTML("beforeend", `
-fuMInsertHtml("head", 'beforeend', `
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
-`);
-
-}
-
-// CSS
-
-
-
-
-
-
-
-// Cookie (auto) v.1.0.0
-
-// Auto select (timezone) v.1.2.0
-//https://www.termsfeed.com/blog/cookie-consent-outside-eu/
-//https://stackoverflow.com/questions/38399465/how-to-get-list-of-all-timezones-in-javascript
-if (conf["confDataCollection"] == 'auto'){
-let confDataCollectionAutoReal = "auto";
-var timeZone = (Intl.DateTimeFormat().resolvedOptions().timeZone).toLowerCase();
-if (
-timeZone.indexOf('UTC'.toLowerCase()) != -1||
-timeZone.indexOf('europe'.toLowerCase()) != -1||
-timeZone.indexOf('mexico_city'.toLowerCase()) != -1||
-timeZone.indexOf('argentina'.toLowerCase()) != -1||
-timeZone.indexOf('brazil'.toLowerCase()) != -1||
-timeZone.indexOf('lagos'.toLowerCase()) != -1||
-timeZone.indexOf('japan'.toLowerCase()) != -1
-){
-conf["confDataCollection"] = 'off';
-confDataCollectionAutoReal = 'off';
-} else {
-confDataCollectionAutoReal = 'on';
-conf["confDataCollection"] = 'on';
-}
-
-//fuMInsertHtml('#fPrivacy', 'beforeend', `Cookie: auto (${conf["confDataCollection"]})`); 
-if (document.getElementById('fPrivacy') != null){
-document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${confDataCollectionAutoReal})`;
-}
-
-}
-// Auto
 
 
 
@@ -988,6 +896,94 @@ document.getElementById("fTheme").innerHTML = 'Theme: ' + theme + ' (' + conf["c
 
 
 
+// CSS
+// random bg image (background img with random position)
+function fuMBg(com, img){
+if (conf["confBg"] == 'on'||com == 'on'){
+
+let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
+let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
+let mRandBgPos = fuMRandom(0, 100);
+let mRandBgPos2 = fuMRandom(0, 100);
+if (conf["confThemeEmbed"] == 'light'||com == "light"){
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
+<style>
+/*.reduceLight { filter: brightness(100%); }*/
+body{
+background-image: url("/img/${mBg}");
+background-repeat: repeat;
+background-position: ${mRandBgPos}% ${mRandBgPos2}%;
+background-attachment: fixed;
+}
+</style>
+`);
+} else {
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
+<style>
+/*.reduceLight { filter:brightness(70%); }*/
+body{
+background-image: url("/img/${mBgDark}");
+background-repeat: repeat;
+background-position: ${mRandBgPos}% ${mRandBgPos2}%;
+background-attachment: fixed;
+}
+</style>
+`);
+}
+
+}
+}
+// random bg image
+
+// fonts, external fonts (privacy, data analytics)
+if (conf["confDataCollection"] == 'on'&&conf["confExternalFonts"] == 'auto'||conf["confExternalFonts"] == 'on'){
+
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+`);
+
+}
+
+// CSS
+
+
+
+// Cookie (auto) v.1.0.1
+
+// Auto select (timezone) v.1.2.0
+//https://www.termsfeed.com/blog/cookie-consent-outside-eu/
+//https://stackoverflow.com/questions/38399465/how-to-get-list-of-all-timezones-in-javascript
+if (conf["confDataCollection"] == 'auto'){
+let confDataCollectionAutoReal = "auto";
+var timeZone = (Intl.DateTimeFormat().resolvedOptions().timeZone).toLowerCase();
+if (
+timeZone.indexOf('UTC'.toLowerCase()) != -1||
+timeZone.indexOf('europe'.toLowerCase()) != -1||
+timeZone.indexOf('mexico_city'.toLowerCase()) != -1||
+timeZone.indexOf('argentina'.toLowerCase()) != -1||
+timeZone.indexOf('brazil'.toLowerCase()) != -1||
+timeZone.indexOf('lagos'.toLowerCase()) != -1||
+timeZone.indexOf('japan'.toLowerCase()) != -1
+){
+conf["confDataCollection"] = 'off';
+confDataCollectionAutoReal = 'off';
+} else {
+confDataCollectionAutoReal = 'on';
+conf["confDataCollection"] = 'on';
+}
+
+//fuMInsertHtml('#fPrivacy', 'beforeend', `Cookie: auto (${conf["confDataCollection"]})`); 
+if (document.getElementById('fPrivacy') != null){
+document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${confDataCollectionAutoReal})`;
+}
+
+}
+// Auto
 
 
 
