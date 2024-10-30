@@ -334,13 +334,22 @@ if (val != ""){
 //console.log(val + "=" + index);
 let color = fuMRandomItem(tagListColor);
 let printTagUrl = val.toLowerCase();
-if (mode == "search"){
+
+switch (mode) {
+
+case 'search':
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="./pages/search?q=${printTagUrl}">${val}</a>`;
-} else if (mode == "random"){
+break;
+
+case 'random':
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?sort_by=random&tag=${printTagUrl}">${val}</a>`;
-} else {
+break;
+
+default:
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?tag=${printTagUrl}">${val}</a>`;
+
 }
+
 }
 });
 
@@ -353,21 +362,29 @@ modeSwitch(mode);
 tagListCloud("");
 
 function modeSwitch(mode){
-if (mode == "search"){
+
+switch (mode) {
+
+case 'search':
 tagModePrint = `<span class="op">Mode:</span>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
 <a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('search'); return false;">search</a>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
-} else if (mode == "random"){
+break;
+
+case 'random':
 tagModePrint = `<span class="op">Mode:</span>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
 <a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
-} else {
+break;
+
+default:
 tagModePrint = `<span class="op">Mode:</span>
 <a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('special'); return false;">special</a>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>`;
+
 }
 
 document.getElementById("printMode").innerHTML = tagModePrint;
