@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "13",
+        "text": "Page refresh trick.\r\n===\r\nIf you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.\r\n\r\n(Maybe the JS file is stuck in the cache, Firefox browser on PC.)",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#caching #refresh #trick #Browser #website #page #WebDevelopment",
+        "time": 1730271534,
+        "rightFooter": ""
+    },
+    {
         "id": "12",
         "text": "Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory.",
         "text2": "",
