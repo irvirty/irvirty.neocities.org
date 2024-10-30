@@ -1,4 +1,4 @@
-// Main.js v.1.0.3
+// Main.js v.1.0.4
 
 // Settings, config
 var conf = [];
@@ -73,6 +73,13 @@ const confData = [
 "confName":"confExternalFonts",
 "confValueDefault":"auto",
 "confValueVariant":["on", "off", "auto"],
+},
+{
+"confTitle":"Speed dial",
+"confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="/projects/speed-dial-58/">/projects/speed-dial-58/</a>`,
+"confName":"confSpeedDialStatus",
+"confValueDefault":"on",
+"confValueVariant":["on", "off", "random"],
 },
 ];
 
@@ -948,7 +955,6 @@ fuMInsertHtml("head", 'beforeend', `
 
 
 // Cookie (auto) v.1.0.1
-
 // Auto select (timezone) v.1.2.0
 //https://www.termsfeed.com/blog/cookie-consent-outside-eu/
 //https://stackoverflow.com/questions/38399465/how-to-get-list-of-all-timezones-in-javascript
@@ -977,7 +983,41 @@ document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${confDataCollect
 }
 
 }
-// Auto
+// end Cookie (auto)
+
+
+
+// fu ClearText, fix print, fix input v.1.0.0
+function fuMClearText(text){
+if (text != undefined){
+
+//text = text.replaceAll("'", '\'');
+//text = text.replaceAll('"', '\"');
+//text = text.replaceAll("/\\/", "\\\\");
+
+//text = text.replaceAll("/\\/", "&#92;");
+text = text.replaceAll("/\\/", "&bsol;");
+text = text.replaceAll("<", '&lt;');
+text = text.replaceAll(">", '&gt;');
+text = text.replaceAll("`", '&#96;'); // Backtick
+text = text.replaceAll(/"/g, '&quot;');
+text = text.replaceAll(/'/g, '&apos;');
+text = text.replaceAll(/'/g, '%27');
+text = text.replaceAll('%', '&percnt;');
+text = text.replaceAll("+", '&plus;');
+
+return text;
+}
+}
+
+// fu ClearText2, for click and to URL
+function fuMClearText2(text){
+if (text != undefined){
+text = text.replaceAll(/"/g, '%22');
+text = text.replaceAll(/'/g, '%27');
+return text;
+}
+}
 
 
 
@@ -1011,6 +1051,9 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 
 // embed and run
+if (conf["confSpeedDialStatus"] != "off"){
+fuMEmbedScript(`/projects/speed-dial-58/script.js`, conf["confIdEmbedScript"]);
+}
 
 if (conf["confDataCollection"] == 'not selected'){
 fuMEmbedScript(`/js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
@@ -1023,14 +1066,13 @@ fuMEmbedScript(`https://www.googletagmanager.com/gtag/js?id=${conf["confGoogleAn
 
 ///////////////////////////
 // Run:
-
-//onload = (event) => {}
-//document.body.onload = function(){}
-//document.addEventListener("DOMContentLoaded", (event) => {})
 //https://stackoverflow.com/questions/39155645/multiple-window-onload-functions-with-only-javascript
 window.addEventListener('load', function() {
 //https://stackoverflow.com/questions/7559520/determine-if-statically-named-javascript-function-exists-to-prevent-errors
 
+if (conf["confSpeedDialtatus"] != "off"&&typeof fuLSpeedDial == 'function'){
+fuLSpeedDial("speedDialPrint", "", "", "print");
+}
 
 if (conf["confDataCollection"] == 'on'){
 window.dataLayer = window.dataLayer || [];
