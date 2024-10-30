@@ -1,11 +1,32 @@
 // Main.js v.1.0.3
 
+// Settings, config
 var conf = [];
-conf["confDomainName"] = "irvirty";
 
+conf["confGoogleAnalyticsId"] = "G-RQJTJG7DF9";
+conf["confUsername"] = "irvirty"; // only in some places
+conf["confWebsiteUrl"] = "irvirty.neocities.org";
+
+// wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
-conf["confMenuItemAverageWidth"] = 80;
+conf["confMenuItemAverageWidth"] = 90;
+
+conf["confDomainNameInTitleStatus"] = "on"; // on, off
+conf["confDomainName"] = String((location.hostname).split('.')[0]);
+if (conf["confDomainName"][0] != undefined){
+conf["confDomainName"] = conf["confDomainName"][0].toUpperCase() + conf["confDomainName"].slice(1);
+} else { conf["confDomainName"] = ''; }
+conf["confDomainNameInTitle"] = ' / ' + conf["confDomainName"];
+
+
+//IndexedDB, DB list for clear (comma)
+conf["confDbList"] = "example-todo-db";
+
+conf["confSymbolForSplit"] = "SYMBOLFORSPLIT";
+conf["confTagListLimit"] = 38;
+conf["confLinkExtList"] = "index.html,.html,index.php,.php";
+conf["confIdEmbedScript"] = "footer";
 
 const confData = [
 {
@@ -14,7 +35,45 @@ const confData = [
 "confName":"confTheme",
 "confValueDefault":"auto",
 "confValueVariant":["light", "dark", "auto-time", "auto", "auto-t-rand-all", "auto-rand-all"],
-}
+},
+{
+"confTitle":"Start of the day (time)",
+"confDescription":"For theme if selected auto time (auto-t) in themes option",
+"confName":"confStartDay",
+"confValueDefault":"7",
+"confValueVariant":["6", "7", "8", "9"],
+},
+{
+"confTitle":"Start of the night (time)",
+"confDescription":"For theme if selected auto time (auto-t) in themes option",
+"confName":"confStartNight",
+"confValueDefault":"19",
+"confValueVariant":["18", "19", "20", "21"],
+},
+{
+"confTitle":"Background picture",
+"confDescription":"Background picture.",
+"confName":"confBg",
+"confValueDefault":"on",
+"confValueVariant":["on", "off"],
+},
+{
+"confTitle":"Allow Cookies For Third Parties?",
+"confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
+- Auto: used the time zone for consent or disagreement.
+- Site used Functionality cookies.
+- Some services still collect visit information if cookie off.`,
+"confName":"confDataCollection",
+"confValueDefault":"not selected",
+"confValueVariant":["on", "off", "auto", "not selected"],
+},
+{
+"confTitle":"Allow external fonts?",
+"confDescription":`Load external fonts (privacy: may be used for analytics). Auto - based on third-party cookies settings.`,
+"confName":"confExternalFonts",
+"confValueDefault":"auto",
+"confValueVariant":["on", "off", "auto"],
+},
 ];
 
 // generate var: conf['confName'];
@@ -22,84 +81,12 @@ confData.forEach((val) => {
 conf[val.confName] = localStorage.getItem(val.confName);
 
 if (conf[val.confName] == null||conf[val.confName] == undefined){
-// enable hide ext / main.js, settings page
-/*delme if (String(location.hostname).indexOf('.pages.dev') != -1&&val.confName == 'confHideLinkExt'){
-val.confValueDefault = 'on';
-}*/
-
 localStorage.setItem(val.confName, val.confValueDefault);
 conf[val.confName] = val.confValueDefault; 
 }
 
 });
 // generate var: conf['confName'];
-
-
-
-
-let mFooter = `
-
-<div class="margin2 padding2"></div>
-<div class="margin2 padding2"></div>
-
-<footer class="tCenter margin3List small">
-
-<!--<a class="inlineFlex margin shadow light2 padding1Px border2 borderRadius2 op" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight border2 borderRadius2" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
-<div class="padding margin"></div>-->
-
-<nav>
-
-<div class="wrapper3 margin2List small tCenter">
-
-<div class="wrapper2 small tLeft">
-<span class="gray">Nav:</span> <span id="footerNav"></span><hr>
-</div>
-
-<div>
-<!--<a class="brand" href="#goBack" onclick="history.back()">Go Back</a>-->
-<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="/pages/themes.html">Themes</a></span>
-<span id="fEmbedFileUrl"></span>
-<span id="fPinButton"></span>
-</div>
-
-<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
-<a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
-<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/irvirty.rss">RSS</a>
-<a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
-<a class="brand inlineBlock padding" title="Source Code (repository)" href="https://github.com/irvirty/irvirty.neocities.org">Source Code</a>
-<a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
-<span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2024</span>
-<a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
-
-</div>
-</nav>
-
-`;
-
-if (document.getElementById("footer") != null){
-document.getElementById("footer").innerHTML = mFooter;
-}
-
- let mFooterNavLinksPrint = `<a class="brand" href="/">start</a> `;
- let mFooterNavLinksUrl = "";
- let mFooterNavLinks = location.href; 
-//https://stackoverflow.com/questions/2540969/remove-querystring-from-url
-mFooterNavLinks = mFooterNavLinks.split(/[?#]/)[0];
-mFooterNavLinks = mFooterNavLinks.split('//');
-mFooterNavLinks = mFooterNavLinks[1].split('/');
-
-mFooterNavLinks.forEach((mFooterNavLinksItem, mFooterNavLinksIndex) => {
-mFooterNavLinks[0] = "";
-if (mFooterNavLinks[mFooterNavLinksIndex] != ""){
-mFooterNavLinksUrl += `/` + mFooterNavLinks[mFooterNavLinksIndex];
-
-mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${mFooterNavLinksUrl}">${mFooterNavLinks[mFooterNavLinksIndex]}</a>`;
-}
-});
-
-fuMPrintText("footerNav", mFooterNavLinksPrint, '');
-
-// end footer
 
 
 
@@ -115,19 +102,39 @@ if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
 
 
 
+// fu sorting v.1.0.0
+function fuMSort(textOrArr, delimiter, mode){
+//https://stackoverflow.com/questions/2802341/natural-sort-of-alphanumerical-strings-in-javascript
+var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+//return textOrArr.sort(collator.compare);
+
+if (mode == 'text'){
+let result = textOrArr.split(delimiter);
+result.sort(collator.compare)
+return result.join(delimiter);
+}
+
+if (mode == 'arr'){
+var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
+return textOrArr.sort(collator.compare);
+}
+
+}
+//alert(fuMSort(["772", " 3",  "6",  "7", "77"], "", "arr"));
 
 
 // CSS
 // random bg image (background img with random position)
 function fuMBg(com, img){
+if (conf["confBg"] == 'on'||com == 'on'){
 
 let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
 let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
-
-if (com == "light"){
-document.head.insertAdjacentHTML("beforeend", `
+if (conf["confThemeEmbed"] == 'light'||com == "light"){
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter: brightness(100%); }*/
 body{
@@ -138,8 +145,9 @@ background-attachment: fixed;
 }
 </style>
 `);
-} else if (com == "dark"){
-document.head.insertAdjacentHTML("beforeend", `
+} else {
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter:brightness(70%); }*/
 body{
@@ -148,35 +156,65 @@ background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;
 }
-`);
-} else {
-document.head.insertAdjacentHTML("beforeend", `
-<style>
-@media (prefers-color-scheme: light) {
-body{
-background-image: url("/img/${mBg}");
-background-repeat: repeat;
-background-position: ${mRandBgPos}% ${mRandBgPos2}%;
-background-attachment: fixed;
-}
-}
-
-@media (prefers-color-scheme: dark) {
-body{
-background-image: url("/img/${mBgDark}");
-background-repeat: repeat;
-background-position: ${mRandBgPos}% ${mRandBgPos2}%;
-background-attachment: fixed;
-}
-}
 </style>
 `);
 }
 
 }
+}
 // random bg image
 
-fuMBg();
+// fonts, external fonts (privacy, data analytics)
+if (conf["confDataCollection"] == 'on'&&conf["confExternalFonts"] == 'auto'||conf["confExternalFonts"] == 'on'){
+
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+`);
+
+}
+
+// CSS
+
+
+
+
+
+
+
+// Cookie (auto) v.1.0.0
+
+// Auto select (timezone) v.1.2.0
+//https://www.termsfeed.com/blog/cookie-consent-outside-eu/
+//https://stackoverflow.com/questions/38399465/how-to-get-list-of-all-timezones-in-javascript
+if (conf["confDataCollection"] == 'auto'){
+let confDataCollectionAutoReal = "auto";
+var timeZone = (Intl.DateTimeFormat().resolvedOptions().timeZone).toLowerCase();
+if (
+timeZone.indexOf('UTC'.toLowerCase()) != -1||
+timeZone.indexOf('europe'.toLowerCase()) != -1||
+timeZone.indexOf('mexico_city'.toLowerCase()) != -1||
+timeZone.indexOf('argentina'.toLowerCase()) != -1||
+timeZone.indexOf('brazil'.toLowerCase()) != -1||
+timeZone.indexOf('lagos'.toLowerCase()) != -1||
+timeZone.indexOf('japan'.toLowerCase()) != -1
+){
+conf["confDataCollection"] = 'off';
+confDataCollectionAutoReal = 'off';
+} else {
+confDataCollectionAutoReal = 'on';
+conf["confDataCollection"] = 'on';
+}
+
+//fuMInsertHtml('#fPrivacy', 'beforeend', `Cookie: auto (${conf["confDataCollection"]})`); 
+if (document.getElementById('fPrivacy') != null){
+document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${confDataCollectionAutoReal})`;
+}
+
+}
+// Auto
 
 
 
@@ -290,13 +328,75 @@ dropdownButton.innerHTML = `☰ Menu`;
 // end Navigation JS version
 
 
+// footer
+
+fuMInsertHtml("#footer", 'beforeend', `
+
+<div class="margin2 padding2"></div>
+<div class="margin2 padding2"></div>
+
+<div id="cookiePopup"></div>
+
+<!--<a class="inlineFlex margin shadow light2 padding1Px border2 borderRadius2 op" title="Hosting platform Neocities" href="https://neocities.org/"><img class="reduceLight border2 borderRadius2" src="https://irvirty.neocities.org/neocities.png" style="max-height: 31px;" alt="neocities"></a>
+<div class="padding margin"></div>-->
+
+<nav>
+<div class="wrapper3 margin2List small tCenter">
+
+<div class="wrapper2">
+<div class="small tLeft">
+<span class="gray">Nav:</span> <span id="footerNav"></span><hr>
+</div>
+</div>
+
+<div>
+<!--<a class="brand" href="#goBack" onclick="history.back()">Go Back</a>-->
+<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="/pages/themes.html">Themes</a></span>
+<span id="fEmbedFileUrl"></span>
+<span id="fPinButton"></span>
+</div>
+
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
+<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/irvirty.rss">RSS</a>
+<a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
+<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>
+<a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings.html#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
+<a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
+<a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
+<span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2024</span>
+<a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
+
+</div>
+</nav>
+
+`);
+
+ let mFooterNavLinksPrint = `<a class="brand" href="/">start</a> `;
+ let mFooterNavLinksUrl = "";
+ let mFooterNavLinks = location.href; 
+//https://stackoverflow.com/questions/2540969/remove-querystring-from-url
+mFooterNavLinks = mFooterNavLinks.split(/[?#]/)[0];
+mFooterNavLinks = mFooterNavLinks.split('//');
+mFooterNavLinks = mFooterNavLinks[1].split('/');
+
+mFooterNavLinks.forEach((mFooterNavLinksItem, mFooterNavLinksIndex) => {
+mFooterNavLinks[0] = "";
+if (mFooterNavLinks[mFooterNavLinksIndex] != ""){
+mFooterNavLinksUrl += `/` + mFooterNavLinks[mFooterNavLinksIndex];
+
+mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${mFooterNavLinksUrl}">${mFooterNavLinks[mFooterNavLinksIndex]}</a>`;
+}
+});
+
+fuMPrintText("footerNav", mFooterNavLinksPrint, '');
+
+// end footer
 
 
 
 
-
-
-
+function fuMReload(){ location.reload(true); }
 
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
@@ -395,7 +495,7 @@ if (option != undefined&&option != ''){
 document.querySelector(selector).insertAdjacentHTML(option, text);
 //alert(opition + 'test');
 } else {
-document.querySelector(selector).insertAdjacentHTML('afterend', text);
+document.querySelector(selector).insertAdjacentHTML('beforeend', text);
 //alert(option + 'test2');
 }
 } else { console.log("fuMInsertHtml: querySelector probably null"); }
@@ -885,3 +985,72 @@ document.getElementById("fTheme").innerHTML = 'Theme: ' + theme + ' (' + conf["c
 }*/
 
 // end Theme switcher
+
+
+
+
+
+
+// Embed scripts. Script embed v.1.0.0
+if (document.getElementById(conf["confIdEmbedScript"]) != null){
+
+function fuMEmbedScript(embedUrl, embedId){
+
+/*
+//https://stackoverflow.com/questions/3646036/preloading-images-with-javascript
+var link = document.createElement("link");
+link.rel = "preload";
+link.as = "script";
+link.href = embedUrl;
+document.head.appendChild(link);*/
+
+let script = document.createElement('script');
+script.type='text/javascript';
+//script.async = true;
+script.defer = true;
+script.charset = 'utf-8';
+script.src = embedUrl;
+
+if (document.getElementById(embedId) != null){
+document.getElementById(embedId).appendChild(script);
+} else {
+document.getElementsByTagName('head')[0].appendChild(script); 
+}
+
+}
+
+
+// embed and run
+
+if (conf["confDataCollection"] == 'not selected'){
+fuMEmbedScript(`/js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+}
+
+if (conf["confDataCollection"] == 'on'){
+fuMEmbedScript(`https://www.googletagmanager.com/gtag/js?id=${conf["confGoogleAnalyticsId"]}`, conf["confIdEmbedScript"]);
+}
+
+
+///////////////////////////
+// Run:
+
+//onload = (event) => {}
+//document.body.onload = function(){}
+//document.addEventListener("DOMContentLoaded", (event) => {})
+//https://stackoverflow.com/questions/39155645/multiple-window-onload-functions-with-only-javascript
+window.addEventListener('load', function() {
+//https://stackoverflow.com/questions/7559520/determine-if-statically-named-javascript-function-exists-to-prevent-errors
+
+
+if (conf["confDataCollection"] == 'on'){
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', conf["confGoogleAnalyticsId"]);
+}
+
+})
+
+}
+// end Embed scripts
+

@@ -27,9 +27,11 @@ background-attachment: fixed;
 border-bottom: 2px dotted transparent;
 }
 
-.itemLinkAni:hover,
-.itemLinkAniActive {
+.itemLinkAni:hover{ 
 transition: 1.8s;
+border-bottom: 2px dotted var(--brand);
+}
+.itemLinkAniActive {
 border-bottom: 2px dotted var(--brand);
 }
 
