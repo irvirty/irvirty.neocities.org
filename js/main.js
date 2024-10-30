@@ -122,22 +122,16 @@ return textOrArr.sort(collator.compare);
 }
 //alert(fuMSort(["772", " 3",  "6",  "7", "77"], "", "arr"));
 
-
-
-
-
-function fuMPrintText(id, text, option){
-if (document.getElementById(id) != null){
-if (option == 'plus'||option == '+'){
-document.getElementById(id).innerHTML += text;
-} else if (option == 'plusTop'||option == 'top'){
-document.getElementById(id).innerHTML = text + document.getElementById(id).innerHTML;
-} else {
-document.getElementById(id).innerHTML = text;
+// domain name in titile
+if (conf["confDomainNameInTitleStatus"] == 'on'&&String(window.location.pathname) != "/"){
+if (document.getElementsByTagName('title')[0] != null){
+document.getElementsByTagName('title')[0].innerHTML += conf["confDomainNameInTitle"];
 }
-} else {
-// console.log(id+' not fount');
 }
+
+// css theme fix if save page
+if (String(window.location.href).slice(0, 4) != 'http'){
+document.getElementById('theme').id = 'themeDisable';
 }
 
 
@@ -266,7 +260,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
 <a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
-<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/irvirty.rss">RSS</a>
+<!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings.html#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
@@ -297,7 +291,7 @@ mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${m
 }
 });
 
-fuMPrintText("footerNav", mFooterNavLinksPrint, '');
+fuMInsertHtml("#footerNav", '', mFooterNavLinksPrint);
 
 // end footer
 
