@@ -349,6 +349,10 @@ case 'random':
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?sort_by=random&tag=${printTagUrl}">${val}</a>`;
 break;
 
+case 'edit':
+tagListPrint += `<a class="inlineBlock padding op brand" href="https://neocities.org/browse?tag=${printTagUrl}">${val}</a>`;
+break;
+
 default:
 tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?tag=${printTagUrl}">${val}</a>`;
 
