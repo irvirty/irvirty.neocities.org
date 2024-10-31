@@ -405,7 +405,7 @@ tagModePrint = `
 <a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
 
 <span class="op gray">/</span>
-<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
+<a class="inlineBlock padding op gray" href="#" onclick="closeTagListData(''); return false;">close</a>
 `;
 
 document.getElementById("tagListEditForm").innerHTML = `
@@ -447,6 +447,11 @@ function resetTagListData(){
 if (window.confirm("Are you sure?")) {
 localStorage.removeItem("tagListData")
 }
+document.getElementById("tagListEditForm").innerHTML = ``;
+tagListCloud("");
+}
+
+function closeTagListData(){
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
