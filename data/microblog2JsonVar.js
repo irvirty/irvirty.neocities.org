@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "16",
+        "text": "Update:\r\n===\r\n1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.\r\n2. I added to the start page a not-so-old \"speed dial\" panel for the links, links stored only locally in the browser too.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#update #new",
+        "time": 1730411740,
+        "rightFooter": ""
+    },
+    {
         "id": "15",
         "text": "Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin.",
         "text2": "",
