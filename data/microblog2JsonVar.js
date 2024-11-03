@@ -23,16 +23,6 @@ var microblog2JsonVar =
         "rightFooter": ""
     },
     {
-        "id": "14",
-        "text": "I added more color themes to the site; it was easy because I used it from my other site. By default, there will be only automatic modes: light and dark themes. I do not turn on random mode with different colors to not overload the impression.",
-        "text2": "",
-        "text3": "",
-        "url": "",
-        "tag": "#update #theme",
-        "time": 1730274923,
-        "rightFooter": ""
-    },
-    {
         "id": "13",
         "text": "Page refresh trick.\r\n===\r\nIf you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.\r\n\r\n(Maybe the JS file is stuck in the cache, Firefox browser on PC.)",
         "text2": "",
