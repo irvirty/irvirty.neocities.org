@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "17",
+        "text": "The default is now random all light and all dark themes.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#update #settings",
+        "time": 1730612079,
+        "rightFooter": ""
+    },
+    {
         "id": "16",
         "text": "Update:\r\n===\r\n1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.\r\n2. I added to the start page a not-so-old \"speed dial\" panel for the links, links stored only locally in the browser too.",
         "text2": "",
