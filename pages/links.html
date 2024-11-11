@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Links</title>
 
-<meta name="description" content="
-A small collection of possibly useful links on various topics: search engines, social media, software, for web developers and more
-">
-<meta name="keywords" content="
-links, collection, sites,
-">
+<meta charset="UTF-8">
+<title>List of pages</title>
+
+<meta name="description" content="A small collection of possibly useful links on various topics: search engines, social media, software, for web developers and more">
+<meta name="keywords" content="links, collection, sites,">
+
+<!--<link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" sizes="512x512" href="/img/logo.png" type="image/png">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<!-- style -->
+<meta name="color-scheme" content="light dark">
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+
+<link rel="icon" sizes="512x512" href="..//img/logo.png" type="image/png">
+<link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon">
+
+
+<!-- main -->
+<link rel="preload" href="../js/main.js" as="script">
+
 <link rel="preload" href="../css/main.css" as="style">
 <link rel="stylesheet" href="../css/main.css" type="text/css">
 <link rel="preload" href="../css/auto.css" as="style">
@@ -23,34 +29,33 @@ links, collection, sites,
 
 <link rel="preload" href="../css/style.css" as="style">
 <link rel="stylesheet" href="../css/style.css" type="text/css">
-<!-- // style -->
 
 <noscript>
 <link rel="stylesheet" type="text/css" href="../css/noscript.css">
 </noscript>
+<!-- // main -->
+
 
 </head>
 <body>
 
-<!-- Navigation HTML part v.1.0.1 -->
+<!-- Navigation HTML v.1.0.1 -->
 <header>
 <div class="wrapper3">
-<div class="margin2"></div>
+<div class="margin"></div>
 
 <div id="topNav" class="topNav">
 <nav>
 
 <span class="countMenuItem"></span>
-<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../index.html" title="index / nav 1"><img class="logo2 reduceLight" src="../img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../index.html" title="index / nav 1"><img class="logo2 reduceLight" src="/img/logo.png" alt="logo" style="max-width: 26px;"></a> 
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>-->
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../pages/links.html">Links</a>
+<a class="countMenuItem active2 inlineBlock padding itemLinkAniActive" href="../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
 <!-- // links in nav -->
 </span>
 
@@ -62,12 +67,10 @@ links, collection, sites,
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/">Search</a>-->
-<a class="countMenuItem inlineBlock padding active itemLinkAniActive" href="../pages/links.html">Links</a>
+<a class="countMenuItem active2 inlineBlock padding itemLinkAniActive" href="../pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
 <!-- // links for show in dropdown (duplicate) -->
 </div>
 </div>
@@ -79,7 +82,7 @@ links, collection, sites,
 <a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="../" title="../ (Up)">List (up)</a>
 
 <span class="countMenuItem"></span>
-<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/main/site-search.html" role="search">
+<form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/pages/site-search.html" role="search">
 <input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">
 </form>-->
 
@@ -89,6 +92,12 @@ links, collection, sites,
 </div>
 </header>
 <!-- // Navigation HTML -->
+
+<!--<hr>-->
+
+
+
+
 
 <!-- content -->
 <main class="content">
@@ -217,9 +226,14 @@ Arch Linux - <a class="brand" href="https://archlinux.org/">https://archlinux.or
 </main>
 <!--// content -->
 
+
+
+
 <footer id="footer"></footer>
 
 <script src="../js/main.js"></script>
+<script src="../js/script.js"></script>
+
 
 </body>
 </html>

@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "18",
+        "text": "It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#URL #post",
+        "time": 1730796015,
+        "rightFooter": ""
+    },
+    {
         "id": "17",
         "text": "The default is now random all light and all dark themes.",
         "text2": "",
@@ -94,7 +104,7 @@ var microblog2JsonVar =
     },
     {
         "id": "3",
-        "text": "New page: Microblog. Website updates page and maybe something else.",
+        "text": "New page: Microblog with posts about site updates and more.",
         "text2": "",
         "text3": "",
         "url": "",

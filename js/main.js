@@ -885,7 +885,7 @@ fuMSetTheme(conf["confTheme"]);
 }
 });
 */
-// end Theme switcher
+// end Themes changer
 
 
 
@@ -894,8 +894,8 @@ fuMSetTheme(conf["confTheme"]);
 function fuMBg(com, img){
 if (conf["confBg"] == 'on'||com == 'on'){
 
-let mBg = fuMRandomItem("bg-binary.svg bg-circle.svg bg-line-chaotic.svg bg-deco-paper.svg bg-wood.svg");
-let mBgDark = fuMRandomItem("bg-binary-d.svg bg-circle-d.svg bg-line-chaotic-d.svg bg-deco-paper-d.svg bg-wood-d.svg");
+let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png");
+let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){
@@ -904,7 +904,7 @@ fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter: brightness(100%); }*/
 body{
-background-image: url("/img/${mBg}");
+background-image: url("/img/bg/${mBg}");
 background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;
@@ -917,7 +917,7 @@ fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter:brightness(70%); }*/
 body{
-background-image: url("/img/${mBgDark}");
+background-image: url("/img/bg/${mBgDark}");
 background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;

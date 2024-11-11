@@ -107,6 +107,8 @@ if (q != ""){
 qPrint = encodeURIComponent(q);
 }
 
+
+
 lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
@@ -121,6 +123,7 @@ lQButtonPrint = `
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<!--<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/">Profile</a>-->
 </div>
 </div>
 
@@ -141,6 +144,13 @@ qPrint = qPrint.trim();
 //q = q.replaceAll(' ', '');
 //document.getElementById("q").value = qPrint.trim();
 
+
+let qPrintProfile = qPrint;
+qPrintProfile = qPrintProfile.replace("https://", "");
+qPrintProfile = qPrintProfile.replace("http://", "");
+qPrintProfile = String((qPrintProfile).split('.')[0]);
+qPrintProfile = encodeURIComponent(qPrintProfile);
+
 qPrint = encodeURIComponent(qPrint);
 
 lQButtonPrint = `
@@ -157,6 +167,7 @@ lQButtonPrint = `
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<!--<a class="tag light2 border3 borderRadius2 op" title="Site profile" href="https://neocities.org/site/${qPrintProfile}">Profile</a>-->
 </div>
 </div>
 

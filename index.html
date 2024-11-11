@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <title>Irvirty - Home page</title>
 
-<meta name="description" content="
-Home and start page for exploring other sites, a collection of links, and a little bit about CSS.
-">
-<meta name="keywords" content="
-webdesign, web, design,
-homepage, home, page, seach, startpage, start, page, newtab, new, tab, CSS, links,
-">
+<meta name="description" content="Home and start page for exploring other sites, a collection of links, and a little bit about CSS.">
+<meta name="keywords" content="webdesign, web, design,
+homepage, home, page, seach, startpage, start, page, newtab, new, tab, CSS, links,">
 
-<link rel="alternate" type="application/rss+xml" title="RSS Site update" href="https://neocities.org/site/irvirty.rss">
+<!--<link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" sizes="512x512" href="/img/logo.png" type="image/png">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<!-- style -->
+<meta name="color-scheme" content="light dark">
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+
+<link rel="icon" sizes="512x512" href=".//img/logo.png" type="image/png">
+<link rel="shortcut icon" href=".//favicon.ico" type="image/x-icon">
+
+
+<!-- main -->
+<link rel="preload" href="./js/main.js" as="script">
+
 <link rel="preload" href="./css/main.css" as="style">
 <link rel="stylesheet" href="./css/main.css" type="text/css">
 <link rel="preload" href="./css/auto.css" as="style">
@@ -26,7 +30,12 @@ homepage, home, page, seach, startpage, start, page, newtab, new, tab, CSS, link
 
 <link rel="preload" href="./css/style.css" as="style">
 <link rel="stylesheet" href="./css/style.css" type="text/css">
-<!-- // style -->
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="./css/noscript.css">
+</noscript>
+<!-- // main -->
+
 
 <link rel="preload" href="./pages/search/style.css" as="style">
 <link rel="stylesheet" href="./pages/search/style.css" type="text/css">
@@ -92,32 +101,27 @@ top: -25px;
 }
 </style>
 
-<noscript>
-<link rel="stylesheet" type="text/css" href="../css/noscript.css">
-</noscript>
 
 </head>
 <body>
 
-<!-- Navigation HTML part v.1.0.1 -->
+<!-- Navigation HTML v.1.0.1 -->
 <header>
 <div class="wrapper3">
-<div class="margin2"></div>
+<div class="margin"></div>
 
 <div id="topNav" class="topNav">
 <nav>
 
 <span class="countMenuItem"></span>
-<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="./index.html" title="index / nav 1"><img class="logo2 reduceLight" src="./img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="./index.html" title="index / nav 1"><img class="logo2 reduceLight" src="/img/logo.png" alt="logo" style="max-width: 26px;"></a> 
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>-->
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="./pages/about.html">About</a>
 <!-- // links in nav -->
 </span>
 
@@ -129,12 +133,10 @@ top: -25px;
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<!--<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/search/">Search</a>-->
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/links.html">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/css/">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/microblog/">Microblog</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="./pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="./pages/about.html">About</a>
 <!-- // links for show in dropdown (duplicate) -->
 </div>
 </div>
@@ -143,7 +145,7 @@ top: -25px;
 </div>
 
 <!--<span class="countMenuItem"></span>
-<a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="../" title="../ (Up)">List (up)</a>
+<a class="countMenuItem inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" href="./" title="../ (Up)">List (up)</a>
 
 <span class="countMenuItem"></span>
 <form class="countMenuItem noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/pages/site-search.html" role="search">
@@ -156,6 +158,9 @@ top: -25px;
 </div>
 </header>
 <!-- // Navigation HTML -->
+
+<!--<hr>-->
+
 
 
 
@@ -266,9 +271,17 @@ top: -25px;
 </main>
 <!--// content -->
 
+
+
+
+
+
+
 <footer id="footer"></footer>
 
 <script src="./js/main.js"></script>
+<script src="./js/script.js"></script>
+
 
 <script src="./pages/search/script.js"></script>
 
@@ -316,6 +329,8 @@ mode = localStorage.getItem("tagModeIndexNeoData");
 localStorage.setItem("tagModeIndexNeoData", mode);
 }
 
+if (mode == null){ mode = "search"; }
+
 let tagListColor = `red orange yellow green blue indigo violet`;
 
 let tagList = localStorage.getItem("tagListData");
@@ -342,19 +357,27 @@ let printTagUrl = val.toLowerCase();
 switch (mode) {
 
 case 'search':
-tagListPrint += `<a class="inlineBlock padding op ${color}" href="./pages/search?q=${printTagUrl}">${val}</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + `">` + val + `</a>`;
 break;
 
 case 'random':
-tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?sort_by=random&tag=${printTagUrl}">${val}</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+case 'update':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=update&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
 case 'edit':
-tagListPrint += `<span class="inlineBlock padding">${val}</span>`;
+tagListPrint += `<span class="inlineBlock padding">` + val + `</span>`;
+break;
+
+case 'special':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
 default:
-tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocities.org/browse?tag=${printTagUrl}">${val}</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + `">` + val + `</a>`;
 
 }
 
@@ -363,51 +386,45 @@ tagListPrint += `<a class="inlineBlock padding op ${color}" href="https://neocit
 
 document.getElementById("printTags").innerHTML = tagListPrint;
 
+
 modeSwitch(mode,tagList);
 
 }
 
 tagListCloud("");
 
+
 function modeSwitch(mode, tagList){
-
-switch (mode) {
-
-case 'search':
-tagModePrint = `
-<span class="op">Mode:</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>
-<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('search'); return false;">search</a>
-
-<span class="op gray">/</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
+let tagModePrint = "";
+let tagsModeList = `search special random update`;
+let arr = fuMSplit(tagsModeList);
+let tagListPrint = `<span class="op">mode:</span>`;
+arr.forEach((val, index) => {
+if (mode == val){
+tagModePrint += `
+<a class="inlineBlock padding op active" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
 `;
-break;
-
-case 'random':
-tagModePrint = `
-<span class="op">Mode:</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
-<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('random'); return false;">random</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
-
-<span class="op gray">/</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
+} else {
+tagModePrint += `
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
 `;
-break;
+}
+});
 
-case 'edit':
-tagModePrint = `
-<span class="op">Mode:</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('special'); return false;">special</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
-
+if (mode == "edit"){
+tagModePrint += `
 <span class="op gray">/</span>
 <a class="inlineBlock padding op gray" title="Close" href="#" onclick="closeTagListData(''); return false;">edit</a>
 `;
+} else {
+tagModePrint += `
+<span class="op gray">/</span>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
+`;
+}
+document.getElementById("printMode").innerHTML = tagModePrint;
 
+if (mode == "edit"){
 document.getElementById("tagListEditForm").innerHTML = `
 <form action="" method="get" class="form-example">
 <textarea id="tagListEditData" rows="10">` + tagList + `</textarea>
@@ -416,23 +433,10 @@ document.getElementById("tagListEditForm").innerHTML = `
   </div>
 </form>
 `;
-break;
-
-default:
-tagModePrint = `
-<span class="op">Mode:</span>
-<a class="inlineBlock padding op gray" href="#" onclick="tagListCloud('special'); return false;">special</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('random'); return false;">random</a>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('search'); return false;">search</a>
-
-<span class="op gray">/</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
-`;
+}
 
 }
 
-document.getElementById("printMode").innerHTML = tagModePrint;
-}
 
 
 
@@ -460,5 +464,3 @@ tagListCloud("");
 
 </body>
 </html>
-
-
