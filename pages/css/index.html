@@ -106,16 +106,18 @@
 <h1 class="tCenter op">CSS</h1>
 <!--<div class="tCenter op margin3List small">Desc.</div>-->
 
-<div class="border padding2 bg borderRadius2">
-<div class="tCenter">
+<!-- page -->
+<div class="">
 
+<div class="tCenter">
 <iframe src="https://giphy.com/embed/13FrpeVH09Zrb2" width="180" style="height: 100%; border: 0px;" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/css-13FrpeVH09Zrb2">via GIPHY</a></p>
 
-<nav class="balance padding balance"><span class="gray">[</span>
+<nav class="balance"><span class="gray">[</span>
 <a class="inlineBlock padding brand" href="#about">About CSS</a> <span class="gray small">|</span>
 <a class="inlineBlock padding brand" href="#basics">CSS Basics</a> <span class="gray small">|</span>
 <a class="inlineBlock padding brand" href="#learning">Learning CSS</a> <span class="gray small">|</span>
-<a class="inlineBlock padding brand" href="#responsive">Responsive Design</a> <span class="gray">]</span>
+<a class="inlineBlock padding brand" href="#responsive">Responsive Design</a> <span class="gray small">|</span>
+<a class="inlineBlock padding brand" href="#tricksandtips">Tricks and tips</a> <span class="gray">]</span>
 </nav>
 
 <div class="maring padding"></div>
@@ -123,9 +125,9 @@
 
 
 <div class="maring2 padding2"></div>
-
+<div class="maring2 padding2"></div>
 <span id="about"></span>
-<div class="border padding2 bg borderRadius2">
+<div class="border padding3 bg borderRadius2">
 <h2 class="op tCenter">About CSS</h2>
 Cascading Style Sheets (CSS) is a style sheet language that allows you to add style to a web page: font, color, space between elements, and more.
 
@@ -138,9 +140,9 @@ Cascading Style Sheets (CSS) is a style sheet language that allows you to add st
 </div>
 
 <div class="maring2 padding2"></div>
-
+<div class="maring2 padding2"></div>
 <span id="basics"></span>
-<div class="border padding2 bg borderRadius2">
+<div class="border padding3 bg borderRadius2">
 <h2 class="op tCenter">CSS Basics</h2>
 <p>"CSS is not a programming language, and not a markup language, <b>CSS is a style sheet language.</b>"</p>
 <p>What does the CSS code look like? Example:</p>
@@ -194,7 +196,7 @@ p {
 </div>
 <br>
 
-<p class="pre border padding2"><b>Note:</b> Hierarchy in CSS matters, CSS property values that were declared last overwrite property values that were declared earlier or above, for example:
+<div class="pre border padding2"><b>Note:</b> Hierarchy in CSS matters, CSS property values that were declared last overwrite property values that were declared earlier or above, for example:
 
 &lt;style&gt;
 p { color: red; }
@@ -208,13 +210,14 @@ The text in the paragraph will be blue.
 <div class="small op">Source:</div>
 - CSS basics - Learn web development | MDN - <a class="brand" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics</a><br>
 - &lt;style&gt;: The Style Information element - HTML: HyperText Markup Language | MDN - <a class="brand" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style</a><br>
+</div>
 <div class="maring2 padding2"></div>
 </div>
 
 <div class="maring2 padding2"></div>
-
+<div class="maring2 padding2"></div>
 <span id="learning"></span>
-<div class="border padding2 bg borderRadius2">
+<div class="border padding3 bg borderRadius2">
 <h2 class="op tCenter">Learning CSS</h2>
 <br><br>
 <div class="small op">Learning:</div><br>
@@ -228,9 +231,9 @@ The text in the paragraph will be blue.
 </div>
 
 <div class="maring2 padding2"></div>
-
+<div class="maring2 padding2"></div>
 <span id="responsive"></span>
-<div class="border padding2 bg borderRadius2">
+<div class="border padding3 bg borderRadius2">
 <h2 class="op tCenter">Responsive Design</h2>
 <p class="pre">Responsive web design is a web design or CSS style that makes a website look good on any screen size.
 
@@ -325,9 +328,33 @@ CSS values and units - Learn web development | MDN - <a class="brand" href="http
 </div>
 
 
+<div class="maring2 padding2"></div>
+<div class="maring2 padding2"></div>
+<span id="tricksandtips"></span>
+<div class="border padding3 bg borderRadius2">
+<h2 class="op tCenter">CSS tricks and tips</h2>
+
+<div class="pre bg border padding2 borderRadius"><b>To prevent element overflow I use this CSS code for all elements:</b>
+
+<div class="border padding2 bg2">* { box-sizing: border-box; }
+</div>
+<div class="small op">Doc:</div>box-sizing - CSS: Cascading Style Sheets | MDN - <a class="brand" href="https://developer.mozilla.org/docs/Web/CSS/box-sizing">https://developer.mozilla.org/docs/Web/CSS/box-sizing</a>
+</div>
+
+<br><br>
+<div class="pre bg border padding2 borderRadius"><b>How to create a perfect page or site? To begin with, the site must pass these 3 basic tests:</b>
+
+<div class="small op">Tools:</div>- PageSpeed Insights - <a class="brand" href="https://pagespeed.web.dev/">https://pagespeed.web.dev/</a>
+- The W3C Markup Validation Service - <a class="brand" href="https://validator.w3.org/">https://validator.w3.org/</a>
+- The W3C CSS Validation Service - <a class="brand" href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a> 
 </div>
 
 <div class="maring2 padding2"></div>
+</div>
+
+
+</div>
+<!-- // page -->
 
 </div>
 </main>
