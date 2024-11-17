@@ -280,7 +280,7 @@ margin: 0 auto;
 
 <div class="padding2 border bg2"><b>4.</b> Hide 1 and show 2 something depending on the screen size or dynamic style change. Hide the desktop version and show the mobile version of something instead. (A drop down menu or something else):
 
-@media(width >= 500px){
+@media(width > 500px){
 p { color: red; }
 }
 
@@ -290,7 +290,7 @@ p { color: green; }
 
 or
 
-@media(width >= 500px){
+@media(width > 500px){
 .mobileVersion { display: none; }
 .desktopVersion { display: block; color: red }
 }
