@@ -64,7 +64,7 @@ const confData = [
 - Site used Functionality cookies.
 - Some services still collect visit information if cookie off.`,
 "confName":"confDataCollection",
-"confValueDefault":"off",
+"confValueDefault":"not selected",
 "confValueVariant":["on", "off", "auto", "not selected"],
 },
 {
