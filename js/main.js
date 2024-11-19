@@ -64,7 +64,7 @@ const confData = [
 - Site used Functionality cookies.
 - Some services still collect visit information if cookie off.`,
 "confName":"confDataCollection",
-"confValueDefault":"not selected",
+"confValueDefault":"off",
 "confValueVariant":["on", "off", "auto", "not selected"],
 },
 {
@@ -266,7 +266,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 </div>
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
-<a class="brand inlineBlock padding" title="Social network" href="https://irvirty.bsky.social">Bluesky</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>
