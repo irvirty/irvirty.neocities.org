@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "19",
+        "text": "When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#post #homepage #site #SEO",
+        "time": 1732434991,
+        "rightFooter": ""
+    },
+    {
         "id": "18",
         "text": "It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs.",
         "text2": "",

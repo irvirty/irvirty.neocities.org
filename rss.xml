@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+<channel>
+
+<title>Irvirty RSS</title>
+<link>https://https://irvirty.pages.dev</link>
+<description>Microblog, site news (updates), and more.</description>
+
+<image class="logo">
+<url>https://irvirty.pages.dev/img/logo.png</url>
+<title>Irvirty RSS</title>
+<link>https://irvirty.pages.dev</link>
+<width>32</width>
+<height>32</height>
+</image>
+
+<item>
+<pubDate>Sun, 24 Nov 24 09:56:31 +0200</pubDate>
+<title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Tue, 05 Nov 24 10:40:15 +0200</pubDate>
+<title><![CDATA[It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Sun, 03 Nov 24 07:34:39 +0200</pubDate>
+<title><![CDATA[The default is now random all light and all dark themes. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+The default is now random all light and all dark themes. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Thu, 31 Oct 24 23:55:40 +0200</pubDate>
+<title><![CDATA[Update:
+===
+1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
+2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Update:
+===
+1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
+2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 30 Oct 24 10:08:46 +0200</pubDate>
+<title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 30 Oct 24 08:58:54 +0200</pubDate>
+<title><![CDATA[Page refresh trick.
+===
+If you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.
+
+(Maybe the JS file is stuck in the cache, Firefox browser on PC.) 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Page refresh trick.
+===
+If you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.
+
+(Maybe the JS file is stuck in the cache, Firefox browser on PC.) 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Sat, 26 Oct 24 07:30:33 +0300</pubDate>
+<title><![CDATA[Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 23 Oct 24 17:12:45 +0300</pubDate>
+<title><![CDATA[One site with the old dark Google bar inspired me not to use my link abbreviations because no one would understand them. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+One site with the old dark Google bar inspired me not to use my link abbreviations because no one would understand them. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 23 Oct 24 03:21:56 +0300</pubDate>
+<title><![CDATA[Being on Neocities I see a lot of personality on the sites, mine looks too simple compared to this and I want to change it and add something. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Being on Neocities I see a lot of personality on the sites, mine looks too simple compared to this and I want to change it and add something. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 23 Oct 24 02:17:38 +0300</pubDate>
+<title><![CDATA[Update. Brought back the old behavior of the input form. 
+]]></title>
+<link><![CDATA[https://irvirty.pages.dev/#postIdDisabled]]></link>
+<description>
+<![CDATA[
+Update. Brought back the old behavior of the input form. 
+
+]]>
+</description>
+</item>
+
+
+</channel>
+</rss>
