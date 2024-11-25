@@ -58,6 +58,13 @@ const confData = [
 "confValueVariant":["on", "off"],
 },
 {
+"confTitle":"Speed dial",
+"confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="/projects/speed-dial-58/">/projects/speed-dial-58/</a>`,
+"confName":"confSpeedDialStatus",
+"confValueDefault":"on",
+"confValueVariant":["on", "off", "random"],
+},
+{
 "confTitle":"Allow Cookies For Third Parties?",
 "confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
 - Auto: used the time zone or Browser settings.
@@ -73,13 +80,6 @@ const confData = [
 "confName":"confExternalFonts",
 "confValueDefault":"auto",
 "confValueVariant":["on", "off", "auto"],
-},
-{
-"confTitle":"Speed dial",
-"confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="/projects/speed-dial-58/">/projects/speed-dial-58/</a>`,
-"confName":"confSpeedDialStatus",
-"confValueDefault":"on",
-"confValueVariant":["on", "off", "random"],
 },
 ];
 
