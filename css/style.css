@@ -113,3 +113,25 @@ margin-top: var(--padding);
 
 
 
+
+.menu {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+grid-gap: 5px;
+margin: 0 auto;
+justify-content: center;
+}
+
+@media(max-width: 150px) { .menu { display: block; width: 100%; }}
+
+.menu a {
+display: flex;
+min-width: 100%;
+justify-content: start;
+align-content: center;
+margin: 0 auto;
+text-wrap: balance;
+text-align: left;
+/*min-height: 50px;*/
+}
+
