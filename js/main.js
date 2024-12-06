@@ -427,14 +427,12 @@ return text = text.split("SYMBOLFORSPLIT");
 theme = conf["confTheme"];
 if (conf["confTheme"] == null||theme == undefined||theme == 'auto'){
 theme = "auto";
-
 if (window.matchMedia &&window.matchMedia('(prefers-contrast: more)').matches == true){
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 theme = 'h-contrast-d'; }
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
 theme = 'h-contrast-l'; }
 }
-
 }
 
 // confDeviceTheme
@@ -780,14 +778,14 @@ break;*/
 
 case 'auto-rand':
 themeAutoRandom();
-window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
 themeAutoRandom();
 });
 break;
 
 case 'auto-rand-all':
 themeAutoRandomAll();
-window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
 themeAutoRandomAll();
 });
 break;
@@ -892,8 +890,8 @@ fuMSetTheme(conf["confTheme"]);
 function fuMBg(com, img){
 if (conf["confBg"] == 'on'||com == 'on'){
 
-let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower-2.png");
-let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-2.png");
+let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
+let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){
