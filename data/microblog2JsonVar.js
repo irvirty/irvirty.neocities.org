@@ -3,6 +3,26 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "21",
+        "text": "Neocities - Site Search",
+        "text2": "",
+        "text3": "",
+        "url": "https:\/\/neocities.org\/browse\/search",
+        "tag": "#links #search #catalog",
+        "time": 1734140063,
+        "rightFooter": ""
+    },
+    {
+        "id": "20",
+        "text": "Marginalia Search - browse:random",
+        "text2": "",
+        "text3": "",
+        "url": "https:\/\/search.marginalia.nu\/explore\/random",
+        "tag": "#links #random #catalog #search",
+        "time": 1734140024,
+        "rightFooter": ""
+    },
+    {
         "id": "19",
         "text": "When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error.",
         "text2": "",

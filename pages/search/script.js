@@ -23,11 +23,13 @@ document.getElementsByTagName('title')[0].innerText = q + " - Search / irvirty -
 }
 
 if (q == ''&&q != 'null'){ q = ''; } // ?
-if (q2 == "l"){ q = q + " l"; }
+//if (q2 == "l"){ q = q + " l"; }
+if (q2 != ""){ q = q + " " + q2; }
 //if (q == ""){ q = "q"; }
 
 // web redirect
-if (q != ""&&q != undefined&&q != "undefined"&&q != 'null'&&q != null&&q != ''&&sUrlText.indexOf("cache") == -1){
+if (q != ""&&q != undefined&&q != "undefined"&&q != 'null'&&q != null&&sUrlText.indexOf("cache") == -1){
+
 
 q = q.trim();
 
@@ -39,10 +41,7 @@ var strArray = qTmpNoPlus.split(" ");
 var qCom = strArray[strArray.length - 1] + "#";
 var q3 = q + "#";
 
-
-
 switch (qCom) {
-
 
 case 'l#':  case 'll#':
 q = q3.replace(qCom, '');
@@ -66,6 +65,72 @@ sRedirectUrl = url;
 
 location.href = sRedirectUrl;
 location.href = location.href + '#!StopRedirect'; 
+break;
+
+
+case 'goo#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://www.google.com/search?q=" + q + " site:neocities.org",
+];
+if (q == ''){
+urlList = [
+"https://www.google.com/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect';
+break;
+
+
+case 'bin#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://www.bing.com/search?q=" + q + " site:neocities.org",
+];
+if (q == ''){
+urlList = [
+"https://www.bing.com/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect';
+break;
+
+
+case 'mar#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
+];
+if (q == ''){
+urlList = [
+"https://search.marginalia.nu/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect';
 break;
 
 
@@ -95,7 +160,50 @@ location.href = sRedirectUrl;
 location.href = location.href + '#!StopRedirect'; 
 break;
 
+
+case 'neo#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://neocities.org/browse/search?q=" + q,
+//"?q=" + q + " o",
+];
+if (q == ''){
+urlList = [
+"https://neocities.org/browse/search",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect'; 
+break;
+
+
 default:
+//q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://neocities.org/browse/search?q=" + q,
+//"?q=" + q + " o",
+];
+if (q == ''){
+urlList = [
+"https://neocities.org/browse/search",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect'; 
 
 }
 
@@ -181,7 +289,7 @@ document.getElementById("seachButtons").innerHTML = `${lQButtonPrint}`;
 
 
 // Google search result
-if (q != ""&&q2 == ""){
+/*if (q != ""&&q2 == "goo"){
 
 // v.1.1.0
 
@@ -192,7 +300,9 @@ script.charset = 'utf-8';
 script.src = 'https://cse.google.com/cse.js?cx=a3a8da84c5ed74909';      
 document.getElementsByTagName('head')[0].appendChild(script);
 
-}
+fuMSetTheme('rand-l');
+fuMBg("light");
+}*/
 // end Google search result
 
 /*// to top form
@@ -213,6 +323,6 @@ document.getElementById('searchPage').classList.add('contentCenter');
 }
 }*/
 
-if (String(location.href).indexOf("/search/") != -1){
+/*if (String(location.href).indexOf("/search/") != -1){
 fuMBg("light");
-}
+}*/

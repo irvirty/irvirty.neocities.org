@@ -121,14 +121,19 @@
 
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./" autocomplete="off" role="search">
-<label class="block op tLeft smaller" for="q"><span class="bold green">✪</span> Neocities search (Google and tag redirect):</label>
+<!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
+<label class="block op tLeft smaller" for="q"><span class="bold green">✪</span> Neocities search (redirect):</label>
 <input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
-<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2px;">
-<input class="smaller op tCenter" type="submit" value="Search">
+<div class="searchButtons">
+<!--<input class="smaller op tCenter" type="submit" value="Neocities" title="text neo">-->
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
-<button class="smaller op tCenter" name="q2" value="l" type="submit">Luck</button>
+<button class="smaller op tCenter" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
+<button class="smaller op tCenter" name="q2" value="goo" type="submit" title="text goo">Google</button>
+<button class="smaller op tCenter" name="q2" value="bin" type="submit" title="text bin">Bing</button>
+<button class="smaller op tCenter" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
+<button class="smaller op tCenter" name="q2" value="l" type="submit" title="text l">Luck</button>
 <!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
 
@@ -147,6 +152,13 @@
 </div>
 <!-- // search -->
 
+<div class="margin2 padding2"></div>
+
+<div class="wrapper">
+<span id="speedDialPrint"></span>
+</div>
+
+
 </main>
 <!--// content -->
 
@@ -160,7 +172,7 @@
 <script src="script.js"></script>
 
 <script>
-fuMSetTheme('rand-l');
+//fuMSetTheme('rand-l');
 </script>
 
 </body>

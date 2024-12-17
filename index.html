@@ -207,14 +207,19 @@ top: -25px;
 
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./pages/search/" autocomplete="off" role="search">
-<label class="block op tLeft small" for="q"><span class="bold green">✪</span> Neocities search (Google and tag redirect):</label>
+<!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
+<label class="block op tLeft small" for="q"><span class="bold green">✪</span> Neocities search (redirect):</label>
 <input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
-<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2px;">
-<input class="smaller op tCenter" type="submit" value="Search">
+<div class="searchButtons">
+<!--<input class="smaller op tCenter" type="submit" value="Neocities" title="text neo">-->
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
-<button class="smaller op tCenter" name="q2" value="l" type="submit">Luck</button>
+<button class="smaller op tCenter" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
+<button class="smaller op tCenter" name="q2" value="goo" type="submit" title="text goo">Google</button>
+<button class="smaller op tCenter" name="q2" value="bin" type="submit" title="text bin">Bing</button>
+<button class="smaller op tCenter" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
+<button class="smaller op tCenter" name="q2" value="l" type="submit" title="text l">Luck</button>
 <!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
 
@@ -255,7 +260,7 @@ top: -25px;
 
 <span id="printTags"></span>
 <hr>
-<span id="printMode"></span>
+<!--<span class="op gray">mode:</span> --><div id="printMode" class="tRight"></div>
 <span id="tagListEditForm"></span>
 
 </div>
@@ -269,13 +274,16 @@ top: -25px;
 <div class="tCenter wrapper2">
 <div class="padding3 margin3"></div>
 
-<a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="./img/buttons-88x31/neocities.png" style="max-height: 31px;" alt="banner img"></a>
-
+<!--
 <a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://developer.mozilla.org/docs/Web/HTML"><img class="reduceLight borderRadius2" src="./img/buttons-88x31/html.png" style="max-height: 31px;" alt="banner img"></a>
 
 <a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://developer.mozilla.org/docs/Web/CSS"><img class="reduceLight borderRadius2" src="./img/buttons-88x31/css.png" style="max-height: 31px;" alt="banner img"></a>
 
 <a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://developer.mozilla.org/docs/Web/JavaScript"><img class="reduceLight borderRadius2" src="./img/buttons-88x31/js.png" style="max-height: 31px;" alt="banner img"></a>
+-->
+<a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="./neocities.png" style="max-height: 31px;" alt="banner img"></a>
+
+
 
 <!--
 <a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://www.php.net/"><img class="reduceLight borderRadius2" src="./img/buttons-88x31/php.png" style="max-height: 31px;" alt="banner img"></a>
@@ -398,6 +406,10 @@ case 'special':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
+case 'new':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
 default:
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + `">` + val + `</a>`;
 
@@ -418,13 +430,13 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList){
 let tagModePrint = "";
-let tagsModeList = `special random update search`;
+let tagsModeList = `special random update new search`;
 let arr = fuMSplit(tagsModeList);
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
 if (mode == val){
 tagModePrint += `
-<a class="inlineBlock padding op active" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
+<a class="inlineBlock padding op active2" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
 `;
 } else {
 tagModePrint += `

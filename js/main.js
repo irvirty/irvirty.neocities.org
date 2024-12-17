@@ -251,7 +251,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 
 <div class="wrapper2">
 <div class="small tLeft">
-<span class="gray">Nav:</span> <span id="footerNav"></span><hr>
+<span class="gray">nav:</span> <span id="footerNav"></span><hr>
 </div>
 </div>
 
@@ -270,7 +270,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings.html#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
-<a rel="license" class="brand inlineBlock padding" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a>
+<a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">License: CC BY-SA 4.0 *</a>
 <span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2024</span>
 <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
 
@@ -731,7 +731,7 @@ break;
 
 case 'auto-h-contrast':
 themeAutoHContrast();
-window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
 themeAutoHContrast();
 });
 break;
@@ -847,7 +847,7 @@ break;
 // auto  
 default:
 themeAuto();
-window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
 themeAuto();
 });
 break;
@@ -928,14 +928,12 @@ background-attachment: fixed;
 
 // fonts, external fonts (privacy, data analytics)
 if (conf["confDataCollection"] == 'on'&&conf["confExternalFonts"] == 'auto'||conf["confExternalFonts"] == 'on'){
-
 //document.head.insertAdjacentHTML("beforeend", `
 fuMInsertHtml("head", 'beforeend', `
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 </style>
 `);
-
 }
 
 // CSS
