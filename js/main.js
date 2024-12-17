@@ -1,4 +1,4 @@
-// Main.js v.1.1.1
+// Main.js v.1.1.2
 
 // Settings, config
 var conf = [];
@@ -263,8 +263,8 @@ fuMInsertHtml("#footer", 'beforeend', `
 </div>
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
-<a class="brand inlineBlock padding" title="Social network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>

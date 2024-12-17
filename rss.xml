@@ -4,13 +4,13 @@
 <channel>
 
 <title>Irvirty RSS</title>
-<link>https://irvirty..neocities.org</link>
+<link>https://irvirty.neocities.org</link>
 <description>Microblog, site news (updates), and more.</description>
 
 <image class="logo">
-<url>https://irvirty..neocities.org/img/logo.png</url>
+<url>https://irvirty.neocities.org/img/logo.png</url>
 <title>Irvirty RSS</title>
-<link>https://irvirty..neocities.org</link>
+<link>https://irvirty.neocities.org</link>
 <width>32</width>
 <height>32</height>
 </image>
@@ -44,7 +44,7 @@ https://search.marginalia.nu/explore/random
 <item>
 <pubDate>Sun, 24 Nov 24 09:56:31 +0200</pubDate>
 <title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=19]]></link>
 <description>
 <![CDATA[
 When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error. 
@@ -57,7 +57,7 @@ When there are a lot of things on the site, then you start thinking about the st
 <pubDate>Tue, 05 Nov 24 10:40:15 +0200</pubDate>
 <title><![CDATA[It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=18]]></link>
 <description>
 <![CDATA[
 It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
@@ -70,7 +70,7 @@ It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn
 <pubDate>Sun, 03 Nov 24 07:34:39 +0200</pubDate>
 <title><![CDATA[The default is now random all light and all dark themes. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=17]]></link>
 <description>
 <![CDATA[
 The default is now random all light and all dark themes. 
@@ -86,7 +86,7 @@ The default is now random all light and all dark themes.
 1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
 2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=16]]></link>
 <description>
 <![CDATA[
 Update:
@@ -102,7 +102,7 @@ Update:
 <pubDate>Wed, 30 Oct 24 10:08:46 +0200</pubDate>
 <title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=15]]></link>
 <description>
 <![CDATA[
 Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
@@ -119,7 +119,7 @@ If you use a JS file and the page does not show its fresh version, open the JS f
 
 (Maybe the JS file is stuck in the cache, Firefox browser on PC.) 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=13]]></link>
 <description>
 <![CDATA[
 Page refresh trick.
@@ -136,7 +136,7 @@ If you use a JS file and the page does not show its fresh version, open the JS f
 <pubDate>Sat, 26 Oct 24 07:30:33 +0300</pubDate>
 <title><![CDATA[Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=12]]></link>
 <description>
 <![CDATA[
 Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory. 
@@ -149,7 +149,7 @@ Tag Cloud Update: Added a toggle mode between special and random tags when navig
 <pubDate>Wed, 23 Oct 24 17:12:45 +0300</pubDate>
 <title><![CDATA[One site with the old dark Google bar inspired me not to use my link abbreviations because no one would understand them. 
 ]]></title>
-<link><![CDATA[https://irvirty..neocities.org/#postIdDisabled]]></link>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog.html?id=11]]></link>
 <description>
 <![CDATA[
 One site with the old dark Google bar inspired me not to use my link abbreviations because no one would understand them. 
