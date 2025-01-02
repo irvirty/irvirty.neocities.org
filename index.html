@@ -208,7 +208,7 @@ top: -25px;
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./pages/search/" autocomplete="off" role="search">
 <!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
-<label class="block op tLeft small" for="q"><span class="bold green">✪</span> Neocities search (redirect):</label>
+<label class="block op tLeft xSmall" for="q"><span class="bold green">✪</span> Neocities search (redirect, WPM:<span id="wpm">0</span>):</label>
 <input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
@@ -495,6 +495,51 @@ tagListCloud("");
 }
 
 </script>
+
+
+
+<script>
+
+// WPM v.1.2.0
+if (document.getElementById("q") != null){ 
+var inputA2 = document.getElementById("q");
+inputA2.addEventListener('input', getWpm);
+}
+
+// new core 2
+
+let dateArr = [];
+let dateArrLast = [];
+const wordLengthLimit = 5.1;
+
+function getWpm(e){
+//if (e.target.value == ""){ dateArr = []; } //fixme
+if (dateArrLast[0] == undefined){ dateArrLast[0] =  Date.now(); }
+dateArr.push(((Date.now() - dateArrLast[0]) / 1000).toFixed(3));
+//console.table(wpmTime);
+dateArrLast[0] = Date.now();
+
+var wpm = 0;
+if (dateArr.length >= 2){
+dateArr.forEach(function(item) {
+wpm = Number(wpm) + Number(item);
+});
+
+var wpmAverageSec = wpm / dateArr.length;
+wpm =  (1 * 60 / wpmAverageSec) / wordLengthLimit;
+wpm = Math.round(wpm);
+}
+
+if (document.getElementById("wpm") != null){
+document.getElementById("wpm").innerHTML = wpm;
+}
+
+dateArr = dateArr.slice(-1000);
+}
+
+</script>
+
+
 
 </body>
 </html>

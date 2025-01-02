@@ -271,7 +271,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings.html#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">License: CC BY-SA 4.0 *</a>
-<span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2024</span>
+<span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2025</span>
 <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
 
 </div>
