@@ -1,4 +1,4 @@
-// Search v.1.1.1
+// Search v.2.0.4
 
 var lQButtonPrint = ``;
 
@@ -8,7 +8,7 @@ var q = url.searchParams.get("q");
 var q2 = url.searchParams.get("q2");
 
 
-if (q == null){ q = ""; }
+//test delme if (q == null){ q = ""; }
 if (q2 == null){ q2 = ""; }
 
 var qPrint = "";
@@ -17,7 +17,7 @@ let sUrlText = String(url);
 const myArray = sUrlText.split("q=");
 sUrlText = myArray[0];
 
-if (q != ''){
+if (q != ''&&q != null&&q != undefined){
 document.getElementById("q").value = q;
 document.getElementsByTagName('title')[0].innerText = q + " - Search / irvirty - Neocities page";
 }
@@ -28,7 +28,7 @@ if (q2 != ""){ q = q + " " + q2; }
 //if (q == ""){ q = "q"; }
 
 // web redirect
-if (q != ""&&q != undefined&&q != "undefined"&&q != 'null'&&q != null&&sUrlText.indexOf("cache") == -1){
+if (q != undefined&&q != "undefined"&&q != 'null'&&q != null&&sUrlText.indexOf("cache") == -1){
 
 
 q = q.trim();
@@ -56,7 +56,8 @@ urlList = [
 ];
 if (q == ''){
 urlList = [
-"https://www.google.com/",
+"https://www.google.com/search?q=site:neocities.org",
+//"https://www.google.com/search?btnI=1",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -78,7 +79,7 @@ urlList = [
 ];
 if (q == ''){
 urlList = [
-"https://www.google.com/",
+"https://www.google.com/search?q=site:neocities.org",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -100,7 +101,7 @@ urlList = [
 ];
 if (q == ''){
 urlList = [
-"https://www.bing.com/",
+"https://www.bing.com/search?q=site:neocities.org",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -122,7 +123,8 @@ urlList = [
 ];
 if (q == ''){
 urlList = [
-"https://search.marginalia.nu/",
+//"https://search.marginalia.nu/search?query=site:neocities.org",
+"https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -141,15 +143,13 @@ q = encodeURIComponent(q);
 
 urlList = [
 "https://www.google.com/search?q=" + q,
-"https://www.bing.com/search?q=" + q + "&form=site",
-"https://www.ecosia.org/search?q=" + q,
+"https://www.bing.com/search?q=" + q + "&form=somesite",
 //"?q=" + q + " o",
 ];
 if (q == ''){
 urlList = [
 "https://www.google.com/",
 "https://www.bing.com/",
-"https://www.ecosia.org/",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -168,11 +168,38 @@ q = encodeURIComponent(q);
 
 urlList = [
 "https://neocities.org/browse/search?q=" + q,
-//"?q=" + q + " o",
 ];
 if (q == ''){
 urlList = [
-"https://neocities.org/browse/search",
+"https://neocities.org/browse",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect'; 
+break;
+
+case 'qr#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://neocities.org/browse/search?q=" + q,
+"https://www.google.com/search?q=" + q + " site:neocities.org",
+"https://www.bing.com/search?q=" + q + " site:neocities.org",
+"https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
+];
+if (q == ''){
+urlList = [
+//"https://neocities.org/browse/search",
+"https://neocities.org/browse",
+"https://www.google.com/search?q=site:neocities.org",
+"https://www.bing.com/search?q=site:neocities.org",
+"https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -185,17 +212,23 @@ break;
 
 
 default:
-//q = q3.replace(qCom, '');
+/*q = q3.replace(qCom, '');*/
 q = q.trim();
 q = encodeURIComponent(q);
 
 urlList = [
 "https://neocities.org/browse/search?q=" + q,
-//"?q=" + q + " o",
+"https://www.google.com/search?q=" + q + " site:neocities.org",
+"https://www.bing.com/search?q=" + q + " site:neocities.org",
+"https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
 ];
 if (q == ''){
 urlList = [
-"https://neocities.org/browse/search",
+//"https://neocities.org/browse/search",
+"https://neocities.org/browse",
+"https://www.google.com/search?q=site:neocities.org",
+"https://www.bing.com/search?q=site:neocities.org",
+"https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -211,7 +244,7 @@ location.href = location.href + '#!StopRedirect';
 
 
 
-if (q != ""){
+if (q != ""&&q != null){
 qPrint = encodeURIComponent(q);
 }
 
@@ -252,13 +285,6 @@ qPrint = qPrint.trim();
 //q = q.replaceAll(' ', '');
 //document.getElementById("q").value = qPrint.trim();
 
-
-let qPrintProfile = qPrint;
-qPrintProfile = qPrintProfile.replace("https://", "");
-qPrintProfile = qPrintProfile.replace("http://", "");
-qPrintProfile = String((qPrintProfile).split('.')[0]);
-qPrintProfile = encodeURIComponent(qPrintProfile);
-
 qPrint = encodeURIComponent(qPrint);
 
 lQButtonPrint = `
@@ -275,7 +301,6 @@ lQButtonPrint = `
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
 <a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
-<!--<a class="tag light2 border3 borderRadius2 op" title="Site profile" href="https://neocities.org/site/${qPrintProfile}">Profile</a>-->
 </div>
 </div>
 
@@ -336,8 +361,14 @@ if (getclick2 != null&&document.getElementById('topHeader') != null){
 document.addEventListener('click', function(event) {
 if (getclick2.contains(event.target)) {
 document.getElementById('topHeader').style.display = 'none';
+if (document.getElementById('searchPage') != null){
+document.getElementById('searchPage').classList.remove("contentCenter");
+}
 } else {
 document.getElementById('topHeader').style.display = 'block';
+if (document.getElementById('searchPage') != null){
+document.getElementById('searchPage').classList.add("contentCenter");
+}
 }
 });
 }

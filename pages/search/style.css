@@ -1,4 +1,4 @@
-/* Hot link in search v.1.0.0 */
+/* Hot link in search v.1.0.1 */
 
 .hotLinks {
 /*display: grid;
@@ -33,11 +33,11 @@ flex-wrap: wrap;
 
 .searchButtons {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-gap: 2px;
 }
 
-@media(max-width: 350px){
+@media(max-width: 450px){
 .searchButtons {
 display: flex;
 flex: 1 0 auto;

@@ -103,13 +103,6 @@
 <!--<hr>-->
 
 
-
-
-
-
-<!-- content -->
-<main id="searchPage" class="content">
-
 <div id="topHeader">
 <h1 class="h2 tCenter op insertIconTitle zero padding">Search (Neocities)</h1>
 <!--<div class="tCenter margin2List smaller op">Search for sites hosted on the Neocities hosting.</div>-->
@@ -117,19 +110,23 @@
 <div class="margin2 padding2"></div>
 </div>
 
-<!-- dublicate form index -->
+<!-- content -->
+<main id="searchPage" class="contentCenter">
+
+<!-- dublicate -->
 <!-- search -->
 <div id="form" class="wrapper">
 
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./" autocomplete="off" role="search">
 <!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
-<label class="block op tLeft smaller" for="q"><span class="bold green">✪</span> Neocities search (redirect):</label>
+<label class="block op tLeft xSmall" for="q"><span class="bold green">✪</span> Neocities search (redirect, random):</label>
 <input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
 <div class="searchButtons">
 <!--<input class="smaller op tCenter" type="submit" value="Neocities" title="text neo">-->
+<input class="smaller op tCenter" type="submit" title="text qr" value="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
 <button class="smaller op tCenter" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
 <button class="smaller op tCenter" name="q2" value="goo" type="submit" title="text goo">Google</button>

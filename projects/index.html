@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Redirect page</title>
 
-<meta name="description" content="
-Redirect. !ignoreme
-">
-<meta name="keywords" content="
-redirect,
-">
+<meta charset="UTF-8">
+<title>Projects</title>
+
+<meta name="description" content="List of main pages of the site.">
+<meta name="keywords" content="pages, list, main,">
+
+<!--<link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" sizes="512x512" href="/img/logo.png" type="image/png">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<!-- style -->
+<meta name="color-scheme" content="light dark">
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+
+<link rel="icon" sizes="512x512" href="..//img/logo.png" type="image/png">
+<link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon">
+
+
+<!-- main -->
+<link rel="preload" href="../js/main.js" as="script">
+
 <link rel="preload" href="../css/main.css" as="style">
 <link rel="stylesheet" href="../css/main.css" type="text/css">
 <link rel="preload" href="../css/auto.css" as="style">
@@ -23,16 +29,17 @@ redirect,
 
 <link rel="preload" href="../css/style.css" as="style">
 <link rel="stylesheet" href="../css/style.css" type="text/css">
-<!-- // style -->
 
 <noscript>
 <link rel="stylesheet" type="text/css" href="../css/noscript.css">
 </noscript>
+<!-- // main -->
+
 
 </head>
 <body>
 
-<!-- Navigation HTML part v.1.0.1 -->
+<!-- Navigation HTML v.1.0.1 -->
 <header>
 <div class="wrapper3">
 <div class="margin2"></div>
@@ -41,15 +48,16 @@ redirect,
 <nav>
 
 <span class="countMenuItem"></span>
-<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../index.html" title="index / nav 1"><img class="logo2 reduceLight" src="../img/logo.png" alt="logo" style="max-width: 26px;"></a> 
+<a class="countMenuItem inlineBlock padding" style="padding-left: 0;" href="../" title="index / nav 1"><img class="logo2 reduceLight" src="/img/logo.png" alt="logo" style="max-width: 26px;"></a> 
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html">Links</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html" title="Links">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/" title="CSS">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/" title="Microblog">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/" title="Other">Other</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/about.html" title="About">About</a>
 <!-- // links in nav -->
 </span>
 
@@ -61,11 +69,12 @@ redirect,
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html">Links</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni" style="padding-right: 0;" href="../pages/about.html">About</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/links.html" title="Links">Links</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/css/" title="CSS">CSS</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/microblog/" title="Microblog">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/other/" title="Other">Other</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../pages/about.html" title="About">About</a>
 <!-- // links for show in dropdown (duplicate) -->
 </div>
 </div>
@@ -88,27 +97,55 @@ redirect,
 </header>
 <!-- // Navigation HTML -->
 
+<!--<hr>-->
+
+
+
+
+
 <!-- content -->
-<main class="content">
+<h1 class="op tCenter">Projects</h1>
 
-<h1 class="tCenter op">Redirect page</h1>
-<!--<div class="tCenter op margin3List">Text.</div>-->
+<main class="contentCenter">
+<div class="wrapper">
 
-<script>
-window.location.href = "../pages/";
-window.location.href = window.location.href + '#stopRedirect'; 
-</script>
 
-<noscript>
-<a class="block padding tCenter" href="../pages/">page</a>
-</noscript>
 
+<!-- menu -->
+<nav>
+
+
+
+
+ 
+
+<div class="menu small">
+<a class="button light3 border3 borderRadius2 itemHeight2 firstLetterBold" tabindex="0" href="index-backup.html"><span class="insertIcon firstLetterBold">Index backup</span></a>
+<a class="button light3 border3 borderRadius2 itemHeight2 firstLetterBold" tabindex="0" href="keep-1"><span class="insertIcon firstLetterBold">Keep </span></a>
+<a class="button light3 border3 borderRadius2 itemHeight2 firstLetterBold" tabindex="0" href="speed-dial-58"><span class="insertIcon firstLetterBold">Speed dial </span></a>
+</div>
+
+<div class="margin2"></div>
+<div class="borderRadius2 op greay xSmall padding2 bg border">total (approx): 3</div>
+
+</nav>
+<!-- // menu -->
+
+<div class="padding2"></div>
+
+<span id="speedDialPrint"></span>
+
+
+</div>
 </main>
 <!--// content -->
 
-<footer id="footer"></footer>
 
+
+
+<footer id="footer"></footer>
 <script src="../js/main.js"></script>
+
 
 </body>
 </html>

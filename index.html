@@ -208,12 +208,13 @@ top: -25px;
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./pages/search/" autocomplete="off" role="search">
 <!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
-<label class="block op tLeft xSmall" for="q"><span class="bold green">✪</span> Neocities search (redirect, WPM:<span id="wpm">0</span>):</label>
+<label class="block op tLeft xSmall" for="q"><span class="bold green">✪</span> Neocities search (redirect, random, WPM: <span id="wpm" class="orange">0</span>):</label>
 <input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
 <div class="searchButtons">
 <!--<input class="smaller op tCenter" type="submit" value="Neocities" title="text neo">-->
+<input class="smaller op tCenter" type="submit" title="text qr" value="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
 <button class="smaller op tCenter" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
 <button class="smaller op tCenter" name="q2" value="goo" type="submit" title="text goo">Google</button>
@@ -260,7 +261,7 @@ top: -25px;
 
 <span id="printTags"></span>
 <hr>
-<!--<span class="op gray">mode:</span> --><div id="printMode" class="tRight"></div>
+<div class="tRight"><span class="op gray">mode:</span> <span id="printMode"></span></div>
 <span id="tagListEditForm"></span>
 
 </div>
@@ -387,7 +388,11 @@ let printTagUrl = val.toLowerCase();
 switch (mode) {
 
 case 'search':
-tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + `">` + val + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` neo">` + val + `</a>`;
+break;
+
+case 'search (random)':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` qr">` + val + `</a>`;
 break;
 
 case 'random':
@@ -421,7 +426,7 @@ tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/s
 document.getElementById("printTags").innerHTML = tagListPrint;
 
 
-modeSwitch(mode,tagList);
+modeSwitch(mode, tagList);
 
 }
 
@@ -430,8 +435,8 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList){
 let tagModePrint = "";
-let tagsModeList = `special random update new search`;
-let arr = fuMSplit(tagsModeList);
+let tagsModeList = `special,random,update,new,search,search (random)`;
+let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
 if (mode == val){
