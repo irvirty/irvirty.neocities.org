@@ -28,6 +28,8 @@ conf["confTagListLimit"] = 38;
 conf["confLinkExtList"] = "index.html,.html,index.php,.php";
 conf["confIdEmbedScript"] = "footer";
 
+if (fuMComVar == undefined){ var fuMComVar = ""; }
+
 const confData = [
 {
 "confTitle":"Theme",
@@ -297,7 +299,7 @@ mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${m
 });
 
 fuMInsertHtml("#footerNav", '', mFooterNavLinksPrint);
-
+if(fuMComVar.indexOf('footer off') != -1){ document.getElementById("footer").innerHTML = ""; }
 // end footer
 
 
