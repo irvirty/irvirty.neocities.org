@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "22",
+        "text": "Ctrl+Shift+R - Force a hard refresh page. If you updated the page on the hosting but don't see any changes.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#hosting #static #page #update #refresh #coding #HTML #CSS",
+        "time": 1737349772,
+        "rightFooter": ""
+    },
+    {
         "id": "21",
         "text": "Neocities - Site Search",
         "text2": "",

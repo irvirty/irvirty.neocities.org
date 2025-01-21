@@ -1,4 +1,4 @@
-// Main.js v.1.1.4
+// Main.js v.1.1.7
 
 // Settings, config
 var conf = [];
@@ -253,7 +253,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 
 <div class="wrapper2">
 <div class="small tLeft">
-<span class="gray">nav:</span> <span id="footerNav"></span><hr>
+<span class="gray">Nav:</span> <span id="footerNav"></span><hr>
 </div>
 </div>
 
