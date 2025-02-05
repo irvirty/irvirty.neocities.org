@@ -3,10 +3,10 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Search (Neocities)</title>
+<title>Site settings</title>
 
-<meta name="description" content="Search for sites hosted on the Neocities hosting platform using Google Programmable Search Engine and tags with redirection to Neocities.">
-<meta name="keywords" content="search,">
+<meta name="description" content="Site settings. Theme time, cookie, etc">
+<meta name="keywords" content="setting, page, config,">
 
 <!--<link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">-->
 
@@ -36,9 +36,6 @@
 <!-- // main -->
 
 
-<link rel="preload" href="style.css" as="style">
-<link rel="stylesheet" href="style.css" type="text/css">
-
 </head>
 <body>
 
@@ -55,7 +52,7 @@
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<a class="countMenuItem active2 inlineBlock padding itemLinkAniActive" href="../../pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/search/" title="Search">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/links/" title="Links">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/css/" title="CSS">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/microblog/" title="Microblog">Microblog</a>
@@ -72,7 +69,7 @@
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<a class="countMenuItem active2 inlineBlock padding itemLinkAniActive" href="../../pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/search/" title="Search">Search</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/links/" title="Links">Links</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/css/" title="CSS">CSS</a>
 <a class="countMenuItem inlineBlock padding brand itemLinkAni" href="../../pages/microblog/" title="Microblog">Microblog</a>
@@ -103,59 +100,20 @@
 <!--<hr>-->
 
 
-<div id="topHeader">
-<h1 class="h2 tCenter op insertIconTitle zero padding">Search (Neocities)</h1>
-<!--<div class="tCenter margin2List smaller op">Search for sites hosted on the Neocities hosting.</div>-->
 
-<div class="margin2 padding2"></div>
-</div>
+
 
 <!-- content -->
-<main id="searchPage" class="contentCenter">
+<main class="content">
 
-<!-- dublicate -->
-<!-- search -->
-<div id="form" class="wrapper">
+<h1 class="tCenter op">Site settings</h1>
+<!--<div class="tCenter op margin3List">Desc.</div>-->
 
-<!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
-<form method="GET" action="./" autocomplete="off" role="search">
-<!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
-<label class="block op tLeft xSmall" for="q"><span class="bold green">✪</span> Neocities search (redirect, random):</label>
-<input id="q" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
+<div class="padding2"></div>
 
-<!--<input type="hidden" name="sort_by" value="random">-->
-<div class="searchButtons">
-<!--<input class="smaller op tCenter" type="submit" value="Neocities" title="text neo">-->
-<input class="smaller op tCenter" type="submit" title="text rse (random search engine)" value="Search">
-<!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
-<button class="smaller op tCenter" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
-<button class="smaller op tCenter" name="q2" value="goo" type="submit" title="text goo">Google</button>
-<button class="smaller op tCenter" name="q2" value="bin" type="submit" title="text bin">Bing</button>
-<button class="smaller op tCenter" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
-<button class="smaller op tCenter" name="q2" value="l" type="submit" title="text l">Luck</button>
-<!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
-</div>
+<div id="result" class="result33"></div>
 
-</form>
-
-<div class="margin"></div>
-<span id="seachButtons"></span>
-
-<div class="margin"></div>
-<div class="gcse-searchresults-only"></div>
-
-
-<!--<div class="padding3List"></div>
-<div class="tRight small gray">* Spaces are removed</div>-->
-
-</div>
-<!-- // search -->
-
-<div class="margin2 padding2"></div>
-
-<div class="wrapper">
-<span id="speedDialPrint"></span>
-</div>
+<div class="padding2 margin2"></div>
 
 
 </main>
@@ -168,11 +126,7 @@
 <script src="../../js/main.js"></script>
 
 
-<script src="script.js"></script>
-
-<script>
-//fuMSetTheme('rand-l');
-</script>
+<script src="../../js/settings-options.js"></script>
 
 </body>
 </html>

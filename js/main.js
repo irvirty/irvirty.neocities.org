@@ -1,4 +1,4 @@
-// Main.js v.1.1.8
+// Main.js v.1.1.9
 
 // Settings, config
 var conf = [];
@@ -259,18 +259,18 @@ fuMInsertHtml("#footer", 'beforeend', `
 
 <div>
 <!--<a class="brand" href="#goBack" onclick="history.back()">Go Back</a>-->
-<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="/pages/themes.html">Themes</a></span>
+<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="/pages/themes/">Themes</a></span>
 <span id="fEmbedFileUrl"></span>
 <span id="fPinButton"></span>
 </div>
 
-<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about.html">About</a>
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="About the site" href="/pages/about/">About</a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
 <a class="brand inlineBlock padding" title="Social Network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
-<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings.html">Settings</a>
-<a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings.html#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
+<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
+<a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">License: CC BY-SA 4.0 *</a>
 <span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2025</span>
