@@ -1,4 +1,4 @@
-// Keep v.3.8.7
+// Keep v.3.8.8
 // Static version of the offline 'keep' script that saves things.
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -801,6 +801,7 @@ if (getP3 <= i){
 if (i3 <= postLimit - 1){
 //printPost += fuPrintPost(postId, '', postText, postTag, postTime, subQforLight, rightFooter, rightFooter);
 if (display == "all"||mode == "search"){
+
 if (postText2 != ''){ postText2 = `
 
 
@@ -809,9 +810,9 @@ if (postText3 != ''){ postText3 = `
 
 
 ` + postText3; };
-var testArr =  fuPrintPost(postId, '', postText + postText2 + postText3, postTag, postTime, subQforLight, rightFooter);
+printPost += fuPrintPost(postId, '', postText + postText2 + postText3, postTag, postTime, subQforLight, rightFooter);
 } else {
-var testArr = fuPrintPost(postId, '', postText, postTag, postTime, subQforLight, rightFooter);
+printPost += fuPrintPost(postId, '', postText, postTag, postTime, subQforLight, rightFooter);
 }
 }
 i3++;
@@ -888,8 +889,6 @@ if (item['rightFooter'] != null){ rightFooter = item['rightFooter']; }
 postText = (postText + ' ' + postUrl).trim();
 
 let qData = String(postText + ' ' + postText2 + ' ' + postText3 + ' ' + postTag + ' ').toLowerCase();
-
-// many words from space split
 
 qData = (qData + ' ').split(' ');
 
@@ -1109,8 +1108,8 @@ print += fuTagList(printTagList);
 print += `
 <br>
 
-<div id="form" class="wrapperSmall">
-<form method="GET" style="margin-top: 0px;" action="?">
+<div class="wrapperSmall">
+<form id="keepForm" method="GET" style="margin-top: 0px;" action="?">
 <label class="op block tLeft xSmall padding1PxList" for="inputKeep">✪ Search:</label>
 
 <input id="inputKeep" type="search" name="q"  autocomplete="off" placeholder="">
@@ -1135,8 +1134,6 @@ print += `
 
 `;
 
-
-
 }
 
 
@@ -1144,7 +1141,17 @@ print += `
 // print all
 document.getElementById(printId).innerHTML += print;
 
-comMessagePrint = `mode: ${mode} `+comMessagePrint;
+// forom dmode
+//https://stackoverflow.com/questions/1000795/create-a-hidden-field-in-javascript
+var input = document.createElement("input");
+input.setAttribute("type", "hidden");
+input.setAttribute("name", "dmode");
+input.setAttribute("value", dMode);
+//append to form element that you want .
+document.getElementById("keepForm").appendChild(input);
+
+
+comMessagePrint = `mode: ${mode} ` + comMessagePrint;
 if (comMessagePrint != ''){
 if (document.getElementById('comMsg') != null){
 
@@ -2680,7 +2687,7 @@ let qGo33 = (fuMClearText2(q));
 var pringInputRange = '';
 if (confDevice != 'mobile'){
 pringInputRange = `
-<form id="form">
+<form id="keepSlider">
 ${navOption3}
 <input name="${navMode}" id="rangeinput" class="slider" value="${getP}" type="range" min="0" max="${total2}" step="${postLimit}" onmouseup="rangeRedirect('${qGo33}');" ontouchend="rangeRedirect('${qGo33}');">
 </form>
@@ -2976,5 +2983,8 @@ String.prototype.fuzzy = function (s) {
 
 return (text).fuzzy(q); 
 }
+
+
+
 
 

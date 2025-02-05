@@ -1,4 +1,4 @@
-// Main.js v.1.1.7
+// Main.js v.1.1.8
 
 // Settings, config
 var conf = [];
@@ -10,7 +10,7 @@ conf["confWebsiteUrl"] = "irvirty.neocities.org";
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
-conf["confMenuItemAverageWidth"] = 90;
+conf["confMenuItemAverageWidth"] = 75;
 
 conf["confDomainNameInTitleStatus"] = "on"; // on, off
 conf["confDomainName"] = String((location.hostname).split('.')[0]);

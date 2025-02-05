@@ -4,7 +4,7 @@ var microblog2JsonVar =
 [
     {
         "id": "22",
-        "text": "Ctrl+Shift+R - Force a hard refresh page. If you updated the page on the hosting but don't see any changes.",
+        "text": "Ctrl+Shift+R, Ctrl+F5 or Shift+F5 - Force a hard refresh page. Refresh a webpage ignoring cache.\r\n\r\nIf you updated the page on the hosting but don't see any changes.",
         "text2": "",
         "text3": "",
         "url": "",

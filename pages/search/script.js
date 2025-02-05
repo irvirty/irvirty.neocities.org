@@ -183,6 +183,7 @@ location.href = location.href + '#!StopRedirect';
 break;
 
 case 'qr#':
+case 'rse#':
 q = q3.replace(qCom, '');
 q = q.trim();
 q = encodeURIComponent(q);
