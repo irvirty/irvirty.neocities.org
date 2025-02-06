@@ -33,7 +33,7 @@ if (fuMComVar == undefined){ var fuMComVar = ""; }
 const confData = [
 {
 "confTitle":"Theme",
-"confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="/pages/themes.html">/pages/themes.html</a>`,
+"confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
 "confName":"confTheme",
 "confValueDefault":"auto-rand-all",
 "confValueVariant":["light", "dark", "auto-time", "auto", "auto-t-rand-all", "auto-rand-all"],
