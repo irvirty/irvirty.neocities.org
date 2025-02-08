@@ -1,4 +1,4 @@
-// Main.js v.1.1.9
+// Main.js v.1.2.1
 
 // Settings, config
 var conf = [];
@@ -274,6 +274,12 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">License: CC BY-SA 4.0 *</a>
 <span title="Updated" class="op small inlineBlock padding gray"><!--2024-->2025</span>
+
+<!--<br>
+<a class="brand inlineBlock padding" href="https://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+<a class="brand inlineBlock padding" href="https://validator.w3.org/check?uri=referer">HTML</a>
+<a class="brand inlineBlock padding" href="https://developer.mozilla.org/docs/Web/JavaScript">JS</a>
+<a class="brand inlineBlock padding" href="https://www.php.net/">PHP</a>-->
 <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
 
 </div>
