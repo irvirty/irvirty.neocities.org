@@ -1,4 +1,4 @@
-// Main.js v.1.2.1
+// Main.js v.1.2.2
 
 // Settings, config
 var conf = [];
@@ -10,7 +10,7 @@ conf["confWebsiteUrl"] = "irvirty.neocities.org";
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
-conf["confMenuItemAverageWidth"] = 65;
+conf["confMenuItemAverageWidth"] = 70;
 
 conf["confDomainNameInTitleStatus"] = "on"; // on, off
 conf["confDomainName"] = String((location.hostname).split('.')[0]);
@@ -35,7 +35,7 @@ const confData = [
 "confTitle":"Theme",
 "confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
 "confName":"confTheme",
-"confValueDefault":"auto-rand-all",
+"confValueDefault":"auto",
 "confValueVariant":["light", "dark", "auto-time", "auto", "auto-t-rand-all", "auto-rand-all"],
 },
 {
