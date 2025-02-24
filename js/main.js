@@ -265,6 +265,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 </div>
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="/pages/">∷ Pages</a>
+<a class="brand inlineBlock padding" title="About" href="/pages/about/">About</a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
 <a class="brand inlineBlock padding" title="Social Network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
