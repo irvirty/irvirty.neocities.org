@@ -259,7 +259,7 @@ top: -25px;
 
 <div class="wrapper2 balance small">
 
-<span id="printTags"></span>
+<div id="printTags" class="pre"></div>
 <hr>
 <div class="tRight"><span class="op gray">mode:</span> <span id="printMode"></span></div>
 <span id="tagListEditForm"></span>
@@ -375,12 +375,21 @@ Science Education Internet Technology Programming
 `;
 }
 
-let arr = fuMSplit(tagList);
+//let arr = fuMSplit(tagList);
+let tagList2 = tagList.replaceAll(`
+`, `SYMBOLFORSPLIT
+SYMBOLFORSPLIT`);
+tagList2 = tagList2.replaceAll(',', ',SYMBOLFORSPLIT');
+tagList2 = tagList2.replaceAll(' ', 'SYMBOLFORSPLIT');
+let arr = tagList2.split("SYMBOLFORSPLIT");
+
+
 
 let tagListPrint = "";
 arr.forEach((val, index) => {
+let val2 = val.trim();
+if (val2 != ""){
 val = val.trim();
-if (val != ""){
 //console.log(val + "=" + index);
 let color = fuMRandomItem(tagListColor);
 let printTagUrl = val.toLowerCase();
@@ -420,6 +429,8 @@ tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/s
 
 }
 
+} else {
+tagListPrint += val;
 }
 });
 
