@@ -162,11 +162,14 @@ var microblogJsonVar =
 }
 </script>
 
+<!--
+Config, copy paste in html before script.js.
+Fresh config in script.js
+-->
 <script>
-// fresh config in script.js
 let keepConfig = {
 "postLimit":"", // number, the number of posts per page
-"embedStatus":"semi", // "off", "semi" (id)
+"embedStatus":"", // "off", "semi" (when id)
 "multiEmbedStatus":"", // "on"
 "tagListStatus":"", // "off"
 "tagListLimit":"", // number
@@ -174,7 +177,7 @@ let keepConfig = {
 "bottomMsg":`
 <!-- bottom text or code -->
 `, // text
-"display":"", // gallery - grid, art - in test, blog - "text" as title link, all - text, text2, text3
+"display":"", // gallery, art, blog (text, text2), all (text, text2, text3)
 "timeStatus":"", // off, disable post time (post id)
 "rightFooterStatus":"", // on, off, right footer in data
 "usernameStatus":"", // on, off
