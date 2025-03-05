@@ -380,7 +380,7 @@ case 'search':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` neo">` + val + `</a>`;
 break;
 
-case 'search (random)':
+case 'search2':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` rse">` + val + `</a>`;
 break;
 
@@ -426,7 +426,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList){
 let tagModePrint = "";
-let tagsModeList = `special,random,update,new,search,search (random)`;
+let tagsModeList = `special,random,update,new,search,search2`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
