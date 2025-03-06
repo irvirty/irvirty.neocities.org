@@ -1,4 +1,4 @@
-// Keep v.3.15.0
+// Keep v.3.15.1
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -260,13 +260,31 @@ q2 = "l";
 break;
 
 case 'q#':
-case 'qq#':
 q = q3.replace(qCom, '');
 q = q.trim();
 //q = encodeURIComponent(q);
 window.location.href = "/?q=" + q;
 window.location.href = window.location.href + '#StopRedirect'; 
 break;
+
+
+case 'q#':
+q = q3.replace(qCom, '');
+q = q.trim();
+//q = encodeURIComponent(q);
+window.location.href = "/?q=" + q;
+window.location.href = window.location.href + '#StopRedirect'; 
+break;
+
+
+case 'qs#':
+q = q3.replace(qCom, '');
+q = q.trim();
+//q = encodeURIComponent(q);
+window.location.href = "/search/?q=" + q;
+window.location.href = window.location.href + '#StopRedirect'; 
+break;
+
 
 case 'ps#':
 case 'gg#':
@@ -280,14 +298,6 @@ window.location.href = "/projects/google-programmable-search-49/index.html?q=" +
 window.location.href = window.location.href + '#StopRedirect'; 
 break;
 
-/*delme
-case 'r#':
-q = q3.replace(qCom, '');
-q = q.trim();
-//q = encodeURIComponent(q);
-//q = null;
-mode = 'random';
-break;*/
 
 case 'r#':
 case 'rr#':
@@ -1053,6 +1063,7 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 background-color: var(--l3);
 }
 
+.keepContent .postContent:first-letter{ font-weight: bold;  }
 </style>
 
 `;
@@ -1069,7 +1080,7 @@ keepStyle = `
 display: grid;
 width: 100%;
 /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 grid-template-rows: masonry;
 grid-gap: 5px;
 
@@ -1094,6 +1105,8 @@ background-color: var(--l3);
 @media(max-width: 300px) {
 .keepContent, .keepContent .post { display: block; width: 100%; }
 }
+
+.keepContent .postContent:first-letter{ font-weight: bold;  }
 </style>
 
 `;
