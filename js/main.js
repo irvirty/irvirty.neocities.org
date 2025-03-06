@@ -273,11 +273,11 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
-<a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">License: CC BY-SA 4.0 *</a>
-<a class="brand inlineBlock padding" rel="license" title="Support me" href="https://buymeacoffee.com/${conf["confUsername"]}">Buy Me a Coffee</a>
+<span class="gray">License:</span> <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">CC BY-SA 4.0 *</a>
+<!--<a class="brand inlineBlock padding tCenter op" title="Buy Me a Coffee" href="https://buymeacoffee.com/${conf["confUsername"]}"><span class="medium">☕</span></a>-->
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <br>
-<a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Hosting: Neocities</a>
+<span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Neocities</a>
 
 </div>
 </nav>
