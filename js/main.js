@@ -1,4 +1,4 @@
-// Main.js v.1.2.2
+// Main.js v.1.2.4
 
 // Settings, config
 var conf = [];
@@ -264,7 +264,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 <span id="fPinButton"></span>
 </div>
 
-<a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="/pages/">∷ Pages</a>
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="/pages/">Pages</a>
 <a class="brand inlineBlock padding" title="About" href="/pages/about/">About</a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
 <a class="brand inlineBlock padding" title="Social Network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
@@ -273,8 +273,8 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
+<!--<a class="brand inlineBlock padding" href="https://buymeacoffee.com/${conf["confUsername"]}"><span class="ico middle" style="margin-bottom: var(--padding);">☕</span> Buy Me a Coffee</a>--
 <span class="gray">License:</span> <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">CC BY-SA 4.0 *</a>
-<!--<a class="brand inlineBlock padding tCenter op" title="Buy Me a Coffee" href="https://buymeacoffee.com/${conf["confUsername"]}"><span class="medium">☕</span></a>-->
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <br>
 <span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Neocities</a>
