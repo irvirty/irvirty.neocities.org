@@ -1,4 +1,4 @@
-// Main.js v.1.2.4
+// Main.js v.1.2.5
 
 // Settings, config
 var conf = [];
@@ -273,7 +273,6 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
-<a class="brand inlineBlock padding" href="https://buymeacoffee.com/${conf["confUsername"]}"><span class="ico middle" style="margin-bottom: var(--padding);">☕</span> Buy Me a Coffee</a>
 <span class="gray">License:</span> <a rel="license" class="brand inlineBlock padding" title="Main license" href="/pages/about.html#license">CC BY-SA 4.0 *</a>
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <br>
