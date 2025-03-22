@@ -1,4 +1,4 @@
-/* v.1.3.1 */
+/* v.1.3.2 */
 
 @font-face {
 font-family: 'Roboto';
@@ -89,7 +89,7 @@ margin: 0 auto;
 position: absolute;
 left: 0;
 right: 0;
-z-index: 2;
+z-index: 5;
 display: none;
 }
 
@@ -102,10 +102,9 @@ fill: var(--brand) !important;
 stroke: var(--c3) !important;
 }
 
-
 .dropdownMenuColumn {
 text-align: left;
-columns: 120px auto;
+/*columns: 120px auto;*/
 z-index: 2;
 margin-top: var(--padding);
 }
@@ -114,6 +113,18 @@ margin-top: var(--padding);
 /* fix */
 .dropdownMenuContentWrapper, .dropdownMenuContent { display: inline-block;  }
 .showDropdownMenu { display: block; }
+
+.topNav nav ul, .topNav nav li {
+padding: 0;
+margin: 0;
+display: inline;
+width: auto;
+list-style-type: none;
+}
+
+.topNav nav a {
+padding: var(--padding);
+}
 /* end Navigation CSS */
 
 
@@ -140,4 +151,5 @@ text-wrap: balance;
 text-align: left;
 /*min-height: 50px;*/
 }
+
 
