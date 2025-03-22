@@ -1,4 +1,4 @@
-// Keep v.3.15.1
+// Keep v.3.16.0
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -13,7 +13,7 @@ Fresh config in script.js
 <script>
 let keepConfig = {
 "postLimit":"", // number, the number of posts per page
-"embedStatus":"", // "off", "semi" (when id)
+"embedStatus":"", // "off", "semi" (embed for single)
 "multiEmbedStatus":"", // "on"
 "tagListStatus":"", // "off"
 "tagListLimit":"", // number
@@ -249,6 +249,7 @@ let qTmpNoPlus = q.replaceAll('%23', '+', ' ');
 var strArray = qTmpNoPlus.split(" ");
 var qCom = strArray[strArray.length - 1] + "#";
 var q3 = q + "#";
+
 switch (qCom) {
 
 case 'l#':
@@ -1164,12 +1165,12 @@ print += `
 <form id="keepForm" method="GET" style="margin-top: 0px;" action="?">
 <label class="op block tLeft xSmall padding1PxList" for="inputKeep">✪ Search:</label>
 
-<input id="inputKeep" type="search" name="q"  autocomplete="off" placeholder="">
+<input id="inputKeep" class="borderRadius" type="search" name="q"  autocomplete="off" placeholder="">
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2px;">
-<input  class="smaller op tCenter submit" type="submit" value="Search" title="Search">
+<input  class="smaller op tCenter submit borderRadius" type="submit" value="Search" title="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
-<button class="smaller op tCenter submit" name="q2" value="l" type="submit" title="First search result">Luck</button>
+<button class="smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="First search result">Luck</button>
 <!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
 
@@ -1493,7 +1494,7 @@ lPostTitle = highlightText(postTitle, targetOption, subQforLight);
 lPost = highlightText(post, targetOption, subQforLight);
 if (display == 'blog'){ lPost = `<h2>${lPostTitle}</h2>` + highlightText(post, targetOption, subQforLight); }
 
-} else if (mode == 'id'||mode == 'list'&&mode == 'idList'||mode == 'random'){
+} else if (mode == 'id'||mode == 'idList'||mode == 'random'){
 if (multiEmbedStatus == 'on'){
 lPost = highlightText(post, targetOption);
 if (display == 'blog'){ lPost = `<h2>${postTitle}</h2>` + highlightText(post, targetOption); }
@@ -1566,15 +1567,9 @@ function highlightText(text, targetOption, subQforLight){
 
 var play = "";
 
-if (embedStatus == "semi"&&mode != "id"){ embedStatus = 'off'; }
-if (embedStatus == "not list"&&mode != "list"&&mode != "search"){ embedStatus = 'on'; }
-
-/*if (embedStatus == "notist"){
-if (mode == 'id'||mode == "idList"||mode == 'random'){
-embedStatus = 'on';
+if (embedStatus == "semi"&&mode != "id"&&mode != "idList"&&mode != "random"){
+embedStatus = 'off';
 }
-}
-test delme*/
 
 //text = decodeURIComponent(text); // error sometimes
 text = clearText(text);
@@ -2095,16 +2090,9 @@ function highlightText2(text, targetOption){
 //text = decodeURIComponent(text); // error sometimes
 
 var play = "";
-
-if (embedStatus == "semi"&&mode == "id"){ embedStatus = 'on'; }
-if (embedStatus == "not list"&&mode != "list"&&mode != "search"){ embedStatus = 'on'; }
-
-/*if (embedStatus == "notist"){
-if (mode == 'id'||mode == "idList"||mode == 'random'){
-embedStatus = 'on';
+if (embedStatus == "semi"){
+if (mode == "id"||mode == "idList"||mode == "random"){ embedStatus = "on"; }
 }
-}
-test delme*/
 
 text = clearText(text);
 
