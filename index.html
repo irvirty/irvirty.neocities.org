@@ -478,8 +478,8 @@ if (mode == "edit"){
 document.getElementById("tagListEditForm").innerHTML = `
 <form action="" method="get" class="form-example">
 <textarea id="tagListEditData" rows="10">` + tagList + `</textarea>
-<a class="block button light3 padding2 shadow op brand bold borderRadius2" href="#" onclick="saveTagListData(); return false;">Save</a>
-<div class="tRight"><a class="tRight button light3 padding2 shadow op red bold borderRadius2" href="#" onclick="resetTagListData(); return false;">Reset</a></div>
+<a class="submit block button padding2 op borderRadius2" href="#" onclick="saveTagListData(); return false;">Save</a>
+<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resetTagListData(); return false;">Reset</a></div>
   </div>
 </form>
 `;
