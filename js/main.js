@@ -60,6 +60,13 @@ const confData = [
 "confValueVariant":["on", "off"],
 },
 {
+"confTitle":"Custom background image",
+"confDescription":`Custom background image. Setting: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
+"confName":"confBgImg",
+"confValueDefault":"",
+"confValueVariant":[""],
+},
+{
 "confTitle":"Speed dial",
 "confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="/projects/speed-dial-58/">/projects/speed-dial-58/</a>`,
 "confName":"confSpeedDialStatus",
@@ -482,7 +489,7 @@ document.getElementById("fTheme").text = conf["confTheme"] + ' (' + theme + ')';
 
 // fix and dynamic
 fuMThemeEmbed();
-fuMBg(conf["confThemeEmbed"]);
+fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
 
 // fix
 if (conf["confThemeEmbed"] == 'dark'){
@@ -901,9 +908,12 @@ fuMSetTheme(conf["confTheme"]);
 
 // CSS
 // random bg image (background img with random position)
-function fuMBg(com, img){
-if (conf["confBg"] == 'on'||com == 'on'){
+function fuMBg(com, bgImage){
+if (conf["confBg"] == "on"){
 
+bgImage = fuMClearText(bgImage);
+
+if (bgImage == undefined||bgImage == null||bgImage == ""){
 let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
 let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);
@@ -931,6 +941,42 @@ background-image: url("/img/bg/${mBgDark}");
 background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;
+}
+</style>
+`);
+}
+} else {
+let reduceBgLight = "";
+if (conf["confThemeEmbed"] == 'dark'||com == "dak"){
+reduceBgLight = "filter:brightness(70%);";
+}
+//document.head.insertAdjacentHTML("beforeend", `
+fuMInsertHtml("head", 'beforeend', `
+<style>
+body::before {
+content: "";
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+overflow: hidden;
+
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+${reduceBgLight}
+}
+
+body::before {
+background-image: url("${bgImage}");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+opacity: .07;
 }
 </style>
 `);

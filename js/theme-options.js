@@ -85,7 +85,11 @@ ${result}
 
 `;
 
+if (document.getElementById("themeOption") != null){
 document.getElementById("themeOption").innerHTML = result;
+} else {
+console.log("themeOption id null");
+}
 
 //document.getElementById("themeselect").innerHTML = theme;
 themeListOption.forEach(myFunction);
@@ -151,4 +155,56 @@ document.getElementById("confTheme").innerHTML = `
 function lMHoverSetTheme(lMThemeNameVar){
 fuMSetTheme(lMThemeNameVar);
 }
+
+
+
+
+// Bg image. Custom background image
+let rusultBgUrl = `
+
+<div class="margin2 padding2"></div>
+
+<div class="wrapper">
+<form>
+<label class="small" for="idBgImg">Custom background image. Image URL:</label>
+<input type="text" id="idBgImg" name="idBgImg" placeholder="https://example.com/example.png">
+<div class="twoColumn">
+<a href="#" class="block button submit border op borderRadius2" onclick="updateValueBgUrl();return false;">Send</a>
+<input class="block button submit border op borderRadius2" type="reset" value="Reset">
+</div>
+</form>
+
+</div>
+
+
+`;
+
+if (document.getElementById("bgOption") != null){
+document.getElementById("bgOption").innerHTML = rusultBgUrl;
+} else {
+console.log("bgOption id null");
+}
+
+
+/*document.getElementById("idBgImg").addEventListener("input", updateValueBgUrl);
+
+function updateValueBgUrl(e) {
+localStorage.setItem('confBgImg', e.target.value);
+fuMBg("", e.target.value);
+fuMReload();
+}*/
+
+function updateValueBgUrl() {
+let bgImage111 = document.getElementById("idBgImg").value;
+localStorage.setItem('confBgImg', bgImage111);
+fuMBg("", bgImage111);
+fuMReload();
+}
+
+let  confBgImgInputPrint = localStorage.getItem("confBgImg");
+if (confBgImgInputPrint != null&&confBgImgInputPrint != undefined){
+document.getElementById("idBgImg").value = confBgImgInputPrint;
+}
+
+
 
