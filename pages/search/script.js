@@ -255,18 +255,18 @@ qPrint = encodeURIComponent(q);
 lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
-<div class="tagList2 hotLinks">
+<div class="autoColumn">
 <!--<span class="tag op">Tag:</span>-->
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
-<!--<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/">Profile</a>-->
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<!--<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/">Profile</a>-->
 </div>
 </div>
 
@@ -292,17 +292,17 @@ qPrint = encodeURIComponent(qPrint);
 lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
-<div class="tagList2 hotLinks">
+<div class="autoColumn">
 <!--<span class="tag op">Tag:</span>-->
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
-<a class="tag light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
+<a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
 </div>
 </div>
 
