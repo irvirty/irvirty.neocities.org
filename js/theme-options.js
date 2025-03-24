@@ -82,7 +82,6 @@ ${result}
 </div>
 
 
-
 `;
 
 if (document.getElementById("themeOption") != null){
@@ -117,10 +116,13 @@ document.getElementById(item).addEventListener("click", function() {
 document.getElementById("fTheme").innerHTML =  item;
 
 fuMSetTheme(item);
+fuMBg(conf["confThemeEmbed"], conf["confBgImg"]);
 light(item);
 localStorage.setItem('confTheme', item);
 
+
 document.getElementById("confTheme").innerHTML = `
+
 <div class="tLeft">
 
 <span class="small borderRadius2">device theme: <b>${conf["confDeviceTheme"]}</b></span><br>
@@ -178,13 +180,11 @@ let rusultBgUrl = `
 
 
 `;
-
 if (document.getElementById("bgOption") != null){
 document.getElementById("bgOption").innerHTML = rusultBgUrl;
 } else {
 console.log("bgOption id null");
 }
-
 
 /*document.getElementById("idBgImg").addEventListener("input", updateValueBgUrl);
 
@@ -205,6 +205,5 @@ let  confBgImgInputPrint = localStorage.getItem("confBgImg");
 if (confBgImgInputPrint != null&&confBgImgInputPrint != undefined){
 document.getElementById("idBgImg").value = confBgImgInputPrint;
 }
-
 
 

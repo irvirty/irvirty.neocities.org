@@ -21,7 +21,6 @@ document.getElementById("cookiePopup").style.display = "block";
 }
 }
 
-
 val.confValueVariant.forEach((val2) => {
 
 if (val2 == carrentValue33){
@@ -99,15 +98,15 @@ ${printBody}
 
 <div class="margin2 padding2"></div>
 
-<div class="block brand shadow button padding3 light3 bold pointer borderBottomOrange borderRadius2" onclick="settingOptionReset();return false;" title="Default value in settings">Reset settings</div>
+<div class="block shadow button padding3 light3 bold pointer borderBottomOrange borderRadius2 brand" onclick="settingOptionReset();return false;" title="Default value in settings">Reset settings</div>
 
 <div class="margin2 padding2"></div>
 
 <div class="padding block right">
 <div class="brand shadow button padding3 light3 bold pointer borderBottomRed borderRadius2" onclick="settingOptionClearData();return false;" title="Some saved settings on other pages and settings">Clear local storage</div>
 
-<!--<div class="brand shadow button padding3 light3 bold pointer borderBottomRed borderRadius2" onclick="settingOptionClearDataIndexdDb();return false;" title="Clear the database (IndexdDb)">Clear IndexedDB</div>-->
-</div>
+<!--<div class="brand shadow button padding3 light3 bold pointer borderBottomRed borderRadius2" onclick="settingOptionClearDataIndexdDb();return false;" title="Clear the database (IndexdDb)">Clear IndexedDB</div>
+</div>-->
 
 
 </div>
@@ -174,7 +173,6 @@ return printFunctionLocal(confValue), fuMReload();
 } else {
 return printFunctionLocal();
 }
-
 }
 
 
