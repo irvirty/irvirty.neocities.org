@@ -255,7 +255,7 @@ qPrint = encodeURIComponent(q);
 lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
-<div class="autoColumn">
+<div class="autoColumn notUnderline">
 <!--<span class="tag op">Tag:</span>-->
 <a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
 <a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
@@ -292,7 +292,7 @@ qPrint = encodeURIComponent(qPrint);
 lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
-<div class="autoColumn">
+<div class="autoColumn notUnderline">
 <!--<span class="tag op">Tag:</span>-->
 <a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
 <a class="tag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
