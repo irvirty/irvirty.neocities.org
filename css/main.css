@@ -202,7 +202,7 @@ align-content: center;
 text-wrap: balance;
 }
 
-.autoColumn * {
+.autoColumn *:not(span) {
 display: inline-flex;
 width: auto;
 justify-content: center;
@@ -424,6 +424,7 @@ filter: invert(100%);
 .xxSmall, .xxSmall * { font-size: xx-small; }
 .em { font-style: italic; }
 .oblique { font-style: oblique; }
+.underline { text-decoration: underline; }
 .clear, .br { clear: both; }
 .scroll {
 /*overflow-x: auto;
