@@ -262,7 +262,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 <div id="cookiePopup"></div>
 
 <nav>
-<div class="wrapper3 margin2List small tCenter">
+<div class="margin2List small tCenter">
 
 <div class="wrapper2">
 <div class="small tLeft">
