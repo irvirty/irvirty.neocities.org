@@ -41,7 +41,7 @@ border-bottom: 2px dotted var(--brand);
 border-bottom: 2px dotted var(--brand);
 }
 
-/* Navigation CSS v.2.2.0 */
+/* Navigation CSS v.3.0.0 */
 
 .topNav form, .topNav input[type=search] { display: inline-block; }
 .topNav form { width: 100%; max-width: 130px; vertical-align: middle; }
@@ -71,7 +71,7 @@ text-align: center;
 }
 
 /* fix for mobile */
-@media(max-width: 500px){
+ @media only screen and (max-width: 500px){
 .topNav nav {
 justify-content: left;
 align-items: center;
@@ -84,7 +84,8 @@ text-align: left;
 
 .dropdownMenu {
 width: calc(100% - (2 * var(--bodyPadding)));
-max-width: calc(900px - (2 * var(--bodyPadding)));
+/*delme test validator error max-width: calc(900px - (2 * var(--bodyPadding)));*/
+max-width: 900px;
 margin: 0 auto;
 position: absolute;
 left: 0;
@@ -101,6 +102,7 @@ vertical-align: middle;
 fill: var(--brand) !important;
 stroke: var(--c3) !important;
 }
+
 
 .dropdownMenuColumn {
 text-align: left;
