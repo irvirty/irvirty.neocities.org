@@ -1,4 +1,4 @@
-// Keep v.4.0.0
+// Keep v.4.0.1
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -1537,7 +1537,7 @@ usernameStatusPrint = `<div class="padding2List bold capitalize"><a class="notUn
 return `
 
 <!-- post -->
-<div class="` + otherClass + ` irvPost bgList border3List borderRadius2 padding3" id="` + id + `">
+<div class="` + otherClass + ` irvPost bgList border3List borderRadius2 padding3 notUnderline" id="` + id + `">
 
 ${usernameStatusPrint}
 

@@ -1,4 +1,4 @@
-/* Main.css style v.23.1.1
+/* Main.css style v.23.2.0
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -228,7 +228,7 @@ justify-content: center;
 align-items: stretch;
 }
 
-.autoColumn * {
+.autoColumnItem {
 display: inline-flex;
 /*test delme width: auto;*/
 margin: 1px;

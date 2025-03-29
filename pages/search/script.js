@@ -1,4 +1,4 @@
-// Search v.2.0.4
+// Search v.2.0.5
 
 var lQButtonPrint = ``;
 
@@ -256,17 +256,17 @@ lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
 <div class="autoColumn notUnderline">
-<!--<span class="irvTag2 op">Tag:</span>-->
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
-<!--<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/">Profile</a>-->
+<!--<span class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op">Tag:</span>-->
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<!--<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/">Profile</a>-->
 </div>
 </div>
 
@@ -293,16 +293,16 @@ lQButtonPrint = `
 
 <div class="wrapper tCenter small" style="margin-top: 7px;">
 <div class="autoColumn notUnderline">
-<!--<span class="irvTag2 op">Tag:</span>-->
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
-<a class="irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
+<!--<span class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op">Tag:</span>-->
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?tag=${qPrint}">Special</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=random&tag=${qPrint}">Random</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=most_followed&tag=${qPrint}">Followers</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=last_updated&tag=${qPrint}">Update</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=views&tag=${qPrint}">Views</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=tipping_enabled&tag=${qPrint}">Tipping</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=newest&tag=${qPrint}">New</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/browse?sort_by=oldest&tag=${qPrint}">Old</a>
+<a class="autoColumnItem irvTag2 itemHeight light2 border3 borderRadius2 op" title="tag" href="https://neocities.org/activity?tag=${qPrint}">Activity</a>
 </div>
 </div>
 
