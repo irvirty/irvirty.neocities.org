@@ -1,4 +1,4 @@
-// Main.js v.1.2.5
+// Main.js v.1.2.6
 
 // Settings, config
 var conf = [];
@@ -189,7 +189,8 @@ cssMedia2 = `@media(width <= 0px)`;
 }
 
 // embed style
-document.getElementsByTagName("nav")[0].innerHTML += `
+//document.getElementsByTagName("nav")[0].innerHTML += `
+document.head.insertAdjacentHTML("beforeend", `
 
 <style>
 ${cssMedia} {
@@ -207,7 +208,7 @@ display: none !important;
 }
 </style>
 
-`;
+`);
 
 }
 

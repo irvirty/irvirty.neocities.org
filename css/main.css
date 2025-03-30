@@ -1,4 +1,4 @@
-/* Main.css style v.23.2.0
+/* Main.css style v.23.3.0
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -11,7 +11,7 @@
 
 --bodyPadding: 3vw;
 --inputHeight: 45px;
---fontSize: 0.9375em;
+--fontSize: 15px;
 
 --wrapper: 560px;
 --wrapper2: 700px;
@@ -197,7 +197,7 @@ text-align: center;
 .pre iframe, .pre video, .pre audio { display: block;  margin: 11px auto; width: 100%; max-width: 100%; }
 .pre .img {  display: inline-block; max-width: 100%; margin: 11px auto; margin-bottom: 0;  }
 
-/* colum in progress */
+/* column in progress */
 .twoColumn,
 .threeColumn,
 .fourColumn {
@@ -206,8 +206,6 @@ grid-gap: 1px;
 align-items: self-end;
 align-items: stretch;
 flex-shrink: 0;
-
-justify-content: center;
 }
 .oneColumn { grid-template-columns: calc(100% / 1); }
 .twoColumn{ grid-template-columns: calc(100% / 2) calc(100% / 2); }
@@ -225,18 +223,24 @@ margin: 0 auto;
 
 flex-direction: row;
 justify-content: center;
-align-items: stretch;
+gap: 0;
+
+/*flex-shrink: 0;*/
 }
 
 .autoColumnItem {
 display: inline-flex;
 /*test delme width: auto;*/
-margin: 1px;
+margin: 0 auto;
 flex: 1 0 auto;
 flex-wrap: wrap;
 max-width: 100%;
 min-width: auto;
 gap: 0;
+margin: 1px;
+
+align-content: start;
+align-self: start;
 }
 
 .logo, .logo2{
@@ -404,6 +408,7 @@ filter: invert(100%);
 
 .zero { margin: 0; padding: 0; }
 .notUnderline, .notUnderline * { text-decoration: none; }
+.underlineHover *:hover { text-decoration: underline; }
 
 .block { display: block; }
 .none { display: none; }
