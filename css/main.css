@@ -738,7 +738,7 @@ button { cursor: pointer; }
 form { margin: 0 auto; padding: 0; width: 100%; }
 /*br, hr { clear: both; }*/
 svg, form, iframe, video, audio, img, hr, table{ max-width:100%; }
-svg, img { height: auto;  display: inline-block; }
+svg, img, figure { height: auto;  display: inline-block; }
 
 .over, .over a{
 overflow: hidden;
