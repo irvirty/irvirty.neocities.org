@@ -1,4 +1,4 @@
-/* Main.css style v.23.5.0
+/* Main.css style v.23.5.1
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -421,6 +421,9 @@ filter: invert(100%);
 .tLeft { text-align: left; }
 .tRight { text-align: right; }
 .tCenter { text-align: center; }
+.tEnd { text-align: end; }
+.tJustify{ text-align: justify; }
+.tStart { text-align: start; }
 .reverse { transform: scale(-1, 1); }
 .b, .b *, .bold, .bold * { font-weight: bold; }
 .normal, .normal * { font-weight: normal; font-size: unset; }
@@ -472,14 +475,14 @@ word-break: break-all;
 
 .imgLeft {
 float: left;
-padding: var(--padding2);
-padding-left: 0;
+margin: var(--padding2);
+margin-left: 0;
 }
 
 .imgRight {
 float: right;
-padding: var(--padding2);
-padding-right: 0;
+margin: var(--padding2);
+margin-right: 0;
 }
 
 .stretch {
