@@ -520,15 +520,10 @@ align-self: stretch;
 .itemHeight3 { min-height: var(--itemHeight3); }
 .itemHeight4 { min-height: var(--itemHeight4); }
 
-.w100 { width: 100%; }
-.h100 { height: 100%; }
-.w50 { width: 50%; }
-.h50 { height: 50%; }
-.w25 { width: 25%; }
-.h25 { height: 25%; }
-.w15 { width: 15%; }
-.h15 { height: 15%; }
-
+.w100 { width: 100%; max-width: 100%; min-width: 100%;  }
+.w50 { width: 50%; max-width: 50%; min-width: 50%;  }
+.w25 { width: 25%; max-width: 25%; min-width: 25%;  }
+.w15 { width: 15%; max-width: 15%; min-width: 15%;  }
 
 
 /* Colors (colors from variables in the theme, r - reverse) */
@@ -781,4 +776,5 @@ input[type="color"], form button { vertical-align: middle; min-height: var(--inp
 .tLeftMobile { text-align: left; }
 .tRightMobile { text-align: right; }
 .blockMobile { display: block; }
+.w100Mobile { width: 100%; max-width: 100%; min-width: 100%;  }
 }
