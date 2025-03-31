@@ -1,4 +1,4 @@
-// Main.js v.1.2.6
+// Main.js v.1.2.7
 
 // Settings, config
 var conf = [];
@@ -948,8 +948,8 @@ background-attachment: fixed;
 }
 } else {
 let reduceBgLight = "";
-if (conf["confThemeEmbed"] == 'dark'||com == "dak"){
-reduceBgLight = "filter:brightness(70%);";
+if (conf["confThemeEmbed"] == 'dark'||com == "dark"){
+reduceBgLight = "filter:brightness(60%);";
 }
 //document.head.insertAdjacentHTML("beforeend", `
 fuMInsertHtml("head", 'beforeend', `
@@ -977,7 +977,7 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
-opacity: .07;
+opacity: .06;
 }
 </style>
 `);
