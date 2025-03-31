@@ -1,4 +1,4 @@
-/* Main.css style v.23.5.1
+/* Main.css style v.23.6.0
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -53,7 +53,7 @@ font-style: normal;
 overflow-wrap: break-word;
 /*word-break: break-all;*/
 }
-html, body {
+html, body, input, button, textarea, select {
 font-size: 13.4px; font-size: 0.9375em; font-size: var(--fontSize);
 }
 
