@@ -1,4 +1,4 @@
-/* Main.css style v.23.6.0
+/* Main.css style v.23.7.0
 /* main.css + theme (auto.css) */
 /* The style is mostly based on classes */
 
@@ -83,11 +83,11 @@ overflow-y: scroll;
 
 .content,
 .contentCenter,
-.irvPostContent,
-.irvPostContentCenter { flex: 1 0 auto; }
+.keepPostContent,
+.keepPostContentCenter { flex: 1 0 auto; }
 
 /* need wrapper */
-.contentCenter, .irvPostContentCenter {
+.contentCenter, .keepPostContentCenter {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -95,7 +95,7 @@ justify-content: center;
 /*height: 100vh;*/
 }
 
-header, footer, nav, .irvPostFooter { flex-shrink: 0; } /*delme width: 100%;*/
+header, footer, nav, .keepPostFooter { flex-shrink: 0; } /*delme width: 100%;*/
 
 .h1 { font-size: 1.40em; }
 .h2 { font-size: 1.35em; }
@@ -151,7 +151,7 @@ input[type="number"]{ padding: 5px; }
 
 /* class */
 
-.irvPost {
+.keepPost {
 width: 100%;
 max-width: 100%;
 margin: 0 auto;
@@ -168,23 +168,23 @@ min-height: auto;
 }
 
 
-.irvPostFooter a {
+.keepPostFooter a {
 display: inline-block;
 padding: var(--padding) 0;
 margin: 0 var(--padding);
 }
-.irvPostFooter a:first-child { margin-left: 0; }
-.irvPostFooter a:last-child { margin-right: 0; }
+.keepPostFooter a:first-child { margin-left: 0; }
+.keepPostFooter a:last-child { margin-right: 0; }
 
-.irvPostFooter {
+.keepPostFooter {
 padding-top: calc(var(--padding) / 2);
 }
 
-.irvPostFooter .irvTagList a {
+.keepPostFooter .keepTagList a {
 padding-top: 0;
 }
 
-.irvTagList, .irvTagList2 {
+.keepTagList, .keepTagList2 {
 display: inline-flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -192,7 +192,7 @@ align-items: center;
 text-align: center;
 }
 
-.irvTagList a, .irvTagList2 a { margin: 1px; }
+.keepTagList a, .keepTagList2 a { margin: 1px; }
 
 /* pre for post */
 .pre iframe, .pre video, .pre audio { display: block;  margin: 11px auto; width: 100%; max-width: 100%; }
@@ -269,8 +269,8 @@ transition: transform 1.5s ease-in-out;
 .logo:hover, .logo2:hover{ border-color: var(--c); }
 }
 
-.irvTag,
-.irvTag2,
+.keepTag,
+.keepTag2,
 .button {
 display: inline-flex;
 justify-content: center;
@@ -286,7 +286,7 @@ white-space: normal;
 word-break: break-word;
 }
 
-.irvPostFooter .irvTagList { align-self: end; display: block; }
+.keepPostFooter .keepTagList { align-self: end; display: block; }
 
 .button {
 padding: .7em 1.2em;
@@ -295,8 +295,8 @@ margin-top: 1px;
 margin-bottom: 1px;
 }
 
-.irvTag2 { padding: .3em .8em; }
-/*@media (any-pointer: coarse) { .irvTag { padding: .3em .8em; } }*/
+.keepTag2 { padding: .3em .8em; }
+/*@media (any-pointer: coarse) { .keepTag { padding: .3em .8em; } }*/
 
 /* ico2 - for img */
 .ico, .ico2 {
