@@ -287,6 +287,7 @@ fuMInsertHtml("#footer", 'beforeend', `
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
+<span class="gray">License:</span>
 <a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><a class="brand inlineBlock padding" title="Other license" href="/pages/about/#license"><sup>*</sup></a>
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <br>
