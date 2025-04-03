@@ -1,5 +1,22 @@
+![banner](/img/github-banner-settings.png)  
+  
 # About
 
-![page with a light and dark theme and theme settings](/img/github-banner-settings.png) 
+Home page for exploring other sites, a collection of links, and a little bit about CSS.
+  
+---
+  
+## License  
+```
+Main license: CC BY-SA 4.0
+Roboto font: Apache License, Version 2.0
+```
 
-## Home and start page for exploring other sites, a collection of links, and a little bit about CSS.
+---
+   
+#### 🏷️ GitHub Explore, topics:  
+[Website](https://github.com/topics/website),
+[Homepage](https://github.com/topics/homepage),
+[Neocities](https://github.com/topics/neocities)
+
+
