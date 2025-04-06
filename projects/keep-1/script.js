@@ -1,4 +1,4 @@
-// Keep v.4.0.1
+// Keep v.4.0.2
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -1047,7 +1047,7 @@ justify-content: center;
 width: auto;
 width: 220px;
 max-width: 100%;
-min-width: 1fr;
+min-width: auto;
 gap: 0;
 
 margin: 3px;
@@ -1083,7 +1083,6 @@ display: grid;
 width: 100%;
 /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
 grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-grid-template-rows: masonry;
 grid-gap: 5px;
 
 
@@ -1228,7 +1227,7 @@ main(q, id);
 
 
 
-// other functions 
+// other functions keep
 // tagList
 function fuTagList(tagList2){
 let color = 'silver';
@@ -2739,7 +2738,6 @@ if (getP <= 0){ hideButtonClass2 = 'op2 cursor-not-allowed'; }
 }
 
 return `
-
 
 <style>
 
