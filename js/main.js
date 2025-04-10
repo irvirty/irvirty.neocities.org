@@ -1,4 +1,4 @@
-// Main.js v.1.2.7
+// Main.js v.1.3.0
 
 // Settings, config
 var conf = [];
@@ -31,6 +31,16 @@ conf["confIdEmbedScript"] = "footer";
 if (fuMComVar == undefined){ var fuMComVar = ""; }
 
 const confData = [
+{
+"confTitle":"Allow Cookies For Third Parties?",
+"confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
+- Auto: used the time zone or Browser settings.
+- Site used Functionality cookies.
+- Some services still collect visit information if cookie off.`,
+"confName":"confDataCollection",
+"confValueDefault":"not selected",
+"confValueVariant":["on", "off", "auto", "not selected"],
+},
 {
 "confTitle":"Theme",
 "confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
@@ -74,14 +84,11 @@ const confData = [
 "confValueVariant":["on", "off", "random"],
 },
 {
-"confTitle":"Allow Cookies For Third Parties?",
-"confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
-- Auto: used the time zone or Browser settings.
-- Site used Functionality cookies.
-- Some services still collect visit information if cookie off.`,
-"confName":"confDataCollection",
-"confValueDefault":"not selected",
-"confValueVariant":["on", "off", "auto", "not selected"],
+"confTitle":"Screen Wake Lock",
+"confDescription":`Prevent devices from dimming or locking.`,
+"confName":"confScreenWakeLock",
+"confValueDefault":"off",
+"confValueVariant":["on", "off"],
 },
 /*{
 "confTitle":"Allow external fonts?",
@@ -151,9 +158,9 @@ document.getElementById('theme').id = 'themeDisable';
 }
 
 
-// Navigation JS part v.1.3.1
+// Navigation JS part v.2.0.0
 
-if (conf == undefined){
+if (conf === undefined){
 var conf = [];
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
@@ -162,6 +169,7 @@ conf["confMenuItemAverageWidth"] = 120;
 
 // nav v.2.0.0 in test
 // count links
+//var countMenuItem = document.querySelectorAll('.countMenuItem');
 if (document.getElementById("topNav") != null){
 //var countMenuItem = document.querySelectorAll('.countMenuItem');
 var countMenuItem = document.getElementById("topNav").querySelectorAll('a');
@@ -173,12 +181,12 @@ if (document.getElementsByTagName("nav")[0] != null){
 var mNavItemsAverageWidth = conf["confMenuItemAverageWidth"];
 // Average item width: 66px
 //var mNavItemsCount = (countMenuItem.length / 2);
-var mNavItemsCount = ((countMenuItem.length + 1) / 2);
+var mNavItemsCount = ((countMenuItem.length + 3) / 2);
 // /2 - dublicate items (links)
 var mNavWhenDropdownWidth = (mNavItemsAverageWidth * mNavItemsCount) / 2;
 // /2 - for 2 rows links
 // auto based on item
-var cssMedia = `@media(width < ${mNavWhenDropdownWidth}px)`;
+var cssMedia = `@media(width <= ${mNavWhenDropdownWidth}px)`;
 var cssMedia2 = `@media(width > ${mNavWhenDropdownWidth}px)`;
 
 // if nav (items) more width then wrapper (forece dropdown)
@@ -219,7 +227,7 @@ const topNav = document.getElementById("topNav");
 
 function fuMDropdownButton(){
 //https://stackoverflow.com/questions/64487640/javascript-show-hide-div-onclick
-if (dropdownMenu.style.display === "block") {
+if (dropdownMenu.style.display === "block"){
 dropdownMenu.style.display = "none";
 if (dropdownButton != null){
 dropdownButton.innerHTML = `☰ Menu`;
@@ -228,6 +236,20 @@ dropdownButton.innerHTML = `☰ Menu`;
 dropdownMenu.style.display = "block";
 if (dropdownButton != null){
 dropdownButton.innerHTML = `☶ Menu`;
+
+//https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+topNav.addEventListener("keydown", fuMDropdownButtonLogKey);
+function fuMDropdownButtonLogKey(e) {
+//console.log(`${e.code}`);
+if (e.code == "Escape"){
+dropdownMenu.style.display = "none";
+if (dropdownButton != null){
+dropdownButton.innerHTML = `☰ Menu`;
+}
+}
+
+}
+
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
@@ -242,6 +264,11 @@ window.addEventListener('click', function(e){
 dropdownMenu = document.getElementById("dropdownMenu");
 if (topNav.contains(e.target) == true){
 // Clicked in box
+//https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/
+if (dropdownMenu.querySelectorAll("a")[0] != undefined){
+dropdownMenu.querySelectorAll("a")[0].tabIndex = 0;
+dropdownMenu.querySelectorAll("a")[0].focus();
+}
 } else {
 dropdownMenu.style.display = "none";
 //dropdownMenu.classList.remove("showDropdownMenu");
@@ -250,6 +277,7 @@ dropdownButton.innerHTML = `☰ Menu`;
 }
 }
 });
+
 // end Navigation JS version
 
 
@@ -1142,3 +1170,25 @@ gtag('config', conf["confGoogleAnalyticsId"]);
 }
 // end Embed scripts
 
+
+
+// Screen Wake Lock (https only)
+//https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API
+if (conf["confScreenWakeLock"] == "on"){
+
+async function fuMWakeLock(){
+// Create a reference for the Wake Lock.
+let mWakeLock = null;
+
+// create an async function to request a wake lock
+try {
+mWakeLock = await navigator.wakeLock.request("screen");
+//console.log("Wake Lock is active!");
+} catch (err) {
+// The Wake Lock request has failed - usually system related, such as battery.
+//console.log(`${err.name}, ${err.message}`);
+}
+
+}
+fuMWakeLock();
+}
