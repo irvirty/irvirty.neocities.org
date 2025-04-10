@@ -8,8 +8,10 @@ Home page for exploring other sites, a collection of links, and a little bit abo
   
 ## License  
 ```
-Main license: CC BY-SA 4.0
-Roboto font: Apache License, Version 2.0
+Main license: CC BY-SA 4.0.
+
+Resources and others:
+Roboto font: Copyright 2025 Google Apache License, Version 2.0
 ```
 
 ---
