@@ -97,11 +97,11 @@ q = q.trim();
 q = encodeURIComponent(q);
 
 urlList = [
-"https://www.bing.com/search?q=" + q + " site:neocities.org",
+"https://www.bing.com/search?q=" + q + " site:neocities.org&form=somesite",
 ];
 if (q == ''){
 urlList = [
-"https://www.bing.com/search?q=site:neocities.org",
+"https://www.bing.com/search?q=site:neocities.org&form=somesite",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
@@ -135,7 +135,7 @@ location.href = sRedirectUrl;
 location.href = location.href + '#!StopRedirect';
 break;
 
-
+case 'glo#':
 case 'q#':
 case 'qq#':
 q = q3.replace(qCom, '');
@@ -192,7 +192,7 @@ q = encodeURIComponent(q);
 urlList = [
 "https://neocities.org/browse/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
-"https://www.bing.com/search?q=" + q + " site:neocities.org",
+"https://www.bing.com/search?q=" + q + " site:neocities.org&&form=somesite",
 "https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
 ];
 if (q == ''){
@@ -200,7 +200,7 @@ urlList = [
 //"https://neocities.org/browse/search",
 "https://neocities.org/browse",
 "https://www.google.com/search?q=site:neocities.org",
-"https://www.bing.com/search?q=site:neocities.org",
+"https://www.bing.com/search?q=site:neocities.org&form=somesite",
 "https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
@@ -221,7 +221,7 @@ q = encodeURIComponent(q);
 urlList = [
 "https://neocities.org/browse/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
-"https://www.bing.com/search?q=" + q + " site:neocities.org",
+"https://www.bing.com/search?q=" + q + " site:neocities.org&form=somesite",
 "https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
 ];
 if (q == ''){
@@ -229,7 +229,7 @@ urlList = [
 //"https://neocities.org/browse/search",
 "https://neocities.org/browse",
 "https://www.google.com/search?q=site:neocities.org",
-"https://www.bing.com/search?q=site:neocities.org",
+"https://www.bing.com/search?q=site:neocities.org&form=somesite",
 "https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }

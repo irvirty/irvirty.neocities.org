@@ -1,11 +1,5 @@
 /* v.1.3.2 */
 
-@font-face {
-font-family: 'Roboto';
-src: url('/fonts/Roboto-Regular.ttf')  format('truetype');
-font-display: swap;
-}
-
 /*
 @media (prefers-color-scheme: light) {
 body{

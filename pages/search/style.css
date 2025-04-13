@@ -1,20 +1,21 @@
 
-
-
+/*
 .searchButtons {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-gap: 2px;
-}
+grid-template-columns: repeat(3, 1fr)
+grid-gap: 10px;
+}*/
 
-@media(max-width: 450px){
+
+
 .searchButtons {
 display: flex;
 flex: 1 0 auto;
 flex-wrap: wrap;
 }
 
-.searchButtons * {
+.searchButtonsItem {
 display: inline-flex;
 width: auto;
 justify-content: center;
@@ -24,7 +25,8 @@ text-wrap: balance;
 
 flex: 1 0 auto;
 flex-wrap: wrap;
-}
+
+margin: 2px;
 }
 
 

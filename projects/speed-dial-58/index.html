@@ -8,12 +8,13 @@
 Pin, unpin a page for speed dial or your own link. Speed dial. Quick access to a page or site.
 ">
 <meta name="keywords" content="
-speed,dial,setting,CSS,JavaScript,project,
+speed,dial,setting,
+JavaScript, project,
 ">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" sizes="512x512" href="../../img/logo.png" type="image/png">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
 
 <!-- main -->
 <link rel="preload" href="../../js/main.js" as="script">
@@ -29,7 +30,7 @@ speed,dial,setting,CSS,JavaScript,project,
 <noscript>
 <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
 </noscript>
-<!-- end main -->
+<!-- // main -->
 
 <link rel="preload" href="script.js" as="script"> 
 
@@ -39,7 +40,7 @@ speed,dial,setting,CSS,JavaScript,project,
 </head>
 <body>
 
-<span id="secondNav">
+<div id="secondNav">
 <header class="tCenter">
 <div class="margin2"></div>
 <nav>
@@ -47,7 +48,7 @@ speed,dial,setting,CSS,JavaScript,project,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="../">list</a>
 </nav>
 </header>
-</span>
+</div>
 
 
 <!-- content -->
@@ -79,6 +80,9 @@ document.getElementById("printStatus").innerText = localStorage.getItem('confSpe
 
 <footer id="footer"></footer>
 
+<script>
+var confD = "../../";
+</script>
 <script src="../../js/main.js"></script>
 
 <script>

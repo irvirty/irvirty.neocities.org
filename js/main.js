@@ -1,5 +1,7 @@
 // Main.js v.1.3.1
 
+if (confD == undefined) { var confD = "/"; }
+
 // Settings, config
 var conf = [];
 
@@ -43,7 +45,7 @@ const confData = [
 },
 {
 "confTitle":"Theme",
-"confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
+"confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="${confD}pages/themes/">${confD}pages/themes/</a>`,
 "confName":"confTheme",
 "confValueDefault":"auto",
 "confValueVariant":["light", "dark", "auto-time", "auto", "auto-t-rand-all", "auto-rand-all"],
@@ -71,14 +73,14 @@ const confData = [
 },
 {
 "confTitle":"Custom background image",
-"confDescription":`Custom background image. Setting: <a class="brand" href="/pages/themes/">/pages/themes/</a>`,
+"confDescription":`Custom background image. Setting: <a class="brand" href="${confD}pages/themes/">${confD}pages/themes/</a>`,
 "confName":"confBgImg",
 "confValueDefault":"",
 "confValueVariant":[""],
 },
 {
 "confTitle":"Speed dial",
-"confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="/projects/speed-dial-58/">/projects/speed-dial-58/</a>`,
+"confDescription":`Pin, unpin a page for speed dial or your own link. <a class="brand brand" href="${confD}projects/speed-dial-58/">${confD}projects/speed-dial-58/</a>`,
 "confName":"confSpeedDialStatus",
 "confValueDefault":"on",
 "confValueVariant":["on", "off", "random"],
@@ -265,6 +267,7 @@ dropdownButton.focus();
 }
 
 
+if (topNav != null){
 // out area click
 //https://stackoverflow.com/questions/36695438/detect-click-outside-div-using-javascript
 window.addEventListener('click', function(e){
@@ -279,6 +282,7 @@ dropdownButton.innerHTML = `☰ Menu`;
 }
 }
 });
+}
 
 function fuMDropdownButtonClose(){
 dropdownMenu.style.display = "none";
@@ -295,7 +299,10 @@ dropdownButton.focus();
 
 // footer
 
-fuMInsertHtml("#footer", 'beforeend', `
+//fuMInsertHtml("#footer", 'beforeend', ``);
+
+if (document.getElementById("footer") != null){
+document.getElementById("footer").innerHTML = `
 
 <div class="margin2 padding2"></div>
 <div class="margin2 padding2"></div>
@@ -313,22 +320,22 @@ fuMInsertHtml("#footer", 'beforeend', `
 
 <div>
 <!--<a class="brand" href="#goBack" onclick="history.back()">Go Back</a>-->
-<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="/pages/themes/">Themes</a></span>
+<span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="${confD}pages/themes/">Themes</a></span>
 <span id="fEmbedFileUrl"></span>
 <span id="fPinButton"></span>
 </div>
 
-<a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="/pages/">Pages</a>
-<a class="brand inlineBlock padding" title="About" href="/pages/about/">About</a>
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="${confD}pages/">Pages</a>
+<a class="brand inlineBlock padding" title="About" href="${confD}pages/about/">About</a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
 <a class="brand inlineBlock padding" title="Social Network" href="https://bsky.app/profile/${conf["confUsername"]}.bsky.social">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/">Other Home</a>
-<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="/pages/settings/">Settings</a>
-<a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="/pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
+<a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="${confD}pages/settings/">Settings</a>
+<a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="gray">License:</span>
-<a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><a class="brand inlineBlock padding" title="Other license" href="/pages/about/#license"><sup>*</sup></a>
+<a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><a class="brand inlineBlock padding" title="Other license" href="${confD}pages/about/#license"><sup>*</sup></a>
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <br>
 <span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Neocities</a>
@@ -336,7 +343,8 @@ fuMInsertHtml("#footer", 'beforeend', `
 </div>
 </nav>
 
-`);
+`;
+}
 
  let mFooterNavLinksPrint = `<a class="brand" href="/" title="Home page">home</a> `;
  let mFooterNavLinksUrl = "";
@@ -520,7 +528,7 @@ document.getElementsByTagName('head')[0].appendChild(meta);
 function fuMPrintTheme(theme){
 
 if (document.getElementById('theme') != null){
-document.getElementById('theme').href = '/css/' + theme + '.css';
+document.getElementById('theme').href = confD + 'css/' + theme + '.css';
 }
 
 
@@ -769,7 +777,7 @@ document.cookie = "theme=light; SameSite=None; Secure; path=/";
 
 /*themeList.forEach((element) => {
 if (mode == element){
-//document.getElementById('theme').href = '/css/'+mode+'.css';
+//document.getElementById('theme').href = confD + 'css/' + mode + '.css';
 fuMPrintTheme(conf["confRealTmpTheme"] );
 }
 })*/
@@ -966,7 +974,7 @@ fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter: brightness(100%); }*/
 body{
-background-image: url("/img/bg/${mBg}");
+background-image: url("${confD}img/bg/${mBg}");
 background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;
@@ -979,7 +987,7 @@ fuMInsertHtml("head", 'beforeend', `
 <style>
 /*.reduceLight { filter:brightness(70%); }*/
 body{
-background-image: url("/img/bg/${mBgDark}");
+background-image: url("${confD}img/bg/${mBgDark}");
 background-repeat: repeat;
 background-position: ${mRandBgPos}% ${mRandBgPos2}%;
 background-attachment: fixed;
@@ -1028,15 +1036,19 @@ opacity: .06;
 }
 // random bg image
 
-// fonts, external fonts (privacy, data analytics)
-if (conf["confDataCollection"] == 'on'&&conf["confExternalFonts"] == 'auto'||conf["confExternalFonts"] == 'on'){
+// fonts
 //document.head.insertAdjacentHTML("beforeend", `
 fuMInsertHtml("head", 'beforeend', `
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
-`);
+@font-face {
+font-family: 'Roboto';
+src: url('${confD}fonts/Roboto-Regular.ttf')  format('truetype');
+font-display: swap;
 }
+</style>
+
+`);
 
 // CSS
 
@@ -1148,11 +1160,11 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 // embed and run
 if (conf["confSpeedDialStatus"] != "off"){
-fuMEmbedScript(`/projects/speed-dial-58/script.js`, conf["confIdEmbedScript"]);
+fuMEmbedScript(`${confD}projects/speed-dial-58/script.js`, conf["confIdEmbedScript"]);
 }
 
 if (conf["confDataCollection"] == 'not selected'){
-fuMEmbedScript(`/js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+fuMEmbedScript(`${confD}js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
 }
 
 if (conf["confDataCollection"] == 'on'){
