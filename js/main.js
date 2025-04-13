@@ -1,4 +1,4 @@
-// Main.js v.1.3.1
+// Main.js v.1.3.2
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -363,7 +363,10 @@ mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${m
 }
 });
 
-fuMInsertHtml("#footerNav", '', mFooterNavLinksPrint);
+//fuMInsertHtml("#footerNav", '', mFooterNavLinksPrint);
+if (document.getElementById("footerNav") != null){
+document.getElementById("footerNav").innerHTML = mFooterNavLinksPrint;
+}
 if(fuMComVar.indexOf('footer off') != -1){ document.getElementById("footer").innerHTML = ""; }
 // end footer
 
