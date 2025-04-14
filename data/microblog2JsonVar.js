@@ -104,7 +104,7 @@ var microblog2JsonVar =
     },
     {
         "id": "12",
-        "text": "Tag Cloud Update: Added a toggle mode between special and random tags when navigating the platform's website directory.",
+        "text": "Tag Cloud Update: Added a toggle mode between special and random tags (edited).",
         "text2": "",
         "text3": "",
         "url": "",
