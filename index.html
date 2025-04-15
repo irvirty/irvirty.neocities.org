@@ -264,7 +264,7 @@ top: -25px;
 </div>
 <hr>
 <div class="wrapper">
-<div class="tRight"><span class="op gray">mode:</span>  <span class="notUnderline" id="printMode"></span></div>
+<div class="balance"><span class="op gray">mode:</span>  <span class="notUnderline" id="printMode"></span></div>
 <div id="tagListEditForm"></div>
 </div>
 
@@ -407,6 +407,10 @@ case 'update':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=update&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
+case 'activity':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
 case 'edit':
 tagListPrint += `<span class="inlineBlock padding">` + val + `</span>`;
 break;
@@ -445,7 +449,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `special,random,update,new,search,search2`;
+let tagsModeList = `special,random,update,activity,new,search,search2`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
