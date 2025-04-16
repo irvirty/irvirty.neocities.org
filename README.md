@@ -5,6 +5,11 @@
 Home page for exploring other sites, a collection of links, and a little bit about CSS.
   
 ---
+   
+> [!IMPORTANT]
+> - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie.  
+  
+---
   
 ## License  
 ```
