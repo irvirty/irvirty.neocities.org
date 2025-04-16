@@ -113,6 +113,29 @@ location.href = location.href + '#!StopRedirect';
 break;
 
 
+case 'sez#':
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+
+urlList = [
+"https://search.seznam.cz/?q=" + q + " site:neocities.org",
+];
+if (q == ''){
+urlList = [
+//"https://search.marginalia.nu/search?query=site:neocities.org",
+"https://search.seznam.cz/?q=site:neocities.org",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+
+location.href = sRedirectUrl;
+location.href = location.href + '#!StopRedirect';
+break;
+
+
 case 'mar#':
 q = q3.replace(qCom, '');
 q = q.trim();
@@ -193,6 +216,7 @@ urlList = [
 "https://neocities.org/browse/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
 "https://www.bing.com/search?q=" + q + " site:neocities.org&&form=somesite",
+"https://search.seznam.cz/?q=" + q + " site:neocities.org",
 "https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
 ];
 if (q == ''){
@@ -201,6 +225,7 @@ urlList = [
 "https://neocities.org/browse",
 "https://www.google.com/search?q=site:neocities.org",
 "https://www.bing.com/search?q=site:neocities.org&form=somesite",
+"https://search.seznam.cz/?q=site:neocities.org",
 "https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
@@ -222,6 +247,7 @@ urlList = [
 "https://neocities.org/browse/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
 "https://www.bing.com/search?q=" + q + " site:neocities.org&form=somesite",
+"https://search.seznam.cz/?q=" + q + " site:neocities.org",
 "https://search.marginalia.nu/search?query=" + q + " site:neocities.org",
 ];
 if (q == ''){
@@ -230,6 +256,7 @@ urlList = [
 "https://neocities.org/browse",
 "https://www.google.com/search?q=site:neocities.org",
 "https://www.bing.com/search?q=site:neocities.org&form=somesite",
+"https://search.seznam.cz/?q=site:neocities.org",
 "https://search.marginalia.nu/search?query=site:neocities.org",
 ];
 }
