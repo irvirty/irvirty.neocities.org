@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="/css/rss.css"?>
 
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
 <channel>
 
 <title>Irvirty RSS</title>
 <link>https://irvirty.neocities.org</link>
 <description>Microblog, site news (updates), and more.</description>
 
-<image class="logo">
+<image>
 <url>https://irvirty.neocities.org/img/logo.png</url>
 <title>Irvirty RSS</title>
 <link>https://irvirty.neocities.org</link>
@@ -17,7 +18,7 @@
 </image>
 
 <item>
-<pubDate>Wed, 19 Feb 25 18:57:12 +0200</pubDate>
+<pubDate>Wed, 19 Feb 2025 16:57:12 +0000</pubDate>
 <title><![CDATA[The default theme is now only "auto" (light and dark). 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=23]]></link>
@@ -30,7 +31,7 @@ The default theme is now only "auto" (light and dark).
 </item>
 
 <item>
-<pubDate>Mon, 20 Jan 25 07:09:32 +0200</pubDate>
+<pubDate>Mon, 20 Jan 2025 05:09:32 +0000</pubDate>
 <title><![CDATA[Ctrl+Shift+R, Ctrl+F5 or Shift+F5 - Force a hard refresh page. Refresh a webpage ignoring cache.
 
 If you updated the page on the hosting but don't see any changes. 
@@ -47,7 +48,7 @@ If you updated the page on the hosting but don't see any changes.
 </item>
 
 <item>
-<pubDate>Sat, 14 Dec 24 03:34:23 +0200</pubDate>
+<pubDate>Sat, 14 Dec 2024 01:34:23 +0000</pubDate>
 <title><![CDATA[Neocities - Site Search 
  ]]></title>
 <link><![CDATA[https://neocities.org/browse/search]]></link>
@@ -60,7 +61,7 @@ https://neocities.org/browse/search
 </item>
 
 <item>
-<pubDate>Sat, 14 Dec 24 03:33:44 +0200</pubDate>
+<pubDate>Sat, 14 Dec 2024 01:33:44 +0000</pubDate>
 <title><![CDATA[Marginalia Search - browse:random 
  ]]></title>
 <link><![CDATA[https://search.marginalia.nu/explore/random]]></link>
@@ -73,7 +74,7 @@ https://search.marginalia.nu/explore/random
 </item>
 
 <item>
-<pubDate>Sun, 24 Nov 24 09:56:31 +0200</pubDate>
+<pubDate>Sun, 24 Nov 2024 07:56:31 +0000</pubDate>
 <title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=19]]></link>
 <description>
@@ -85,7 +86,7 @@ When there are a lot of things on the site, then you start thinking about the st
 </item>
 
 <item>
-<pubDate>Tue, 05 Nov 24 10:40:15 +0200</pubDate>
+<pubDate>Tue, 05 Nov 2024 08:40:15 +0000</pubDate>
 <title><![CDATA[It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=18]]></link>
@@ -98,7 +99,7 @@ It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn
 </item>
 
 <item>
-<pubDate>Sun, 03 Nov 24 07:34:39 +0200</pubDate>
+<pubDate>Sun, 03 Nov 2024 05:34:39 +0000</pubDate>
 <title><![CDATA[The default is now random all light and all dark themes. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=17]]></link>
@@ -111,7 +112,7 @@ The default is now random all light and all dark themes.
 </item>
 
 <item>
-<pubDate>Thu, 31 Oct 24 23:55:40 +0200</pubDate>
+<pubDate>Thu, 31 Oct 2024 21:55:40 +0000</pubDate>
 <title><![CDATA[Update:
 ===
 1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
@@ -130,7 +131,7 @@ Update:
 </item>
 
 <item>
-<pubDate>Wed, 30 Oct 24 10:08:46 +0200</pubDate>
+<pubDate>Wed, 30 Oct 2024 08:08:46 +0000</pubDate>
 <title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=15]]></link>
@@ -143,7 +144,7 @@ Fixed the CSS style in the navigation, when the element was active, underlining 
 </item>
 
 <item>
-<pubDate>Wed, 30 Oct 24 08:58:54 +0200</pubDate>
+<pubDate>Wed, 30 Oct 2024 06:58:54 +0000</pubDate>
 <title><![CDATA[Page refresh trick.
 ===
 If you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.
