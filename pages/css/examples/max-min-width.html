@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>max-width and min-width</title>
+
+<meta name="description" content="
+max-width
+">
+<meta name="keywords" content="
+CSS, example,
+">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@media(max-width: 500px){
+p {
+color: red;
+}
+}
+
+@media(min-width: 500px){
+p {
+color: blue;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<a class="inlineBlock brand" href="/">index</a>
+<a class="inlineBlock brand" href="../">up ../</a>
+</nav>
+
+<!-- content -->
+<main id="content">
+
+<h1>max-width and min-width</h1>
+Resize the window to see the changes, the style is responsive at 500px.
+<hr>
+
+<p>its "p" tag with test text</p>
+<br><br>
+
+</main>
+<!--// content -->
+
+<footer></footer>
+
+</body>
+</html>

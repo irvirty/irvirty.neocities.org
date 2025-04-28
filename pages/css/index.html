@@ -272,20 +272,29 @@ To make the page optimized for mobile devices, first use this meta tag in the "h
 <p class="pre">
 CSS Responsive Design can be achieved by using:
 
-- CSS units as percentages "%" (100%), "vw", "1fr"
+- CSS units as percentages "%" (100%), "1fr" (for grid). "vw".
 - "media query".
 - CSS property: "max-width", "min-width".
 - Maybe something else.
 </p>
 
 <p>A few of my own examples of what I use.</p>
-<div class="pre"><div class="padding2 border bg2"><b>1.</b> If the width of the screen is 500 pixels or less, we do something:
+<div class="pre"><div class="padding2 border bg2"><b>1.</b> 1. If the width of the screen is 500 pixels or less, we do something, or if it is more than 500 pixels, we do something else:
 
 @media(max-width: 500px){
 p {
 color: red;
 }
-}</div>
+}
+
+@media(min-width: 500px){
+p {
+color: blue;
+}
+}
+
+- max-width and min-width example: <a class="brand" href="./examples/max-min-width.html">./examples/max-min-width.html</a>
+</div>
 
 <div class="padding2 border bg2"><b>2.</b> This CSS code prevents images from overflowing and sets the automatic size for the picture:
 
