@@ -165,7 +165,7 @@ document.getElementById('theme').id = 'themeDisable';
 }
 
 
-// Navigation JS part v.2.2.1
+// Navigation JS part v.2.3.0
 
 if (conf === undefined){
 var conf = [];
@@ -231,6 +231,14 @@ const dropdownButton = document.getElementById("dropdownMenuButton");
 let dropdownMenu = document.getElementById("dropdownMenu");
 const topNav = document.getElementById("topNav");
 
+//https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/
+if (topNav != undefined&&topNav.querySelectorAll("a")[0] != undefined){
+let topNavAllLinks = topNav.querySelectorAll("a");
+topNavAllLinks.forEach((item, index) => {
+topNav.querySelectorAll("a")[index].tabIndex = 0;
+});
+}
+
 function fuMDropdownButton(){
 //https://stackoverflow.com/questions/64487640/javascript-show-hide-div-onclick
 if (dropdownMenu.style.display === "block"){
@@ -245,8 +253,15 @@ dropdownButton.innerHTML = `☶ Menu`;
 
 //https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/
 if (dropdownMenu.querySelectorAll("a")[0] != undefined){
-dropdownMenu.querySelectorAll("a")[0].tabIndex = 0;
-dropdownMenu.querySelectorAll("a")[0].focus();
+let dropdownMenuAllLinks = dropdownMenu.querySelectorAll("a");
+dropdownMenuAllLinks.forEach((item, index) => {
+if (index == 0){
+dropdownMenu.querySelectorAll("a")[index].tabIndex = 0;
+dropdownMenu.querySelectorAll("a")[index].focus();
+} else {
+dropdownMenu.querySelectorAll("a")[index].tabIndex = 0;
+}
+});
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
@@ -270,7 +285,6 @@ dropdownButton.focus();
 //dropdownMenu.classList.toggle("showDropdownMenu");
 }
 }
-
 
 if (topNav != null){
 // out area click
@@ -299,7 +313,7 @@ dropdownButton.focus();
 }
 }
 
-// end Navigation JS version
+// end Navigation JS part
 
 
 // footer
