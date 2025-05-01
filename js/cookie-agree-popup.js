@@ -42,6 +42,14 @@ fuMInsertHtml('#cookiePopup', '', `
 
 </p>
 
+<div class="padding2List"></div>
+<div class="small">
+Other:<br>
+<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a><br>
+<a class="brand inlineBlock padding" target="blank" href="https://neocities.org/privacy">Neocities - Privacy</a><br>
+</div>
+
+
 </div>
 </div>
 </div>

@@ -38,7 +38,12 @@ const confData = [
 "confDescription":`- This is necessary to improve the site. (For Ads Services, Statistics).
 - Auto: used the time zone or Browser settings.
 - Site used Functionality cookies.
-- Some services still collect visit information if cookie off.`,
+- Some services still collect visit information if cookie off.
+
+Other:
+<a class="brand inlineBlock padding" target="blank" href="https://www.google.com/policies/privacy/partners/">Google's Privacy & Terms</a>
+<a class="brand inlineBlock padding" target="blank" href="https://neocities.org/privacy">Neocities - Privacy</a>
+`,
 "confName":"confDataCollection",
 "confValueDefault":"not selected",
 "confValueVariant":["on", "off", "auto", "not selected"],
