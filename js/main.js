@@ -318,27 +318,86 @@ dropdownButton.focus();
 
 // footer
 
+var fDesc = '';
+var fDescTitle = '';
+var fDescTags = '';
+var fDescTagsLimit = 17;
+var fDescLength = '';
+if (document.getElementsByName("keywords")[0] != null){
+fDescTags = document.getElementsByName("keywords")[0].content;
+fDescTags = fDescTags.replaceAll("\n", " ");
+fDescTags = fDescTags.replaceAll("\r", " ");
+fDescTags = fDescTags.replaceAll("\r\n", " ");
+fDescTags = fDescTags.replaceAll("\n\r", " ");
+
+var fDescArr = fDescTags.split(",");
+fDescArr = fuMSort(fDescArr, "", "arr");
+fDescTags = '';
+var fDescTagsLimitCounter = 0;
+fDescArr.forEach((tag) => {
+if ((tag.trim()) != ''&&fDescTagsLimitCounter <= fDescTagsLimit){
+tag = tag.trim();
+tag = tag.replaceAll(" ", "_");
+fDescTags += `<a class="inlineBlock padding brand light border2 borderRadius2" href="/search/?tag=${tag}">#${tag}</a> `;
+}
+fDescTagsLimitCounter++;
+});
+if (fDescTagsLimit < fDescTagsLimitCounter){
+fDescTags += `<div class="inlineBlock padding">...</div>`;
+}
+
+fDescTags = `
+<br><b class="block padding2List small">Tags (keywords):</b><div class="irvTagList small left">` + fDescTags + '</div>';
+}
+
+fDescTags = ""; // disabled
+
+if (document.getElementsByName("description")[0] != null){
+fDescLength = document.getElementsByName("description")[0].content.length;
+fDesc = `<b class="block padding2List small">Description or summary:</b>` + document.getElementsByName("description")[0].content.trim() + fDescTags;
+
+if (fDescLength > 160){
+fDescTitle = `<span class="inlineBlock borderBottomRed xSmall">Description: ${fDescLength} of 160</span>`;
+} else if (fDescLength < 25){
+fDescTitle = `<span class="inlineBlock borderBottomOrange xSmall">Description: <span class="xSmall">${fDescLength} of 160</span>`;
+} else {
+fDescTitle = `<span class="inlineBlock xSmall">Description: <span class="xSmall">${fDescLength} of 160</span>`;
+}
+}
+
 //fuMInsertHtml("#footer", 'beforeend', ``);
 
 if (document.getElementById("footer") != null){
 document.getElementById("footer").innerHTML = `
 
-<div class="margin2 padding2"></div>
-<div class="margin2 padding2"></div>
+<div class="padding2 margin2"></div>
 
 <div id="cookiePopup"></div>
+
+<div id="ads2"></div>
+<div class="padding"></div>
 
 <nav>
 <div class="margin2List small tCenter">
 
 <div class="wrapper2">
+
+
+<div class="wrapperSmall right">
+<details class="op">
+<div id="fDesc" class="block pre tLeft padding2 bg shadow light borderRadius2 margin2List w100" style="margin-left: 0; margin-right: 0;">${fDesc}</div>
+<summary class="pointer paddingList marginList brand" title="Description and keywords">${fDescTitle}</summary>
+</details>
+</div>
+
 <div class="small tLeft">
 <span class="gray">nav:</span> <span id="footerNav"></span><hr>
 </div>
+
 </div>
 
 <div>
-<!--<a class="brand" href="#goBack" onclick="history.back()">Go Back</a>-->
+<!--<a class="brand" href="#goBack" onclick="history.back();return false;">Go Back</a>-->
 <span class="capitalize brand" title="Theme settings"><a id="fTheme" class="inlineBlock padding brand" href="${confD}pages/themes/">Themes</a></span>
 <span id="fEmbedFileUrl"></span>
 <span id="fPinButton"></span>
