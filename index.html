@@ -3,9 +3,9 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Irvirty - Home page</title>
+<title>Irvirty - Home and start page</title>
 
-<meta name="description" content="Home and start page for exploring other sites, a collection of links, and a little bit about CSS.">
+<meta name="description" content="Home and Start page with search redirection. Collection of links. Little bit about CSS and other.">
 <meta name="keywords" content="webdesign, web, design,
 homepage, home, page, seach, startpage, start, page, newtab, new, tab, CSS, links,">
 
@@ -124,34 +124,34 @@ top: -25px;
 
 <span id="navMenu" class="navMenu">
 <!-- links in nav -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/search/" title="Search">Search</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/links/" title="Links">Links</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/css/" title="CSS">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/microblog/" title="Microblog">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/other/" title="Other">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/about/" title="About">About</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/links/" title="Links">Links</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/css/" title="CSS">CSS</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/microblog/" title="Microblog">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/other/" title="Other">Other</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/about/" title="About">About</a>
 <!-- // links in nav -->
 </span>
 
-<div class="dropdownMenuContentWrapper">
+<div class="dropdownMenuContentWrapper navMenu2">
 <div class="dropdownMenuContent">
 
-<a id="dropdownMenuButton" class="dropdownMenuButton inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" tabindex="0" href="#" onclick="fuMDropdownButton();return false;">☰ Menu</a>
+<a id="dropdownMenuButton" class="dropdownMenuButton inlineBlock padding mClassNavUp brand borderBottomTransparent" tabindex="0" href="#" onclick="fuMDropdownButton();return false;">☰ Menu</a>
 
 <div id="dropdownMenu" class="dropdownMenu">
 <div class="dropdownMenuColumn shadow bg2 padding2 borderRadius2">
 <!-- links for show in dropdown (duplicate) -->
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/search/" title="Search">Search</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/links/" title="Links">Links</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/css/" title="CSS">CSS</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/microblog/" title="Microblog">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/other/" title="Other">Other</a>
-<a class="countMenuItem inlineBlock padding brand itemLinkAni empty" tabindex="0" href="./pages/about/" title="About">About</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/search/" title="Search">Search</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/links/" title="Links">Links</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/css/" title="CSS">CSS</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/microblog/" title="Microblog">Microblog</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/other/" title="Other">Other</a>
+<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="./pages/about/" title="About">About</a>
 <!-- // links for show in dropdown (duplicate) -->
 <hr>
-<a class="block w100 tCenter padding brand" href="#" onclick="fuMDropdownButtonClose();return false;" title="Close menu">close</a>
+<a class="noscriptHide block w100 tCenter padding brand" href="#" onclick="fuMDropdownButtonClose();return false;" title="Close menu">close</a>
 </div>
 </div>
 
@@ -159,7 +159,7 @@ top: -25px;
 </div>
 
 <!--
-<a class="inlineBlock padding mClassNavUp brand borderBottomTransparent itemLinkAni" tabindex="0" href="./" title="../ (Up)">List (up)</a>
+<a class="inlineBlock padding mClassNavUp brand borderBottomTransparent" tabindex="0" href="./" title="../ (Up)">List (up)</a>
 
 <form class="noscriptHide inlineBlock padding" style="padding-right: 0;" method="GET" action="/pages/site-search.html" role="search">
 <input id="siteSearch" type="search" placeholder="site search" name="q" autocomplete="off">

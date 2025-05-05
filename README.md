@@ -2,7 +2,7 @@
   
 # About
 
-Home page for exploring other sites, a collection of links, and a little bit about CSS.
+Home and Start page with search redirection. Collection of links. Little bit about CSS and other.
   
 ---
    
@@ -24,6 +24,7 @@ Roboto font: Copyright 2025 Google Apache License, Version 2.0
 #### 🏷️ GitHub Explore, topics:  
 [Website](https://github.com/topics/website),
 [Homepage](https://github.com/topics/homepage),
+[Startpage](https://github.com/topics/startpage),
 [Personal website](https://github.com/topics/personal-website),
 [Neocities](https://github.com/topics/neocities)
 
