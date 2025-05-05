@@ -1,8 +1,8 @@
 ![banner](/img/github-banner-settings.png)  
   
-# About
+# Home and Start page
 
-Home and Start page with search redirection. Collection of links. Little bit about CSS and other.
+Pages: search redirection, links, a little bit about CSS, and others.
   
 ---
    
