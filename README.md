@@ -2,7 +2,7 @@
   
 # Home and Start page
 
-Pages: search redirection, links, a little bit about CSS, and others.
+Search redirection, links, a little bit about CSS, and others.
   
 ---
    
