@@ -33,12 +33,12 @@ width: var(--worldClickHeight);
 height: var(--worldClickHeight);
 
 border: 2px dashed color-mix(in srgb, var(--blue) 50%, transparent);
-background-color: color-mix(in srgb, var(--brand) 14%, transparent);
+background-color: color-mix(in srgb, var(--d) 35%, transparent);
 }
 
 .worldClick:hover {
 border: 2px solid var(--blue2);
-background-color: color-mix(in srgb, var(--brand) 34%, transparent);
+background-color: color-mix(in srgb, var(--gray) 34%, transparent);
 opacity: 1;
 }
 
