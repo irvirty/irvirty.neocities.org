@@ -405,7 +405,9 @@ document.getElementById("footer").innerHTML = `
 
 <a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="${confD}pages/">Pages</a>
 <a class="brand inlineBlock padding" title="About" href="${confD}pages/about/">About</a>
+<a class="brand inlineBlock padding" title="Other license" href="https://bsky.app/"></a>
 <a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>
+<a class="brand inlineBlock padding" style="padding-left: 0;" title="Bluesky" href="https://bsky.app/">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>-->
 <a class="brand inlineBlock padding" title="Another home page" href="https://irvirty.pages.dev/#1">Other Home</a>
 <a id="fSettings" class="brand inlineBlock padding2" title="Settings" href="${confD}pages/settings/">Settings</a>
@@ -413,7 +415,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="op inlineBlock padding gray"><!--2024-->2025</span>
 <span class="gray">License:</span>
-<a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/public-domain/cc0/">CC0</a><a class="brand inlineBlock padding" title="Other license" href="${confD}pages/about/#license"><sup>*</sup></a>
+<a class="brand inlineBlock padding" rel="license" title="Main license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><a class="brand inlineBlock padding" title="Other license" href="${confD}pages/about/#license"><sup>*</sup></a>
 <br>
 <span class="gray">Hosting:</span> <a class="brand inlineBlock padding" style="padding-right: 0;" title="Hosting Service" href="https://neocities.org/">Neocities</a>
 
