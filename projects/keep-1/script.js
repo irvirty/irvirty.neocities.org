@@ -1,4 +1,4 @@
-// Keep v.4.0.2
+// Keep v.4.1.2
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -1175,7 +1175,7 @@ print += `
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2px;">
 <input  class="smaller op tCenter submit borderRadius" type="submit" value="Search" title="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
-<button class="smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="First search result">Luck</button>
+<button class="smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="First search result">I'm Feeling Lucky</button>
 <!--<input  class="smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
 
@@ -2524,13 +2524,13 @@ item = `<a class="brand insertIcon" href="${item}">${item}</a>`;
 }
 
 
-// add hashtag
-if (item[0] == "#"){
+//add hashtag
+if (item[0] == '#'){
 item = item.replaceAll(/#/g, "");
 item = `<a class="brand op" href="${scriptDir}?tag=${item}">#${item}</a>`;
 }
 
-if (item[0] == "@"){
+if (item[0] == '@'){
 item = `<a class="brand op" href="${scriptDir}?q=${item}">${item}</a>`;
 }
 
