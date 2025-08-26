@@ -1702,7 +1702,7 @@ break;
 case "www.reddit.com":
 if (item.split('/').length >= 9){
 play = item.replaceAll('reddit.com/r/', "redditmedia.com/r/");
-embed = `<blockquote class="reddit-embed-bq" style="height:auto" data-embed-theme="${confThemeEmbed}"><a href="${item}"><no value=""></no></a></blockquote><!--<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>-->`;
+embed = `<blockquote class="reddit-embed-bq" style="height:auto" data-embed-theme="${confThemeEmbed}"><a href="${play}"><no value=""></no></a></blockquote><!--<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>-->`;
 embedServiceList += 'reddit';
 }
 break;
@@ -2224,7 +2224,7 @@ break;
 case "www.reddit.com":
 if (item.split('/').length >= 9){
 play = item.replaceAll('reddit.com/r/', "redditmedia.com/r/");
-embed = `<blockquote class="reddit-embed-bq" style="height:auto" data-embed-theme="${confThemeEmbed}"><a href="${item}"><no value=""></no></a></blockquote><!--<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>-->`;
+embed = `<blockquote class="reddit-embed-bq" style="height:auto" data-embed-theme="${confThemeEmbed}"><a href="${play}"><no value=""></no></a></blockquote><!--<script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>-->`;
 embedServiceList += 'reddit';
 }
 break;
@@ -2875,8 +2875,6 @@ script2.charset = 'utf-8';
 script2.src = 'https://embed.reddit.com/widgets.js';
 document.getElementsByTagName('head')[0].appendChild(script2);
 }
-
-
 
 }
 
