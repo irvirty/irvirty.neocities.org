@@ -1,0 +1,45 @@
+/* World v.1.0.0 */
+
+:root{
+/* .brand - link, accent color (red, orange, yellow, green, blue, indigo, violet) */
+--worldClickHeight: 18px;
+}
+
+.world {
+display: block;
+position: relative;
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+aspect-ratio: 4 / 3;
+}
+
+.worldImg, .worldClick {
+display: block;
+position: absolute;
+}
+
+.worldImg {
+top: 0;
+left: 0;
+box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 0 2px rgba(0,0,0,0.24);
+border-radius: var(--borderRadius2);
+}
+
+.worldClick {
+border-radius: 50%;
+
+width: var(--worldClickHeight);
+height: var(--worldClickHeight);
+
+border: 2px dashed color-mix(in srgb, var(--blue) 80%, transparent);
+background-color: color-mix(in srgb, var(--d) 50%, transparent);
+}
+
+.worldClick:hover {
+border: 2px solid var(--blue2);
+background-color: color-mix(in srgb, var(--gray) 34%, transparent);
+opacity: 1;
+}
+
+

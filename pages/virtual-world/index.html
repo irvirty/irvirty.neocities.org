@@ -3,10 +3,10 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Site theme settings</title>
+<title>Virtual world</title>
 
-<meta name="description" content="Setting up color themes for the site and their modes.">
-<meta name="keywords" content="setting, themes, theme, config,">
+<meta name="description" content="Trying to create a website from just pictures. Mini world. Test. Experimental.">
+<meta name="keywords" content="mini, world, website, test, picture, image, test, experimental,">
 
 <link rel="alternate" type="application/rss+xml" title="Website RSS" href="/rss.xml">
 <link rel="alternate" type="application/rss+xml" title="Website RSS 2" href="https://neocities.org/site/.rss">
@@ -39,6 +39,9 @@
 <!--<link rel="preload" href="/js/script.js" as="script"> -->
 
 
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
 
@@ -60,7 +63,7 @@
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/links/" title="Links">Links</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/css/" title="CSS">CSS</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/microblog/" title="Microblog">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/virtual-world/" title="Virtual World (mini)">Virtual World</a>
+<a class="countMenuItem active2 navMenuActive inlineBlock padding empty" tabindex="0" href="../../pages/virtual-world/" title="Virtual World (mini)">Virtual World</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/other/" title="Other">Other</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/about/" title="About">About</a>
@@ -79,7 +82,7 @@
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/links/" title="Links">Links</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/css/" title="CSS">CSS</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/microblog/" title="Microblog">Microblog</a>
-<a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/virtual-world/" title="Virtual World (mini)">Virtual World</a>
+<a class="countMenuItem active2 navMenuActive inlineBlock padding empty" tabindex="0" href="../../pages/virtual-world/" title="Virtual World (mini)">Virtual World</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/guestbook/" title="Guestbook (comments)">Guestbook</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/other/" title="Other">Other</a>
 <a class="countMenuItem inlineBlock padding brand empty" tabindex="0" href="../../pages/about/" title="About">About</a>
@@ -109,52 +112,21 @@
 <!--<hr>-->
 
 
-
-
-
 <!-- content -->
 <main id="content" class="content">
 
-<h1 class="tCenter op">Site theme settings</h1>
-<!--<div class="tCenter op margin3List">Desc.</div>-->
+<h1 class="tCenter">Virtual world</h1>
+<!--<div class="tCenter margin4List small op">In progress</div>-->
 
 
-<div id="themeOption"></div>
-<div id="bgOption"></div>
-
-<div class="padding2 margin2"></div>
-
-<details>
-<summary class="pointer brand wrapperSmall tLeft small">Note, info:</summary>
-<div class="wrapperSmall">
-
-<div class="padding2 margin bg border borderRadius2 op tCenter"><b>Note:</b></div>
-<div class="padding2 margin bg border borderRadius2 op">
-<ul>
-<li><b>Color names</b> may be <b>incorrect</b> and only <b>approximate</b> the true color name.</li>
-<hr>
-<li><b>time, t</b>: Depends on the time.</li>
-<li><b>auto</b>: Depends on the theme used by the browser (dark, light) or operating system.</li>
-<li><b>auto-rand</b>: Random only light or dark themes.</li>
-<li><b>auto-rand-all</b>: Random <b>all</b> light or dark themes including "others light" or "other dark" + contrast.</li>
-</ul>
-</div>
-
-<div class="padding2 margin bg border borderRadius2 op"><b>Info:</b></div>
-<div class=" padding2 margin bg border borderRadius2 op" id="confTheme"></div>
+<div id="print"></div>
 
 
-</div>
-
-</div>
-</details>
-
-<div class="padding2 margin2"></div>
-
+<div class="clear"></div>
+<div class="margin2 padding2"></div>
 
 </main>
 <!--// content -->
-
 
 
 
@@ -168,7 +140,11 @@ var confD = "../../";
 <script src="../../js/main.js"></script>
 
 
-<script src="../../js/theme-options.js"></script>
+<script src="script.js"></script>
+
+<script>
+//fuMSetTheme('rand-l');
+</script>
 
 </body>
 </html>
