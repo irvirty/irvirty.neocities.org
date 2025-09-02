@@ -394,23 +394,23 @@ let printTagUrl = val.toLowerCase();
 
 switch (mode) {
 
-case 'search':
-tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` neo">` + val + `</a>`;
+case 'NeocitiesSearch':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search/?q=` + printTagUrl + ` neo">` + val + `</a>`;
 break;
 
-case 'search2':
-tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + ` rse">` + val + `</a>`;
+case 'RandomSearch':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search/?q=` + printTagUrl + ` rse">` + val + `</a>`;
 break;
 
-case 'random':
+case 'Random':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
-case 'update':
+case 'Update':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=update&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
-case 'activity':
+case 'Activity':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
@@ -418,16 +418,16 @@ case 'edit':
 tagListPrint += `<span class="inlineBlock padding">` + val + `</span>`;
 break;
 
-case 'special':
+case 'Special':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
-case 'new':
+case 'New':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
 
 default:
-tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search?q=` + printTagUrl + `">` + val + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./pages/search/?q=` + printTagUrl + `">` + val + `</a>`;
 
 }
 
@@ -452,7 +452,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `special,random,update,activity,new,search,search2`;
+let tagsModeList = `Special,Random,Update,Activity,New,NeocitiesSearch,RandomSearch`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
