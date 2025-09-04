@@ -10,7 +10,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update",
         "time": 1739984232,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=23\"  title=\"id=23 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "22",
@@ -20,7 +20,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#hosting #static #page #update #refresh #coding #HTML #CSS",
         "time": 1737349772,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=22\"  title=\"id=22 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "21",
@@ -30,7 +30,7 @@ var microblog2JsonVar =
         "url": "https:\/\/neocities.org\/browse\/search",
         "tag": "#links #search #catalog",
         "time": 1734140063,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=21\"  title=\"id=21 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "20",
@@ -40,7 +40,7 @@ var microblog2JsonVar =
         "url": "https:\/\/search.marginalia.nu\/explore\/random",
         "tag": "#links #random #catalog #search",
         "time": 1734140024,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=20\"  title=\"id=20 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "19",
@@ -50,7 +50,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#post #homepage #site #SEO",
         "time": 1732434991,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=19\"  title=\"id=19 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "18",
@@ -60,7 +60,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#URL #post",
         "time": 1730796015,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=18\"  title=\"id=18 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "17",
@@ -70,7 +70,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update #settings",
         "time": 1730612079,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=17\"  title=\"id=17 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "16",
@@ -80,7 +80,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update #new",
         "time": 1730411740,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=16\"  title=\"id=16 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "15",
@@ -90,7 +90,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update #fixed",
         "time": 1730275726,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=15\"  title=\"id=15 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "13",
@@ -100,7 +100,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#caching #refresh #trick #Browser #website #page #WebDevelopment #post",
         "time": 1730271534,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=13\"  title=\"id=13 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "12",
@@ -110,7 +110,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update",
         "time": 1729917033,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=12\"  title=\"id=12 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "11",
@@ -120,7 +120,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#post",
         "time": 1729692765,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=11\"  title=\"id=11 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "6",
@@ -130,7 +130,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#post",
         "time": 1729642916,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=6\"  title=\"id=6 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "5",
@@ -140,7 +140,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update",
         "time": 1729639058,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=5\"  title=\"id=5 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "4",
@@ -150,7 +150,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update",
         "time": 1729422687,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=4\"  title=\"id=4 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "3",
@@ -160,7 +160,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update #new #page",
         "time": 1729262589,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=3\"  title=\"id=3 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "2",
@@ -170,7 +170,7 @@ var microblog2JsonVar =
         "url": "",
         "tag": "#update",
         "time": 1729262033,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=2\"  title=\"id=2 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     },
     {
         "id": "1",
@@ -180,6 +180,6 @@ var microblog2JsonVar =
         "url": "https:\/\/example.com\/",
         "tag": "#test",
         "time": 1729260404,
-        "rightFooter": "<a class=\"brand\" href=\"\/pages\/microblog2\/?id=1\"  title=\"id=1 (permanent link)\" >id<\/a>"
+        "rightFooter": ""
     }
 ]
