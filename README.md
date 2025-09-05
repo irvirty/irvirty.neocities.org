@@ -1,6 +1,6 @@
 ![banner](/img/github-banner-settings.png)  
   
-# Home and Start page
+# Home Page and Start Page
 
 Search redirection, links, a little bit about CSS, and others.
   
