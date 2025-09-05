@@ -410,7 +410,7 @@ print += `
 <nav class="tCenter">
 <!--<a class="small keepTag2" href="./" title="Index ./">index</a>-->
 <a class="small keepTag2 brand" href="?" title="Start">start</a>
-<a class="small keepTag2 brand" href="?mode=random" title="Random post">random</a>
+<a class="small keepTag2 brand" href="?mode=random&dmode=${dMode}" title="Random post">random</a>
 </nav>
 
 <div class="wrapper">
@@ -971,11 +971,12 @@ var subQforLight = subQ.join(confSymbolForSplit);
 
 if (checkDublicateId[0] != postId){ // fixed dublicate post when search and found
 
+// fixme for s3
 // Luck
 if (q2 == 'l'){
 //if (postUrl == ''&&postId != ''){ window.location.href = scriptDir + '?id=' + postId; }
 if (postUrl != ''&&String('' + window.location + '').indexOf("#StopRedirect") == -1){
-comMessagePrint = `Luck search, redirect to URL: `+ sTimeRedir[2] / 1000 + ` sec.`;
+comMessagePrint = `Luck search, redirect to URL: ` + sTimeRedir[2] / 1000+` sec.`;
 window.location.href = '/projects/redirects-25/?rUrl=' + postUrl;
 //window.location.href = postUrl;
 window.location.href = window.location.href + '#StopRedirect'; 
@@ -1500,7 +1501,7 @@ return time;
 }
 
 var datePublished = timeConverter(time);
-time = `<a class="brand op" href="${scriptDir}?id=${id}"><time itemprop="datePublished" datetime="` + datePublished+`">` + fuPostTime(time) + `</time></a>`;
+time = `<a class="brand op" href="${scriptDir}?id=${id}" title="id=${id} (permanent link)"><time itemprop="datePublished" datetime="` + datePublished + `">` + fuPostTime(time) + `</time></a>`;
 
 var lPost = '';
 var lPostTitle = '';
@@ -2369,12 +2370,12 @@ embed = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/
 
 if (play[play.length - 2] == 'episode') {
 play2 = play[play.length - 1];
-embed = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/${play2}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+embed = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/${play2}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
 }
 
 if (play[play.length - 2] == 'show') {
 play2 = play[play.length - 1];
-embed = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/${play2}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+embed = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/${play2}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
 }
 
 embedServiceList += 'spotify';
@@ -2725,7 +2726,7 @@ navOption3 = `<input id="navOptionQ" type="hidden" name="q" value="">`;
 navOption2 = 'q=' + encodeURIComponent(q) + "&";
 nav2Print = `
 <div class="tRight">
-<!--<a class="op border3List button light" href="?id=">random</a>-->
+<!--<a class="op border3List button light" href="?id=&dmode=${dMode}">random</a>-->
 </div>
 <!--<a class="op border3 borderRadius2 button light" style="width: 49%;" href="#" onclick="history.back();return false;">back</a>-->
 `;
