@@ -28,7 +28,7 @@ if (q2 != ""){ q = q + " " + q2; }
 //if (q == ""){ q = "q"; }
 
 // web redirect
-if (q != undefined&&q != "undefined"&&q != 'null'&&q != null&&sUrlText.indexOf("cache") == -1){
+if (q != ""&&q != undefined&&q != "undefined"&&q != 'null'&&q != null&&sUrlText.indexOf("cache") == -1){
 
 
 q = q.trim();
