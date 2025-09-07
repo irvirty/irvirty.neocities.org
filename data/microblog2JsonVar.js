@@ -8,7 +8,7 @@ var microblog2JsonVar =
         "text2": "",
         "text3": "",
         "url": "https:\/\/privacybadger.org\/",
-        "tag": "#extension #addon #privacy",
+        "tag": "#links #extension #addon #privacy",
         "time": 1757225692,
         "rightFooter": ""
     },
