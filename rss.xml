@@ -18,6 +18,19 @@
 </image>
 
 <item>
+<pubDate>Sun, 07 Sep 2025 05:19:49 +0000</pubDate>
+<title><![CDATA[I removed links that cause "mindless scrolling" (hashtag cloud on the main page) 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=25]]></link>
+<description>
+<![CDATA[
+I removed links that cause "mindless scrolling" (hashtag cloud on the main page) 
+
+]]>
+</description>
+</item>
+
+<item>
 <pubDate>Wed, 19 Feb 2025 16:57:12 +0000</pubDate>
 <title><![CDATA[The default theme is now only "auto" (light and dark). 
 ]]></title>
@@ -138,27 +151,6 @@ Update:
 <description>
 <![CDATA[
 Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
-
-]]>
-</description>
-</item>
-
-<item>
-<pubDate>Wed, 30 Oct 2024 06:58:54 +0000</pubDate>
-<title><![CDATA[Page refresh trick.
-===
-If you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.
-
-(Maybe the JS file is stuck in the cache, Firefox browser on PC.) 
-]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=13]]></link>
-<description>
-<![CDATA[
-Page refresh trick.
-===
-If you use a JS file and the page does not show its fresh version, open the JS file and click: reload the page button, then you will get the latest version of the page.
-
-(Maybe the JS file is stuck in the cache, Firefox browser on PC.) 
 
 ]]>
 </description>

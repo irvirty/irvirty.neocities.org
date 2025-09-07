@@ -1,5 +1,15 @@
 [
     {
+        "id": "25",
+        "text": "I removed links that cause \"mindless scrolling\" (hashtag cloud on the main page)",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#update",
+        "time": 1757222389,
+        "rightFooter": ""
+    },
+    {
         "id": "23",
         "text": "The default theme is now only \"auto\" (light and dark).",
         "text2": "",
