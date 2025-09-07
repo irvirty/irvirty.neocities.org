@@ -18,6 +18,19 @@
 </image>
 
 <item>
+<pubDate>Sun, 07 Sep 2025 06:14:52 +0000</pubDate>
+<title><![CDATA[Privacy Badger 
+ ]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=26]]></link>
+<description>
+<![CDATA[
+Privacy Badger 
+https://privacybadger.org/
+]]>
+</description>
+</item>
+
+<item>
 <pubDate>Sun, 07 Sep 2025 05:19:49 +0000</pubDate>
 <title><![CDATA[I removed links that cause "mindless scrolling" (hashtag cloud on the main page) 
 ]]></title>
@@ -138,19 +151,6 @@ Update:
 ===
 1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
 2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
-
-]]>
-</description>
-</item>
-
-<item>
-<pubDate>Wed, 30 Oct 2024 08:08:46 +0000</pubDate>
-<title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
-]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=15]]></link>
-<description>
-<![CDATA[
-Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
 
 ]]>
 </description>

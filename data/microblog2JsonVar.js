@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "26",
+        "text": "Privacy Badger",
+        "text2": "",
+        "text3": "",
+        "url": "https:\/\/privacybadger.org\/",
+        "tag": "#extension #addon #privacy",
+        "time": 1757225692,
+        "rightFooter": ""
+    },
+    {
         "id": "25",
         "text": "I removed links that cause \"mindless scrolling\" (hashtag cloud on the main page)",
         "text2": "",
