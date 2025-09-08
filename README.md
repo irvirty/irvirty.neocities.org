@@ -32,6 +32,8 @@ Roboto font: Copyright 2025 Google Apache License, Version 2.0
 [Search-Redirect](https://github.com/topics/search-redirect?s=updated),
 [Personal website](https://github.com/topics/personal-website?s=updated),
 [Neocities](https://github.com/topics/neocities?s=updated),
-
+[HTML](https://github.com/topics/HTML?s=updated),
+[CSS](https://github.com/topics/CSS?s=updated),
+[JavaScript](https://github.com/topics/javascript?s=updated),
 
 
