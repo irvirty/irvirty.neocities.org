@@ -459,6 +459,19 @@ case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` rse">` + val + `</a>`;
 break;
 
+case 'Google':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` goo">` + val + `</a>`;
+break;
+
+case 'Bing':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` bin">` + val + `</a>`;
+break;
+
+
+case 'Global':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` q">` + val + `</a>`;
+break;
+
 case 'Random':
 tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + val + `</a>`;
 break;
@@ -509,7 +522,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `Special,Random,Update,Activity,New,NeocitiesSearch,RandomSearch`;
+let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global,`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
