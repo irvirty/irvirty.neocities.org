@@ -255,9 +255,45 @@ top: -25px;
 
 
 
+
+<div class="padding2 margin2"></div>
+
+<!-- tag bcloud -->
+
+<aside>
+<div class="tCenter">
+
+<div class="bold padding medium">
+<a class="op brand notUnderline" href="https://neocities.org/browse">Neocities Explore:</a>
+</div>
+
+<div class="padding"></div>
+
+<div class="wrapper3 notUnderline">
+<div id="printTags" class="balance small"></div>
+</div>
+<hr>
+<div class="wrapper">
+<div class="balance"><span class="op gray">mode:</span>  <span class="notUnderline" id="printMode"></span></div>
+<div id="tagListEditForm"></div>
+</div>
+
+</div>
+</aside>
+
+
+
+
+<!--// tag cloud -->
+
+
+
+
+
 <!-- buttons -->
 
 <div class="tCenter wrapper2">
+<div class="padding2 margin2"></div>
 <div class="padding2 margin2"></div>
 
 <a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="./neocities.png" style="max-height: 31px;" alt="banner img"></a>
@@ -367,5 +403,186 @@ dateArr = dateArr.slice(-500);
 
 
 
+<script>
+
+//window.addEventListener('load', function() {});
+function tagListCloud(mode){
+
+let tagModePrint = "";
+
+if (mode == undefined||mode == ""){
+mode = localStorage.getItem("tagModeData");
+} else if (mode != "edit"){
+localStorage.setItem("tagModeData", mode);
+}
+
+if (mode == null){ mode = "Special"; }
+
+let tagListSortConf = localStorage.getItem("tagListSortConf");
+
+let tagListColor = `red orange yellow green blue indigo violet`;
+
+let tagList = localStorage.getItem("tagListData");
+if (tagList == null||tagList == undefined){
+tagList = `
+Link Link Link
+Link Link
+`;
+}
+
+let arr = fuMSplit(tagList);
+
+if (tagListSortConf == "sort"){
+arr = fuMSort(arr, "", "arr");
+}
+
+
+
+
+
+let tagListPrint = "";
+arr.forEach((val, index) => {
+let val2 = val.trim();
+if (val2 != ""){
+val = val.trim();
+//console.log(val + "=" + index);
+let color = fuMRandomItem(tagListColor);
+let printTagUrl = val.toLowerCase();
+
+switch (mode) {
+
+case 'NeocitiesSearch':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` neo">` + val + `</a>`;
+break;
+
+case 'RandomSearch':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + ` rse">` + val + `</a>`;
+break;
+
+case 'Random':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+case 'Update':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=update&tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+case 'Activity':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+case 'edit':
+tagListPrint += `<span class="inlineBlock padding">` + val + `</span>`;
+break;
+
+case 'Special':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+case 'New':
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + val + `</a>`;
+break;
+
+default:
+tagListPrint += `<a class="inlineBlock padding op ` + color + `" href="./search/?q=` + printTagUrl + `">` + val + `</a>`;
+
+}
+
+} else {
+//tagListPrint += val;
+}
+});
+
+document.getElementById("printTags").innerHTML = tagListPrint;
+
+
+modeSwitch(mode, tagList, tagListSortConf);
+
+}
+
+tagListCloud("");
+
+function tagListSortConfSet(item){
+localStorage.setItem("tagListSortConf", item);
+tagListCloud("");
+}
+
+function modeSwitch(mode, tagList, tagListSortConf){
+let tagModePrint = "";
+let tagsModeList = `Special,Random,Update,Activity,New,NeocitiesSearch,RandomSearch`;
+let arr = fuMSplit(tagsModeList, ",");
+let tagListPrint = `<span class="op">mode:</span>`;
+arr.forEach((val, index) => {
+if (mode == val){
+tagModePrint += `
+<a class="inlineBlock padding op active2" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
+`;
+} else {
+tagModePrint += `
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('` + val +`'); return false;">` + val +`</a>
+`;
+}
+});
+
+if (tagListSortConf == "sort"){
+tagModePrint += `
+<span class="op gray">/</span>
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="tagListSortConfSet('unsort'); return false;">unsort</a>
+`;
+} else {
+tagModePrint += `
+<span class="op gray">/</span>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListSortConfSet('sort'); return false;">sort</a>
+`;
+}
+
+if (mode == "edit"){
+tagModePrint += `
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="closeTagListData(''); return false;">edit</a>
+`;
+} else {
+tagModePrint += `
+<a class="inlineBlock padding op brand" href="#" onclick="tagListCloud('edit'); return false;">edit</a>
+`;
+}
+document.getElementById("printMode").innerHTML = tagModePrint;
+
+if (mode == "edit"){
+document.getElementById("tagListEditForm").innerHTML = `
+<form action="" method="get" class="form-example">
+<textarea id="tagListEditData" rows="10">` + tagList + `</textarea>
+<a class="submit block button padding2 op borderRadius2" href="#" onclick="saveTagListData(); return false;">Save</a>
+<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resetTagListData(); return false;">Reset</a></div>
+  </div>
+</form>
+`;
+}
+
+}
+
+
+
+
+function saveTagListData(){
+let data = document.getElementById("tagListEditData").value;
+localStorage.setItem("tagListData", data);
+document.getElementById("tagListEditForm").innerHTML = ``;
+tagListCloud("");
+}
+
+function resetTagListData(){
+if (window.confirm("Are you sure?")) {
+localStorage.removeItem("tagListData")
+}
+document.getElementById("tagListEditForm").innerHTML = ``;
+tagListCloud("");
+}
+
+function closeTagListData(){
+document.getElementById("tagListEditForm").innerHTML = ``;
+tagListCloud("");
+}
+
+</script>
 </body>
 </html>
