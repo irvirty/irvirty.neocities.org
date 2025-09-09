@@ -19,10 +19,6 @@ Resources and others:
 Roboto font: Copyright 2025 Google Apache License, Version 2.0
 ```
 
----  
-
-## Download:  [main.zip](https://github.com/irvirty/irvirty.neocities.org/archive/refs/heads/main.zip)
-
 ---
    
 #### 🏷️ GitHub Explore, topics:  
