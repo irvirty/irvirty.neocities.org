@@ -18,6 +18,19 @@
 </image>
 
 <item>
+<pubDate>Tue, 09 Sep 2025 00:48:15 +0000</pubDate>
+<title><![CDATA[Brought back the tag cloud on the main page (more convenient). 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=27]]></link>
+<description>
+<![CDATA[
+Brought back the tag cloud on the main page (more convenient). 
+
+]]>
+</description>
+</item>
+
+<item>
 <pubDate>Sun, 07 Sep 2025 06:14:52 +0000</pubDate>
 <title><![CDATA[Privacy Badger 
  ]]></title>
@@ -132,25 +145,6 @@ It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn
 <description>
 <![CDATA[
 The default is now random all light and all dark themes. 
-
-]]>
-</description>
-</item>
-
-<item>
-<pubDate>Thu, 31 Oct 2024 21:55:40 +0000</pubDate>
-<title><![CDATA[Update:
-===
-1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
-2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
-]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=16]]></link>
-<description>
-<![CDATA[
-Update:
-===
-1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
-2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
 
 ]]>
 </description>

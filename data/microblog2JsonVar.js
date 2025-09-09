@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "27",
+        "text": "Brought back the tag cloud on the main page (more convenient).",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#tag #TagCloud #update",
+        "time": 1757378895,
+        "rightFooter": ""
+    },
+    {
         "id": "26",
         "text": "Privacy Badger",
         "text2": "",
