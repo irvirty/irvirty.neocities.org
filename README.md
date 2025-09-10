@@ -2,7 +2,7 @@
   
 # Homepage and Start Page
 
-Search redirection (Neocities), links, a little bit about CSS and other.
+### Search redirection (Neocities), links, a little bit about CSS and other.
   
 ---
    
