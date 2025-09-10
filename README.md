@@ -23,6 +23,7 @@ Roboto font: Copyright 2025 Google Apache License, Version 2.0
    
 #### 🏷️ GitHub Explore, topics:  
 [Website](https://github.com/topics/website?s=updated),
+[Static Website ](https://github.com/topics/static-website?s=updated),
 [Homepage](https://github.com/topics/homepage?s=updated),
 [Startpage](https://github.com/topics/startpage?s=updated),
 [Search-Redirect](https://github.com/topics/search-redirect?s=updated),
