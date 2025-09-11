@@ -409,20 +409,32 @@ fuMBg("light");
 // hide top header if mobile
 if (conf["confDevice"] == 'mobile'){
 var getclick2 = document.getElementById('form');
-if (getclick2 != null&&document.getElementById('topHeader') != null){
+if (getclick2 != null){
 document.addEventListener('click', function(event) {
 if (getclick2.contains(event.target)) {
+
+if (document.getElementById('topHeader') != null){
 document.getElementById('topHeader').style.display = 'none';
+}
+if (document.getElementById('topNav') != null){
 document.getElementById('topNav').style.display = 'none';
+}
 if (document.getElementById('searchPage') != null){
 document.getElementById('searchPage').classList.remove("contentCenter");
 }
+
 } else {
+
+if (document.getElementById('topHeader') != null){
 document.getElementById('topHeader').style.display = 'block';
+}
+if (document.getElementById('topNav') != null){
 document.getElementById('topNav').style.display = 'block';
+}
 if (document.getElementById('searchPage') != null){
 document.getElementById('searchPage').classList.add("contentCenter");
 }
+
 }
 });
 }
