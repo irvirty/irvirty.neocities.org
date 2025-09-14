@@ -1,4 +1,4 @@
-// Main.js v.1.4.0
+// Main.js v.1.5.0
 
 if (confD == undefined) { var confD = "/"; }
 
