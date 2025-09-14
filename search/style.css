@@ -1,3 +1,4 @@
+/* v.1.2.0
 
 /*
 .searchButtons {
@@ -13,6 +14,7 @@ grid-gap: 10px;
 display: flex;
 flex: 1 0 auto;
 flex-wrap: wrap;
+gap: 2px;
 }
 
 .searchButtonsItem {
@@ -25,8 +27,6 @@ text-wrap: balance;
 
 flex: 1 0 auto;
 flex-wrap: wrap;
-
-margin: 2px;
 }
 
 
