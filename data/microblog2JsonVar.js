@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "28",
+        "text": "The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#theme #DarkMode",
+        "time": 1757860922,
+        "rightFooter": ""
+    },
+    {
         "id": "27",
         "text": "Brought back the tag cloud on the main page (more convenient).",
         "text2": "",
