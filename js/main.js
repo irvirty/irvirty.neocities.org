@@ -122,9 +122,6 @@ conf[val.confName] = val.confValueDefault;
 
 // Device 1.0.0
 conf["confDevice"] = 'none';
-/*if (conf["confDataCollection"] != 'on'){
-conf["confDevice"] = '(disabled, privacy)';
-} else {}*/
 if (navigator.userAgent.search("iPhone|Android|Mobile|Lumia|Phone") != -1){ conf["confDevice"] = 'mobile';  }
 if (navigator.userAgent.search("PlayStation|Xbox|TV|Roku|SmartTV|BRAVIA") != -1){ conf["confDevice"] = 'tv';  }
 if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
@@ -1130,6 +1127,10 @@ document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${conf["confDataC
 }
 
 }
+
+//conf["confDataCollection"] conf["confEmbedBlockMsg"]
+conf["confEmbedBlockMsg"] = `<div class="padding bg border small borderRadius">Embedding is disabled. <!--Sorry, but there is no consent for third-party cookies.--> <a id="fPrivacy" class="underline brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a></div>`;
+
 // end Cookie (auto)
 
 
