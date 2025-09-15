@@ -1,4 +1,4 @@
-// Main.js v.2.0.0
+// Main.js v.1.5.0
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -29,6 +29,8 @@ conf["confSymbolForSplit"] = "SYMBOLFORSPLIT";
 conf["confTagListLimit"] = 38;
 conf["confLinkExtList"] = "index.html,.html,index.php,.php";
 conf["confIdEmbedScript"] = "footer";
+
+if (fuMComVar == undefined){ var fuMComVar = ""; }
 
 const confData = [
 {
@@ -384,6 +386,9 @@ document.getElementById("footer").innerHTML = `
 </details>
 </div>
 
+<div class="small tLeft">
+<span class="gray">nav:</span> <span id="footerNav"></span><hr>
+</div>
 
 </div>
 
@@ -414,6 +419,27 @@ document.getElementById("footer").innerHTML = `
 `;
 }
 
+ let mFooterNavLinksPrint = `<a class="brand" href="/" title="Home page">home</a> `;
+ let mFooterNavLinksUrl = "";
+ let mFooterNavLinks = location.href; 
+//https://stackoverflow.com/questions/2540969/remove-querystring-from-url
+mFooterNavLinks = mFooterNavLinks.split(/[?#]/)[0];
+mFooterNavLinks = mFooterNavLinks.split('//');
+mFooterNavLinks = mFooterNavLinks[1].split('/');
+
+mFooterNavLinks.forEach((mFooterNavLinksItem, mFooterNavLinksIndex) => {
+mFooterNavLinks[0] = "";
+if (mFooterNavLinks[mFooterNavLinksIndex] != ""){
+mFooterNavLinksUrl += `/` + mFooterNavLinks[mFooterNavLinksIndex];
+
+mFooterNavLinksPrint += ` <span class="gray">/</span> <a class="brand" href="${mFooterNavLinksUrl}">${mFooterNavLinks[mFooterNavLinksIndex]}</a>`;
+}
+});
+
+if (document.getElementById("footerNav") != null){
+document.getElementById("footerNav").innerHTML = mFooterNavLinksPrint;
+}
+if(fuMComVar.indexOf('footer off') != -1){ document.getElementById("footer").innerHTML = ""; }
 // end footer
 
 
