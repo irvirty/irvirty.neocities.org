@@ -46,7 +46,7 @@ Other:
 `,
 "confName":"confDataCollection",
 "confValueDefault":"not selected",
-"confValueVariant":["on", "off", "auto", "not selected"],
+"confValueVariant":["on", "off", "auto", "not selected", "test"],
 },
 {
 "confTitle":"Theme",
@@ -1128,6 +1128,8 @@ document.getElementById('fPrivacy').innerHTML = `Cookie: auto (${conf["confDataC
 
 }
 
+conf["confEmbedBlockMsg"] = "";
+if (conf["confDataCollection"] != "test"){
 //conf["confDataCollection"] conf["confEmbedBlockMsg"]
 conf["confEmbedBlockMsg"] = `<div class="tCenter padding bg border small borderRadius">Embedding is disabled. <!--Sorry, but there is no consent for third-party cookies.--> <a id="fPrivacy" class="underline brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a></div>`;
 
@@ -1135,6 +1137,7 @@ conf["confEmbedBlockMsg"] = `<div class="tCenter padding bg border small borderR
 if (conf["confDataCollection"] != "on"){
 	if (document.getElementById("disableEmbed") != null){
 	document.getElementById("disableEmbed").innerHTML = conf["confEmbedBlockMsg"];
+}
 }
 }
 
@@ -1214,7 +1217,7 @@ if (conf["confDataCollection"] == 'not selected'){
 fuMEmbedScript(`${confD}js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
 }
 
-if (conf["confDataCollection"] == 'on'){
+if (conf["confDataCollection"] == "on"&&conf["confDataCollection"] != "test"){
 fuMEmbedScript(`https://www.googletagmanager.com/gtag/js?id=${conf["confGoogleAnalyticsId"]}`, conf["confIdEmbedScript"]);
 }
 
@@ -1262,4 +1265,8 @@ mWakeLock = await navigator.wakeLock.request("screen");
 
 }
 fuMWakeLock();
+}
+
+if (conf["confDataCollection"] == "test"){
+	conf["confDataCollection"] = "on";
 }
