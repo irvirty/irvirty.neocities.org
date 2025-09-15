@@ -11,16 +11,15 @@ Search redirect (Neocities), links, a little bit about CSS, virtual world, and o
   
 ---
   
-## License  
-```
-Main license: CC BY-SA 4.0.
+# License:  
+  
+- Main license: CC BY-SA 4.0.
 
-Resources and others:
-Roboto font: Copyright 2025 Google Apache License, Version 2.0
-```
-
+Resources and others:  
+- Roboto font: Copyright 2025 Google Apache License, Version 2.0
+  
 ---
-   
+  
 #### 🏷️ GitHub Explore, topics:  
 [Website](https://github.com/topics/website?s=updated),
 [Static Website ](https://github.com/topics/static-website?s=updated),
@@ -28,6 +27,7 @@ Roboto font: Copyright 2025 Google Apache License, Version 2.0
 [Startpage](https://github.com/topics/startpage?s=updated),
 [Search-Redirect](https://github.com/topics/search-redirect?s=updated),
 [Personal website](https://github.com/topics/personal-website?s=updated),
+
 [Neocities](https://github.com/topics/neocities?s=updated),
 [HTML](https://github.com/topics/HTML?s=updated),
 [CSS](https://github.com/topics/CSS?s=updated),
