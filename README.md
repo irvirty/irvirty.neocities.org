@@ -1,8 +1,8 @@
 ![banner](/img/github-banner-settings.png)  
   
-# Homepage and Start Page
+# irvirty.neocities.org
 
-Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
+🏠 Homepage and start page. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
   
 ---
    
