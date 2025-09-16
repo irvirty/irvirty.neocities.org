@@ -27,7 +27,6 @@ Resources and others:
 [Startpage](https://github.com/topics/startpage?s=updated),
 [Search-Redirect](https://github.com/topics/search-redirect?s=updated),
 [Personal website](https://github.com/topics/personal-website?s=updated),
-
 [Neocities](https://github.com/topics/neocities?s=updated),
 [HTML](https://github.com/topics/HTML?s=updated),
 [CSS](https://github.com/topics/CSS?s=updated),
