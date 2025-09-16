@@ -2,7 +2,7 @@
   
 # irvirty.neocities.org
 
-🏠 Homepage and start page. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
+• Homepage and start page. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
   
 ---
    
@@ -20,7 +20,7 @@
   
 ---
   
-#### 🏷️ GitHub Explore, topics:  
+#### GitHub Explore, topics:  
 [Website](https://github.com/topics/website?s=updated),
 [Static Website ](https://github.com/topics/static-website?s=updated),
 [Homepage](https://github.com/topics/homepage?s=updated),
