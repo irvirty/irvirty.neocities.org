@@ -48,7 +48,7 @@ conf["confTagListLimit"] = 38;
 conf["confLinkExtList"] = "index.html,.html,index.php,.php";
 conf["confIdEmbedScript"] = "footer";
 
-const confData = [
+var confData = [
 {
 "confTitle":"Allow Cookies For Third Parties?",
 "confDescription":`${conf["confCookieDesc"]}`,
@@ -170,7 +170,7 @@ document.getElementById('theme').id = 'themeDisable';
 }
 
 
-// Navigation JS part v.2.3.0
+// Navigation JS part v.2.3.1
 
 if (conf === undefined){
 var conf = [];
@@ -232,13 +232,13 @@ display: none !important;
 }
 
 // button
-const dropdownButton = document.getElementById("dropdownMenuButton");
-let dropdownMenu = document.getElementById("dropdownMenu");
-const topNav = document.getElementById("topNav");
+var dropdownButton = document.getElementById("dropdownMenuButton");
+var dropdownMenu = document.getElementById("dropdownMenu");
+var topNav = document.getElementById("topNav");
 
 //https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/
 if (topNav != undefined&&topNav.querySelectorAll("a")[0] != undefined){
-let topNavAllLinks = topNav.querySelectorAll("a");
+var topNavAllLinks = topNav.querySelectorAll("a");
 topNavAllLinks.forEach((item, index) => {
 topNav.querySelectorAll("a")[index].tabIndex = 0;
 });
@@ -1241,6 +1241,4 @@ mWakeLock = await navigator.wakeLock.request("screen");
 fuMWakeLock();
 }
 
-if (conf["confDataCollection"] == "allow embed"){
-	conf["confDataCollection"] = "on";
-}
+
