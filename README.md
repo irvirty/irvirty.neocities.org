@@ -15,7 +15,7 @@ Homepage and start page. Search redirect (Neocities), links, a little bit about 
   
 • Main license: CC BY-SA 4.0  
   
-• Others:  
+Others:  
 • Roboto font: Copyright 2025 Google Apache License, Version 2.0  
   
 ---
