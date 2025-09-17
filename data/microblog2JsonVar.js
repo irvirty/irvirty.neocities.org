@@ -4,7 +4,7 @@ var microblog2JsonVar =
 [
     {
         "id": "29",
-        "text": "I removed the tag cloud on the main page again, there is a search form for that.",
+        "text": "I removed the tag cloud on the main page again, there is a search form for that.\r\n+ I undeleted and restored it (more faster 1 click).",
         "text2": "",
         "text3": "",
         "url": "",
