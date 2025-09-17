@@ -830,10 +830,9 @@ top: -25px;
 </div>
 </aside>
 
+<div class="margin2 padding2"></div>
 
 
-
-<!--// tag cloud -->
 
 
 
@@ -841,14 +840,12 @@ top: -25px;
 
 <!-- buttons -->
 
-<div class="tCenter wrapper2">
-<div class="padding2 margin2"></div>
 <div class="padding2 margin2"></div>
 
-<a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="./neocities.png" style="max-height: 31px;" alt="banner img"></a>
-
-
+<div class="tCenter">
+<a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="./neocities.png" style="max-width: 120px;" alt="banner img"></a>
 </div>
+
 <!--// buttons -->
 
 </main>
@@ -1064,9 +1061,9 @@ tagListCloud("");
 
 </script>
 
+<!--// tag cloud -->
 
-
-
+<script src="./search/script.js"></script>
 
 
 <script>
@@ -1142,41 +1139,6 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, extraSheet];
 // end Random color
 </script>
 
-<script src="./search/script.js"></script>
-
-
-<script>
-// hide top header if mobile
-// local, only this page
-/*
-if (conf["confDevice"] == 'mobile'){
-var getclick2 = document.getElementById('form');
-document.addEventListener('click', function(event) {
-if (getclick2.contains(event.target)) {
-document.getElementById( 'topHeader' ).style.display = 'none';
-document.getElementById( 'topNav' ).style.display = 'none';
-} else {
-document.getElementById( 'topHeader' ).style.display = 'block';
-document.getElementById( 'topNav' ).style.display = 'block';
-}
-});
-}*/
-
-
-/*// redirect "q" to "redirect" script
-var geturl = window.location;
-var url = new URL(geturl);
-var q = url.searchParams.get("q");
-var url = new URL(geturl);
-let sUrlText = String(url);
-const myArray = sUrlText.split("q=");
-if (q != null&&myArray[0].search("cache") == -1&&url.hostname == location.hostname){
-q = encodeURIComponent(q);
-location.href = "/projects/redirects-25/?q=" + q;
-//location.href = fuMHideFileNameExt("./search.html?q=") + q;
-}*/
-
-</script>
 
 
 
