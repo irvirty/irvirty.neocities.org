@@ -67,15 +67,15 @@ var confData = [
 "confTitle":"Start of the day (time)",
 "confDescription":"For theme if selected auto time (auto-t) in themes option",
 "confName":"confStartDay",
-"confValueDefault":"7",
+"confValueDefault":"8",
 "confValueVariant":["6", "7", "8", "9"],
 },
 {
 "confTitle":"Start of the night (time)",
 "confDescription":"For theme if selected auto time (auto-t) in themes option",
 "confName":"confStartNight",
-"confValueDefault":"19",
-"confValueVariant":["18", "19", "20", "21"],
+"confValueDefault":"20",
+"confValueVariant":["18", "20", "20", "21"],
 },
 {
 "confTitle":"Background picture",
