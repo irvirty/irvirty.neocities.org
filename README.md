@@ -7,7 +7,7 @@ Homepage and start page. Search redirect (Neocities), links, a little bit about 
 ---
    
 > [!IMPORTANT]
-> - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie.  
+> - The Google analytics ID is in the file "/js/main.js", it works if accept the cookie (you can replace with your ID).   
   
 ---
   
