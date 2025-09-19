@@ -18,6 +18,19 @@
 </image>
 
 <item>
+<pubDate>Fri, 19 Sep 2025 01:04:18 +0000</pubDate>
+<title><![CDATA[Switching to automatic theme detection for pages (auto.css: dark or light theme). 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=30]]></link>
+<description>
+<![CDATA[
+Switching to automatic theme detection for pages (auto.css: dark or light theme). 
+
+]]>
+</description>
+</item>
+
+<item>
 <pubDate>Wed, 17 Sep 2025 03:22:35 +0000</pubDate>
 <title><![CDATA[I removed the tag cloud on the main page again, there is a search form for that.
 + I undeleted and restored it (more faster 1 click). 
@@ -136,18 +149,6 @@ https://neocities.org/browse/search
 <![CDATA[
 Marginalia Search - browse:random 
 https://search.marginalia.nu/explore/random
-]]>
-</description>
-</item>
-
-<item>
-<pubDate>Sun, 24 Nov 2024 07:56:31 +0000</pubDate>
-<title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=19]]></link>
-<description>
-<![CDATA[
-When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error. 
-
 ]]>
 </description>
 </item>

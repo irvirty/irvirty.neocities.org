@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "30",
+        "text": "Switching to automatic theme detection for pages (auto.css: dark or light theme).",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#theme #DarkMode #update",
+        "time": 1758243858,
+        "rightFooter": ""
+    },
+    {
         "id": "29",
         "text": "I removed the tag cloud on the main page again, there is a search form for that.\r\n+ I undeleted and restored it (more faster 1 click).",
         "text2": "",
