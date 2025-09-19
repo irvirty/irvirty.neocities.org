@@ -26,7 +26,7 @@ img = mode;
 buttons = `
 <a class="worldClick" style="top: calc(27% - (var(--worldClickHeight) / 2)); left: calc(55% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="index"></a>
 <a class="worldClick" style="top: calc(61% - (var(--worldClickHeight) / 2)); left: calc(5% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="index"></a>
-<a class="worldClick" style="top: calc(52% - (var(--worldClickHeight) / 2)); left: calc(37% - (var(--worldClickHeight) / 2));" target="blank" href="https://www.youtube.com/watch?v=59Q_lhgGANc" title="Makeba"></a>
+<a class="worldClick" style="top: calc(52% - (var(--worldClickHeight) / 2)); left: calc(37% - (var(--worldClickHeight) / 2));" target="blank" href="https://www.youtube.com/watch?v=59Q_lhgGANc" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
