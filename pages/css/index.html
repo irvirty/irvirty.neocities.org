@@ -344,11 +344,21 @@ I write CSS styles simultaneously for any screen, my method is the method of ove
 
 Then under it I add the same CSS class from the style above with parameters for other screens using CSS Media Queries: 
 
+.testClass { color: red; }
+
 @media (max-width: 500px) { 
-.testClass { colore: orange; }
+.testClass { color: orange; }
 }
 
-so I override the style above and create a new style with overriding method for screens that are not larger than 500 pixels, then for 200px with overwriting  , then for 100px etc
+@media (max-width: 300px) { 
+.testClass { color: blue; }
+}
+
+@media (max-width: 100px) { 
+.testClass { color: yellow; }
+}
+
+so I override the style above and create a new style with overriding method for screens that are not larger than 500 pixels, then for 300px with overwriting  , then for 100px etc
 </div>
 
 <p class="pre border padding2"><b>Note:</b> Testing and debugging:
