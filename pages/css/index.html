@@ -336,6 +336,23 @@ or
 </div>
 
 </div>
+
+<p class="pre border padding2 bg2">
+<b>5.</b> My personal experience and advice or technique:
+
+I write CSS styles simultaneously for any screen, my method is the method of overriding the style above with the style below (hierarchy in CSS), for example, there is a regular style for large screens:
+
+.testClass { color: red; }
+
+Then under it I add the same CSS class from the style above with parameters for other screens using CSS Media Queries: 
+
+@media (max-width: 500px) { 
+.testClass { colore: orange; }
+}
+
+so I override the style above and create a new style with overriding method for screens that are not larger than 500 pixels, then for 200px with overwriting  , then for 100px etc
+</p>
+
 <p class="pre border padding2"><b>Note:</b> Testing and debugging:
 
 - Resize the browser window to see the style changes.

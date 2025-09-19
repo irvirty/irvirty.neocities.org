@@ -71,7 +71,7 @@ break;
 default:
 img = "index.png";
 buttons = `
-<a class="worldClick" style="top: calc(27% - (var(--worldClickHeight) / 2)); left: calc(50% - (var(--worldClickHeight) / 2));" href="./?q=space.png" title="space"></a>
+<a class="worldClick" style="top: calc(27% - (var(--worldClickHeight) / 2)); left: calc(50% - (var(--worldClickHeight) / 2));" href="./?q=space.png" title="link"></a>
 <a class="worldClick" style="top: calc(73% - (var(--worldClickHeight) / 2)); left: calc(52.5% - (var(--worldClickHeight) / 2));" href="./?q=room.png" title="link"></a>
 <a class="worldClick" style="top: calc(75% - (var(--worldClickHeight) / 2)); left: calc(65% - (var(--worldClickHeight) / 2));" href="./?q=room.png" title="link"></a>
 <a class="worldClick" style="top: calc(27% - (var(--worldClickHeight) / 2)); left: calc(83% - (var(--worldClickHeight) / 2));" href="./?q=sun.png" title="link"></a>
