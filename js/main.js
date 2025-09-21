@@ -406,6 +406,7 @@ document.getElementById("footer").innerHTML = `
 
 <!--<a class="brand inlineBlock padding" style="padding-left: 0;" title="Pages" href="${confD}pages/">Pages</a>-->
 <a class="brand inlineBlock padding" title="About" href="${confD}pages/about/">About</a>
+<a class="brand inlineBlock padding" title="Doante" href="${confD}pages/about/#donate">Donate</a>
 <a class="brand inlineBlock padding" title="Social" href="https://bsky.app/profile/${conf["confUsername"]}.pages.dev">Bluesky</a>
 <!--<a class="brand inlineBlock padding" title="RSS News" href="/rss.xml">RSS</a>-->
 <a class="brand inlineBlock padding" title="RSS News (Site update)" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>

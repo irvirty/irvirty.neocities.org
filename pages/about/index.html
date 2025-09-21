@@ -39,6 +39,39 @@
 <!--<link rel="preload" href="/js/script.js" as="script"> -->
 
 
+<style>
+
+
+/*https://stackoverflow.com/questions/11142125/css-highlight-a-div-when-the-id-is-linked-to-using-an-anchor#*/
+
+#about:target,
+#webdesign:target,
+#tools:target,
+#dev:target,
+#learning:target,
+#software:target,
+#games:target,
+#links:target,
+#hosting:target,
+#contact:target,
+#donate:target,
+#counter:target,
+#sites:target,
+#other:target,
+#thankyou:target,
+#license:target {
+
+border-bottom: 4px solid var(--d);
+min-height: 100vh;
+min-height: 100dvh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+</style>
+
 </head>
 <body>
 
@@ -116,8 +149,10 @@
 <a href="../../img/logo.png"><img class="logo reduceLight marginList" src="../../img/logo.png" alt="logo"></a>
 </div>
 
-<h1 class="tCenter op" style="padding-top:0; margin-top:0;">Irvirty</h1>
-<div class="tCenter op margin3List">Short information.</div>
+<h1 class="tCenter op" style="padding-top:0; margin-top:0;">
+<a href="./" class="notUnderline">Irvirty</a>
+</h1>
+<div class="tCenter op margin3List"><a href="#about" class="notUnderline">Short information</a></div>
 
 <div class="margin padding"></div>
 
@@ -126,14 +161,31 @@
 <div class="wrapper">
 
 <div class="light padding3 border borderRadius2">
+
+<div id="about"><div class="padding">
 <span class="ico">•</span> Hey There!<hr>
 <span class="ico">•</span> Europe. He/him.<hr>
 <span class="ico">•</span> I'm here to get inspiration, explore other sites, find something interesting, and share something useful.<hr>
+</div></div>
 
-<span class="ico">•</span> Now I'm learning English, and JS (JavaScript).<hr>
-<span class="ico">•</span> My many years of hobbies are web design, and web development.<hr>
+<div id="dev"><div class="padding">
+<span class="ico">•</span> <a class="" href="#dev">Development:</a> My many years' hobby is web design and web development.<hr>
+</div></div>
 
-<span class="ico">•</span> Links:
+<div id="learning"><div class="padding">
+<span class="ico">•</span> <a class="" href="#learning">Learning:</a> Now I'm learning English, and JS (JavaScript).<hr>
+</div></div>
+
+<div id="software"><div class="padding">
+<span class="ico">•</span> <a class="" href="#software">Favorite software:</a> Firefox, Ubuntu, GIMP, Inkscape, and XAMPP.<hr>
+</div></div>
+
+<div id="games"><div class="padding">
+<span class="ico">•</span> <a class="" href="#games">Games:</a> Typing Speed (WPM).<hr>
+</div></div>
+
+<div id="links"><div class="padding">
+<span class="ico">•</span> <a class="" href="#links">Links:</a>
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://neocities.org/site/irvirty">Website Profile</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://bsky.app/profile/irvirty.pages.dev">Bluesky</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://www.deviantart.com/irvirty">DeviantArt</a>,
@@ -142,27 +194,39 @@
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://codepen.io/irvirty">CodePen</a>,
 <a class="inlineBlock padding brand" href="https://github.com/irvirty">GitHub</a>,
 <hr>
+</div></div>
 
-<span class="ico">•</span> My websites:
+<div id="sites"><div class="padding">
+<span class="ico">•</span> <a class="" href="#sites">My websites:</a>
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.pages.dev/">irvirty.pages.dev</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.neocities.org/">irvirty.neocities.org</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.github.io/">irvirty.github.io</a>,
-
 <br><hr>
+</div></div>
 
-<span class="ico orange">•</span> Bitcoin address for support: <span>bc1qrgpjr4wn9agy3zdgs836lw60fp0r5smp53qmel</span><hr>
+<div id="donate"><div class="padding">
+<span class="ico orange">•</span> <a class="" href="#donate">Donate:</a> <span>bc1qrgpjr4wn9agy3zdgs836lw60fp0r5smp53qmel</span> (Bitcoin)<hr>
+</div></div>
 
-<span class="ico">•</span> Contacts:
+<div id="contact"><div class="padding">
+<span class="ico">•</span> <a class="" href="#contact">Contacts <!--(only text)-->:</a>
 <a class="inlineBlock padding brand" rel="nofollow" href="mailto:irvirty@gmail.com">irvirty@gmail.com</a>,
+</div></div>
 
-<span class="ico">•</span> Thank you for visiting my page.<hr>
+<div id="thankyou"><div class="padding">
+<span class="ico">•</span> <a class="" href="#thankyou">Thank you for visiting my page.</a><hr>
+</div></div>
+
 <div class="margin padding"></div>
+
+
 </div>
 
 <div class="margin2 padding2"></div>
 
-<div id="license">
-<h2 class="margin2 bold tCenter"><a class="inlineBlock padding op" href="#license">License and copyright:</a></h2>
+<div id="license"><div>
+<h2 class="margin2 bold tCenter"><a class="inlineBlock padding op underline" href="#license">License and copyright:</a></h2>
+
 <div class="light padding3 border borderRadius2">
 <!--<div class="padding3List op">Content usage rules</div>-->
 
@@ -176,8 +240,10 @@
 
 <div class="listItem">Roboto font: Copyright 2025 Google <a class="brand" href="https://www.apache.org/licenses/LICENSE-2.0"><span class="firstLetterBold">Apache License, Version 2.0</span></a></div>
 
-</div>
+</div><div>
+
 <div class="margin padding"></div>
+
 </div>
 
 
