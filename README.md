@@ -18,7 +18,11 @@ Homepage and start page. Search redirect (Neocities), links, a little bit about 
 Others:  
 • Roboto font: Copyright 2025 Google Apache License, Version 2.0  
   
----
+---  
+  
+[Download ZIP](https://github.com/irvirty/irvirty.neocities.org/archive/refs/heads/main.zip)
+  
+---  
   
 #### GitHub Explore, topics:  
 [Website](https://github.com/topics/website),
