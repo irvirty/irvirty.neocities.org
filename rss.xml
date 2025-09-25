@@ -5,13 +5,13 @@
 
 <channel>
 
-<title>Irvirty RSS</title>
+<title>Irvirty Neocities RSS</title>
 <link>https://irvirty.neocities.org</link>
 <description>Microblog, site news (updates), and more.</description>
 
 <image>
 <url>https://irvirty.neocities.org/img/logo.png</url>
-<title>Irvirty RSS</title>
+<title>Irvirty Neocities RSS</title>
 <link>https://irvirty.neocities.org</link>
 <width>32</width>
 <height>32</height>
@@ -75,7 +75,7 @@ Brought back the tag cloud on the main page (more convenient).
 <pubDate>Sun, 07 Sep 2025 06:14:52 +0000</pubDate>
 <title><![CDATA[Privacy Badger 
  ]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=26]]></link>
+<link><![CDATA[https://privacybadger.org/]]></link>
 <description>
 <![CDATA[
 Privacy Badger 
@@ -131,7 +131,7 @@ If you updated the page on the hosting but don't see any changes.
 <pubDate>Sat, 14 Dec 2024 01:34:23 +0000</pubDate>
 <title><![CDATA[Neocities - Site Search 
  ]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=21]]></link>
+<link><![CDATA[https://neocities.org/browse/search]]></link>
 <description>
 <![CDATA[
 Neocities - Site Search 
@@ -144,11 +144,81 @@ https://neocities.org/browse/search
 <pubDate>Sat, 14 Dec 2024 01:33:44 +0000</pubDate>
 <title><![CDATA[Marginalia Search - browse:random 
  ]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=20]]></link>
+<link><![CDATA[https://search.marginalia.nu/explore/random]]></link>
 <description>
 <![CDATA[
 Marginalia Search - browse:random 
 https://search.marginalia.nu/explore/random
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Sun, 24 Nov 2024 07:56:31 +0000</pubDate>
+<title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=19]]></link>
+<description>
+<![CDATA[
+When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Tue, 05 Nov 2024 08:40:15 +0000</pubDate>
+<title><![CDATA[It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=18]]></link>
+<description>
+<![CDATA[
+It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Sun, 03 Nov 2024 05:34:39 +0000</pubDate>
+<title><![CDATA[The default is now random all light and all dark themes. 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=17]]></link>
+<description>
+<![CDATA[
+The default is now random all light and all dark themes. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Thu, 31 Oct 2024 21:55:40 +0000</pubDate>
+<title><![CDATA[Update:
+===
+1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
+2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=16]]></link>
+<description>
+<![CDATA[
+Update:
+===
+1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
+2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
+
+]]>
+</description>
+</item>
+
+<item>
+<pubDate>Wed, 30 Oct 2024 08:08:46 +0000</pubDate>
+<title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=15]]></link>
+<description>
+<![CDATA[
+Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
+
 ]]>
 </description>
 </item>
