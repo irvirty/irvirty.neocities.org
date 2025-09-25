@@ -1,4 +1,4 @@
-// Search redirects v.2.9.1
+// Search redirects v.2.9.3
 // Search query + command
 
 // conf
@@ -969,7 +969,7 @@ q = q.trim();
 q = encodeURI(q);
 //q = q.replaceAll('%2F', '/');
 urlList = [
-"http://" + q,
+"https://" + q,
 ];
 if (q == ""){
 urlList = [
@@ -1729,7 +1729,44 @@ sRedirectUrl = url;
 break;
 
 
+case "gw#":
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+urlList = [
+"https://www.google.com/search?q="+ q + "&tbs=qdr:w",
+];
+if (q == ""){
+urlList = [
+"https://www.google.com/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+break;
+
+
+case "gm#":
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+urlList = [
+"https://www.google.com/search?q="+ q + "&tbs=qdr:m",
+];
+if (q == ""){
+urlList = [
+"https://www.google.com/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+break;
+
+
 case "ps#":
+case "pse#":
 case "cs#":
 case "cse#":
 case "gps#":
@@ -2345,14 +2382,14 @@ urlList = [
 "https://search.seznam.cz/?q=" + q,
 //"https://mwmbl.org/?q=" + q,
 //"https://www.mojeek.com/search?q=" + q,
-//"https://duckduckgo.com/" + q,
+"https://duckduckgo.com/" + q,
 ];
 if (q == ""){
 urlList = [
 "https://marginalia-search.com/",
 "https://search.seznam.cz/",
 //"https://mwmbl.org/",
-"https://www.mojeek.com/",
+//"https://www.mojeek.com/",
 "https://duckduckgo.com/",
 ];
 }

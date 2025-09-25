@@ -3,13 +3,21 @@ var guestbook2JsonVar =
 
 [
     {
-        "id": "1",
-        "text": "test test2 test3 test4 test test test https:\/\/example.com",
+        "text": "test name\r\n---\r\ntest text 1\r\ntest text 2\r\ntest text 3 https:\/\/exmaple.com\/#LinkTest",
         "text2": "",
         "text3": "",
         "url": "",
-        "tag": "",
-        "time": 1756894062,
+        "tag": "#guestbook2",
+        "time": 1758807008,
+        "rightFooter": ""
+    },
+    {
+        "text": "2 test text , test link: https:\/\/example.com\/",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#guestbook2",
+        "time": 1758795624,
         "rightFooter": ""
     }
 ]

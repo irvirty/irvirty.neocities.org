@@ -1,4 +1,4 @@
-// Main.js v.2.1.0
+// Main.js v.2.1.1
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -170,13 +170,14 @@ document.getElementById('theme').id = 'themeDisable';
 }
 
 
-// Navigation JS part v.2.3.1
+// Navigation JS part v.2.3.2
 
 if (conf === undefined){
 var conf = [];
 // wrapper size for navigation, number in px from your CSS
 conf["confWrapperNavWidth"] = 900;
 conf["confMenuItemAverageWidth"] = 120;
+//conf["confMenuItemAverageWidth"] = 79;
 }
 
 // count links
