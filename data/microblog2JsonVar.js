@@ -4,7 +4,7 @@ var microblog2JsonVar =
 [
     {
         "id": "30",
-        "text": "Switching to automatic theme detection for pages (auto.css: dark or light theme).",
+        "text": "Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme.",
         "text2": "",
         "text3": "",
         "url": "",
@@ -24,7 +24,7 @@ var microblog2JsonVar =
     },
     {
         "id": "28",
-        "text": "The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).",
+        "text": "The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).\r\n+\r\nCancelled, returned automatic mode (auto.css) (to have the same theme as the device, to save battery power), plus the theme can be changed manually.",
         "text2": "",
         "text3": "",
         "url": "",
@@ -78,7 +78,7 @@ var microblog2JsonVar =
         "text2": "",
         "text3": "",
         "url": "",
-        "tag": "#hosting #static #page #update #refresh #coding #HTML #CSS",
+        "tag": "#hosting #static #page #update #refresh #coding #HTML #CSS #update",
         "time": 1737349772,
         "rightFooter": ""
     },
@@ -158,7 +158,7 @@ var microblog2JsonVar =
         "text2": "",
         "text3": "",
         "url": "",
-        "tag": "#caching #refresh #trick #Browser #website #page #WebDevelopment #post",
+        "tag": "#caching #refresh #trick #Browser #website #page #WebDevelopment #post #update",
         "time": 1730271534,
         "rightFooter": ""
     },

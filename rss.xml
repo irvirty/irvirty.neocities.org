@@ -19,12 +19,12 @@
 
 <item>
 <pubDate>Fri, 19 Sep 2025 01:04:18 +0000</pubDate>
-<title><![CDATA[Switching to automatic theme detection for pages (auto.css: dark or light theme). 
+<title><![CDATA[Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=30]]></link>
 <description>
 <![CDATA[
-Switching to automatic theme detection for pages (auto.css: dark or light theme). 
+Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme. 
 
 ]]>
 </description>
@@ -47,12 +47,15 @@ I removed the tag cloud on the main page again, there is a search form for that.
 
 <item>
 <pubDate>Sun, 14 Sep 2025 14:42:02 +0000</pubDate>
-<title><![CDATA[The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable). 
-]]></title>
+<title><![CDATA[The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).
++
+Cancelled, returned automatic mode (auto.css) (to have the same theme as the device, to save battery power), plus the theme can be ch]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=28]]></link>
 <description>
 <![CDATA[
-The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable). 
+The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).
++
+Cancelled, returned automatic mode (auto.css) (to have the same theme as the device, to save battery power), plus the theme can be changed manually. 
 
 ]]>
 </description>
