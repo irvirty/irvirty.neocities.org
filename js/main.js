@@ -50,13 +50,6 @@ conf["confIdEmbedScript"] = "footer";
 
 var confData = [
 {
-"confTitle":"Allow Cookies For Third Parties?",
-"confDescription":`${conf["confCookieDesc"]}`,
-"confName":"confDataCollection",
-"confValueDefault":"not selected",
-"confValueVariant":["on", "off", "auto", "not selected", "allow embed"],
-},
-{
 "confTitle":"Theme",
 "confDescription":`Choosing a theme for the site. More modes and themes: <a class="brand" href="${confD}pages/themes/">${confD}pages/themes/</a>`,
 "confName":"confTheme",
@@ -112,6 +105,13 @@ var confData = [
 "confValueDefault":"auto",
 "confValueVariant":["on", "off", "auto"],
 },*/
+{
+"confTitle":"Allow Cookies For Third Parties?",
+"confDescription":`${conf["confCookieDesc"]}`,
+"confName":"confDataCollection",
+"confValueDefault":"not selected",
+"confValueVariant":["on", "off", "auto", "not selected", "allow embed"],
+},
 ];
 
 // generate var: conf['confName'];
@@ -448,7 +448,10 @@ document.getElementById("footer").innerHTML = `
 
 
 
-function fuMReload(){ location.reload(true); }
+function fuMReload(){
+window.location.hash = "";
+location.reload(true);
+}
 
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
