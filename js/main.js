@@ -426,8 +426,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">License:</span>
-<a class="brand inlineBlock padding" rel="license" title="Licenses for content" href="${confD}pages/about/#license">CC BY-SA 4.0 <sup>*</sup></a>
+<span class="gray inlineBlock padding" style="padding-right: 0;">License:</span> <a class="brand inlineBlock padding" style="padding-left: 0;" rel="license" title="Licenses for content" href="${confD}pages/about/#license">CC BY-SA 4.0 <sup>*</sup></a>
 <span class="op gray">|</span>
 
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
@@ -436,7 +435,7 @@ document.getElementById("footer").innerHTML = `
 <span class="op inlineBlock padding gray" title="update"><!--2024-->2025</span>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://neocities.org/">Neocities</a>
+<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by</span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://neocities.org/">Neocities</a>
 
 </div>
 </nav>
@@ -1013,6 +1012,9 @@ return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // 
 // CSS
 // random bg image (background img with random position)
 
+function fuMBg(com, bgImage){
+if (conf["confBg"] == "on"){
+
 // fix bg
 if (conf["confThemeEmbed"] == undefined){
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -1022,9 +1024,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matc
 conf["confThemeEmbed"] = "light";
 }
 }
-
-function fuMBg(com, bgImage){
-if (conf["confBg"] == "on"){
 
 bgImage = fuMClearText(bgImage);
 
