@@ -422,7 +422,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" rel="license" title="Licenses for content" href="${confD}pages/about/#license">CC BY-SA 4.0 <sup>*</sup></a>
 <span class="op gray">|</span>
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
-<span class="op gray">|</span>
+<span class="op gray inlineBlock padding">|</span>
 <span class="op inlineBlock padding gray" title="update"><!--2024-->2025</span>
 <span class="op inlineBlock padding gray">|</span>
 <span class="gray">Powered by </span> <a class="brand inlineBlock padding" style="padding-right: 0;"  href="https://neocities.org/">Neocities</a>
