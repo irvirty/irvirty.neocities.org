@@ -159,9 +159,10 @@ justify-content: center;
 
 
 <main id="content" class="contentCenter notUnderline">
-<div class="wrapper">
 
+<div class="wrapper">
 <div class="border bg padding3 borderRadius2">
+
 
 <div id="about"><div class="">
 <span class="ico">•</span> Hey There!<hr>
@@ -170,23 +171,23 @@ justify-content: center;
 </div></div>
 
 <div id="dev"><div class="">
-<span class="ico">•</span> <a class="bold" href="#dev">Development:</a> My many years' hobby is web design and web development.<hr>
+<span class="ico">•</span> <!--<a class="bold" href="#dev">Development:</a>--> My many years' hobby is web design and web development.<hr>
 </div></div>
 
 <div id="learning"><div class="">
-<span class="ico">•</span> <a class="bold" href="#learning">Learning:</a> Now I'm learning English, and JS (JavaScript).<hr>
+<span class="ico">•</span> <!--<a class="bold" href="#learning">Learning:</a>--> Now I'm learning English, and JS (JavaScript).<hr>
 </div></div>
 
 <div id="software"><div class="">
-<span class="ico">•</span> <a class="bold" href="#software">Favorite software:</a> Firefox, Ubuntu, GIMP, Inkscape, and XAMPP.<hr>
+<span class="ico">•</span> <!--<a class="bold" href="#software">Favorite software:</a>--> Favorite software: Firefox, Ubuntu, GIMP, Inkscape, and XAMPP.<hr>
 </div></div>
 
 <div id="games"><div class="">
-<span class="ico">•</span> <a class="bold" href="#games">Games:</a> Typing Speed (WPM).<hr>
+<span class="ico">•</span> <!--<a class="bold" href="#games">Games:</a>--> Games: Typing Speed (WPM).<hr>
 </div></div>
 
 <div id="links"><div class="">
-<span class="ico">•</span> <a class="bold" href="#links">Links:</a>
+<span class="ico">•</span> <!--<a class="bold" href="#links">Links:</a>-->Links:
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://neocities.org/site/irvirty">Website Profile</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://bsky.app/profile/irvirty.pages.dev">Bluesky</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://www.deviantart.com/irvirty">DeviantArt</a>,
@@ -198,7 +199,7 @@ justify-content: center;
 </div></div>
 
 <div id="sites"><div class="">
-<span class="ico">•</span> <a class="bold" href="#sites">My websites:</a>
+<span class="ico">•</span> <!--<a class="bold" href="#sites">My websites:</a>-->My websites:
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.pages.dev/">irvirty.pages.dev</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.neocities.org/">irvirty.neocities.org</a>,
 <a class="inlineBlock padding brand" style="padding-right: 0;" href="https://irvirty.github.io/">irvirty.github.io</a>,
@@ -206,19 +207,34 @@ justify-content: center;
 </div></div>
 
 <div id="contact"><div class="">
-<span class="ico">•</span> <a class="bold" href="#contact">Contacts:</a>
+<span class="ico">•</span> <!--<a class="bold" href="#contact">Contacts:</a>-->Contacts:
 <a class="inlineBlock padding brand" rel="nofollow" href="mailto:s2m8voqyg@mozmail.com">s2m8voqyg@mozmail.com</a>,
 <hr>
 </div></div>
 
-<div id="donate"><div class="">
-<span class="ico orange">•</span> <a class="bold" href="#donate">Donate.</a>
-<div class="padding2">
+
+
+
+
+
+<div class="margin padding"></div>
+<div class="margin padding"></div>
+
+
+<div id="donate"><div>
+<h2 class="margin2 bold tCenter"><a class="inlineBlock padding op underline" href="#donate">Donate:</a></h2>
+
+
+<!--<div class="padding3List op"></div>-->
+<div class="listItem">
+
 The current goal is $25, progress:
 <div class="margin"></div>
+
 <div class="bg2 shadow borderRadius2">
 <div id="donateProgress"></div>
 </div>
+
 <div class="margin"></div>
 
 <script>
@@ -233,19 +249,22 @@ if (donateProgressPercentage > 0){ donateProgressBg = " bg4 "; }
 
 if (document.getElementById("donateProgress") != null){
 document.getElementById("donateProgress").innerHTML = `
-<div class=" ` + donateProgressBg + ` borderRadius2 small padding border3 tCenter" style="width: ` + donateProgressPercentage + `%; max-width: 100%; min-width: 45px; z-index: 1; position: abosolute;"> <div style="min-width="120px">` + donateProgressPercentage + `%</div>`;
+<div class=" ` + donateProgressBg + ` borderRadius2 small padding border3 tCenter" style="width: ` + donateProgressPercentage + `%; max-width: 100%; min-width: 45px; z-index: 1; position: abosolute;"><div style="min-width="120px">` + donateProgressPercentage + `%</div></div>`;
 }
 
 </script>
 </div>
-<span class="ico">&nbsp;</span> Bitcoin address:</a> <span>bc1qrgpjr4wn9agy3zdgs836lw60fp0r5smp53qmel</span>
+
+<div class="listItem">
+Bitcoin address: <span>bc1qrgpjr4wn9agy3zdgs836lw60fp0r5smp53qmel</span>
+</div>
+
 <div class="margin padding"></div>
-<div class="margin padding">Thank you for your support!</div>
-<hr>
+<div class="listItem">Thank you for your support!</div>
+
 </div></div>
 
 
-</div>
 
 
 <div class="margin padding"></div>
@@ -255,7 +274,6 @@ document.getElementById("donateProgress").innerHTML = `
 <div id="license"><div>
 <h2 class="margin2 bold tCenter"><a class="inlineBlock padding op underline" href="#license">License and copyright:</a></h2>
 
-<div class="border bg padding3 borderRadius2">
 <!--<div class="padding3List op">Content usage rules</div>-->
 
 <div class="margin padding"></div>
@@ -268,33 +286,36 @@ document.getElementById("donateProgress").innerHTML = `
 
 <div class="listItem">Roboto font: Copyright 2025 Google <a class="brand" href="https://www.apache.org/licenses/LICENSE-2.0"><span class="firstLetterBold">Apache License, Version 2.0</span></a></div>
 
-</div><div>
+</div></div>
+
 
 <div class="margin padding"></div>
 <div class="margin padding"></div>
+
 
 
 <div id="hosting"><div>
 <h2 class="margin2 bold tCenter"><a class="inlineBlock padding op underline" href="#hosting">Hosting:</a></h2>
 <div class="tCenter op margin3List">Thanks for hosting my site</div>
 
-<div class="border bg padding3 borderRadius2">
-<div class="tCenter"><a class="brand" target="blank" href="https://neocities.org/">Neocities</a></div>
-<hr>
-<div class="tCenter">
-<a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="../../neocities.png" style="max-width: 120px;" alt="banner img"></a>
-</div>
+<div class="margin padding"></div>
 
-</div>
+<div class="tCenter"><a class="brand" target="blank" href="https://neocities.org/">Neocities</a></div>
+<div class="margin padding"></div>
+
+<div class="tCenter"><a class="inlineFlex margin1Px shadow light2 padding1Px border2 borderRadius2 op" title="Banner" href="https://neocities.org/"><img class="reduceLight borderRadius2" src="../../neocities.png" style="max-width: 120px;" alt="banner img"></a></div>
+<br>
 
 </div></div>
 
+
+
 <div class="margin padding"></div>
 
-</div>
-
 
 </div>
+</div>
+
 </main>
 <!--// content -->
 
