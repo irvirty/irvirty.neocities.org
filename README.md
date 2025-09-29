@@ -32,11 +32,11 @@ Others:
 [Website](https://github.com/topics/website),
 [Homepage](https://github.com/topics/homepage),
 [Startpage](https://github.com/topics/startpage),
-[Search-Redirect](https://github.com/topics/search-redirect),
+[Search redirect](https://github.com/topics/search-redirect),
 [Personal website](https://github.com/topics/personal-website),
 [Neocities](https://github.com/topics/neocities),
 [HTML](https://github.com/topics/HTML),
 [CSS](https://github.com/topics/CSS),
 [JavaScript](https://github.com/topics/javascript),
-[Open Source](https://github.com/topics/open-source),
+[Open source](https://github.com/topics/open-source),
 
