@@ -1104,9 +1104,9 @@ opacity: .06;
 }
 // random bg image
 
+/*
 // fonts
 document.head.insertAdjacentHTML("beforeend", `
-
 <style>
 @font-face {
 font-family: 'Roboto';
@@ -1115,7 +1115,7 @@ font-display: swap;
 }
 </style>
 
-`);
+`);*/
 
 // CSS
 
