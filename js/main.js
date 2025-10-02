@@ -1,4 +1,4 @@
-// Main.js v.2.1.1
+// Main.js v.2.2.0
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -90,6 +90,13 @@ var confData = [
 "confName":"confSpeedDialStatus",
 "confValueDefault":"on",
 "confValueVariant":["on", "off", "random"],
+},
+{
+"confTitle":"Tag cloud",
+"confDescription":`Tag cloud on the main page.`,
+"confName":"confTagCloudlStatus",
+"confValueDefault":"off",
+"confValueVariant":["on", "off"],
 },
 {
 "confTitle":"Screen Wake Lock",
