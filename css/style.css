@@ -1,4 +1,11 @@
-/* Main local style v.1.3.2 */
+/* Main local style v.1.4.0 */
+
+
+@font-face {
+font-family: 'Roboto';
+src: url('/fonts/Roboto-Regular.ttf')  format('truetype');
+font-display: auto;
+}
 
 /*
 @media (prefers-color-scheme: light) {
