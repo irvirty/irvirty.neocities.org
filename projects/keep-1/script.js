@@ -1,4 +1,4 @@
-// Keep v.4.3.1
+// Keep v.4.3.0
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
