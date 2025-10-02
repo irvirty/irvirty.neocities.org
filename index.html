@@ -267,8 +267,6 @@ top: -25px;
 
 <div id="printTags" class="balance notUnderline"></div>
 
-<hr>
-
 <div class="wrapperSmall small tRight">
 <div><span class="notUnderline" id="printMode"></span></div>
 </div>
@@ -276,8 +274,6 @@ top: -25px;
 
 </div>
 </aside>
-
-<div class="margin2 padding2"></div>
 
 
 
@@ -498,7 +494,6 @@ document.getElementById("tagListEditForm").innerHTML = `
 
 
 
-
 function saveTagListData(){
 let data = document.getElementById("tagListEditData").value;
 localStorage.setItem("tagListData", data);
@@ -518,6 +513,14 @@ function closeTagListData(){
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
+
+
+document.getElementById("tagListEditForm").innerHTML += `
+
+<div class="margin2 padding2"></div>
+
+`;
+
 
 }
 

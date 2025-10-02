@@ -4,7 +4,7 @@ var microblog2JsonVar =
 [
     {
         "id": "31",
-        "text": "I removed the tag cloud again for a cleaner design.",
+        "text": "I removed the tag cloud again for a cleaner design.\r\n+ You can now enable this in the settings.",
         "text2": "",
         "text3": "",
         "url": "",
