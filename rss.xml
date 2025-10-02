@@ -18,6 +18,19 @@
 </image>
 
 <item>
+<pubDate>Thu, 02 Oct 2025 05:57:19 +0000</pubDate>
+<title><![CDATA[I removed the tag cloud again for a cleaner design. 
+]]></title>
+<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=31]]></link>
+<description>
+<![CDATA[
+I removed the tag cloud again for a cleaner design. 
+
+]]>
+</description>
+</item>
+
+<item>
 <pubDate>Fri, 19 Sep 2025 01:04:18 +0000</pubDate>
 <title><![CDATA[Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme. 
 ]]></title>
@@ -208,19 +221,6 @@ Update:
 ===
 1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
 2. I added to the start page a not-so-old "speed dial" panel for the links, links stored only locally in the browser too. 
-
-]]>
-</description>
-</item>
-
-<item>
-<pubDate>Wed, 30 Oct 2024 08:08:46 +0000</pubDate>
-<title><![CDATA[Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
-]]></title>
-<link><![CDATA[https://irvirty.neocities.org/pages/microblog/?id=15]]></link>
-<description>
-<![CDATA[
-Fixed the CSS style in the navigation, when the element was active, underlining was incorrect and thin. 
 
 ]]>
 </description>
