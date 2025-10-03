@@ -1,4 +1,4 @@
-// Main.js v.2.2.0
+// Main.js v.2.3.0
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -1115,13 +1115,13 @@ opacity: .06;
 
 
 
-// Cookie (auto) v.2.1.0
+// Cookie (auto) v.2.2.0
 if (document.getElementById('fPrivacy') != null){
 document.getElementById('fPrivacy').innerHTML = `Cookie: (${conf["confDataCollection"]})`;
 }
 
 if (conf["confDataCollection"] == 'auto'){
-if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
+if (fuMBrowserDoNotShareDataConfig() == "on"){
 conf["confDataCollection"] = "off";
 }
 
@@ -1144,6 +1144,16 @@ document.getElementById("disableEmbedMsg").innerHTML = conf["confEmbedBlockMsg"]
 }
 }
 }
+
+
+function fuMBrowserDoNotShareDataConfig(){
+if (navigator.doNotTrack == 1||navigator.globalPrivacyControl == true){
+return "on";
+} else {
+return "of";
+}
+}
+//alert(fuMBrowserDoNotShareDataConfig());
 
 // end Cookie (auto)
 
@@ -1217,9 +1227,25 @@ if (conf["confSpeedDialStatus"] != "off"){
 fuMEmbedScript(`${confD}projects/speed-dial-58/script.js`, conf["confIdEmbedScript"]);
 }
 
+
+// Cookie popup
 if (conf["confDataCollection"] == 'not selected'){
-fuMEmbedScript(`${confD}js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+/*
+if (fuMBrowserDoNotShareDataConfig() == "on"){
+localStorage.setItem("confDataCollection", "off");
+conf["confDataCollection"] = "off";
+
+if (document.getElementById('fPrivacy') != null){
+document.getElementById('fPrivacy').innerHTML = `Cookie: (${conf["confDataCollection"]})`;
 }
+
+} else {
+fuMEmbedScript(confD + `js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+}*/
+fuMEmbedScript(confD + `js/cookie-agree-popup.js`, conf["confIdEmbedScript"]);
+}
+// end Cookie popup
+
 
 if (conf["confDataCollection"] == "on"){
 fuMEmbedScript(`https://www.googletagmanager.com/gtag/js?id=${conf["confGoogleAnalyticsId"]}`, conf["confIdEmbedScript"]);
