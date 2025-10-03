@@ -1,5 +1,6 @@
-// Search redirects v.2.9.3
+// Search redirects v.2.9.7
 // Search query + command
+// Example: "text goo" or "text google", "text bin" or "text bing"
 
 // conf
 var com = "on"; // on, off redirection
@@ -563,6 +564,7 @@ break;
 
 
 case "tg#":
+case "tgg#":
 q = q3.replace(qCom, '');
 q = q.trim();
 q = encodeURIComponent(q);
@@ -576,6 +578,7 @@ break;
 
 
 case "tb#":
+case "ttb#":
 q = q3.replace(qCom, '');
 q = q.trim();
 q = encodeURIComponent(q);
@@ -1367,7 +1370,6 @@ sRedirectUrl = url;
 break;
 
 
-case "b#":
 case "blo#":
 q = q3.replace(qCom, '');
 q = q.trim();
@@ -1829,7 +1831,7 @@ url = random;
 sRedirectUrl = url;
 break;
 
-
+case "b#":
 case "bing#":
 case "bin#":
 q = q3.replace(qCom, '');
@@ -2287,6 +2289,26 @@ urlList = [
 //"https://www.bing.com/copilot",
 //"https://copilot.microsoft.com/",
 //"https://gemini.google.com/",
+];
+}
+random = urlList[fuMRandom(0, urlList.length - 1)];
+url = random;
+sRedirectUrl = url;
+break;
+
+
+case "aii#":
+q = q3.replace(qCom, '');
+q = q.trim();
+q = encodeURIComponent(q);
+urlList = [
+"https://www.google.com/search?q=" + q + "&udm=50",
+"https://www.bing.com/copilotsearch?q=" + q + "&FORM=somesite",
+];
+if (q == ""){
+urlList = [
+"https://gemini.google.com/app",
+"https://copilot.microsoft.com/",
 ];
 }
 random = urlList[fuMRandom(0, urlList.length - 1)];
