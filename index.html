@@ -258,7 +258,7 @@ top: -25px;
 
 
 
-<!-- tag bcloud -->
+<!-- tag bcloud v.1.0.0 -->
 
 <aside>
 <div class="wrapper2 tCenter">
@@ -525,6 +525,8 @@ if (tag != ""){
 let printTag = tag;
 let printTag2 = tag.replaceAll(/#/g, "");
 let printTagUrl = encodeURIComponent(tag);
+
+printTag = fuMClearText(printTag);
 
 switch (mode) {
 
