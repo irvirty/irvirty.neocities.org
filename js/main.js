@@ -1022,8 +1022,7 @@ return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // 
 
 
 
-// CSS
-// random bg image (background img with random position)
+// Random bg image CSS (background img with random position)
 
 function fuMBg(com, bgImage){
 if (conf["confBg"] == "on"){
@@ -1041,8 +1040,8 @@ conf["confThemeEmbed"] = "light";
 bgImage = fuMClearText(bgImage);
 
 if (bgImage == undefined||bgImage == null||bgImage == ""){
-let mBg = fuMRandomItem("binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
-let mBgDark = fuMRandomItem("binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
+let mBg = fuMRandomItem("index.svg binary.svg circle.svg line-chaotic.svg deco-paper.svg wood.png grid.png flower.png flower-2.png");
+let mBgDark = fuMRandomItem("index-d.svg binary-d.svg circle-d.svg line-chaotic-d.svg deco-paper-d.svg wood-d.png grid-d.png flower-d.png flower-2-d.png");
 let mRandBgPos = fuMRandom(0, 100);
 let mRandBgPos2 = fuMRandom(0, 100);
 if (conf["confThemeEmbed"] == 'light'||com == "light"){
@@ -1109,9 +1108,8 @@ opacity: .06;
 
 }
 }
-// random bg image
 
-// CSS
+// Random bg image CSS
 
 
 
