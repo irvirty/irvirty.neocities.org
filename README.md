@@ -15,7 +15,7 @@ Homepage and start page. Search redirect (Neocities), links, a little bit about 
   
 # License:  
   
-• Main license: Copyright 2025 Irvirty CC BY-SA 4.0  
+• Main: Copyright 2025 Irvirty CC BY-SA 4.0  
 
 Other:  
 • Roboto font: Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic). SIL Open Font License, Version 1.1  
