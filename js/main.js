@@ -7,6 +7,7 @@ var conf = [];
 
 conf["confGoogleAnalyticsId"] = "G-RQJTJG7DF9";
 conf["confUsername"] = "irvirty"; // only in some places
+conf["confUsernameUpper"] = fuMCapitalizeFirstLetter(conf["confUsername"]);
 conf["confWebsiteUrl"] = "irvirty.neocities.org";
 
 conf["confCookieDesc"] = `${conf["confCookieDesc"]}
@@ -133,6 +134,11 @@ conf[val.confName] = val.confValueDefault;
 });
 // generate var: conf['confName'];
 
+//https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+function fuMCapitalizeFirstLetter(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
 
 
 // Device 1.0.0
@@ -140,7 +146,6 @@ conf["confDevice"] = 'none';
 if (navigator.userAgent.search("iPhone|Android|Mobile|Lumia|Phone") != -1){ conf["confDevice"] = 'mobile';  }
 if (navigator.userAgent.search("PlayStation|Xbox|TV|Roku|SmartTV|BRAVIA") != -1){ conf["confDevice"] = 'tv';  }
 if (conf["confDevice"] == 'none'){ conf["confDevice"] = 'pc'; }
-
 
 
 
@@ -392,16 +397,17 @@ document.getElementById("footer").innerHTML = `
 <nav>
 <div class="margin2List small tCenter">
 
-<div class="wrapper2">
+<div class="wrapper3">
 
 
+<div class="wrapper3">
 <div class="wrapperSmall right">
 <details class="op">
 <div id="fDesc" class="block pre tLeft padding2 bg shadow light borderRadius2 margin2List w100" style="margin-left: 0; margin-right: 0;">${fDesc}</div>
 <summary class="pointer paddingList marginList brand" title="Description and keywords">${fDescTitle}</summary>
 </details>
 </div>
-
+</div>
 
 </div>
 
@@ -433,19 +439,17 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">License:</span> <a class="brand inlineBlock padding" style="padding-left: 0;" rel="license" title="Licenses for content" href="${confD}pages/about/#license">CC BY-SA 4.0 <sup>*</sup></a>
-<span class="op gray">|</span>
-
 <a id="contact" class="brand inlineBlock padding" title="Contact" href="${confD}pages/about/#contact">Contact</a>
 <span class="op gray">|</span>
 
 <a id="fPrivacy" class="brand inlineBlock padding" title="Cookie Settings" href="${confD}pages/settings/#confDataCollection">Cookie: ${conf["confDataCollection"]}</a>
 <span class="op gray">|</span>
 
-<span class="op inlineBlock padding gray" title="update"><!--2024-->2025</span>
+<span class="op inlineBlock padding" style="padding-right: 0;" title="update"><!--2024-->© 2025 ${conf["confUsernameUpper"]} License:</span> 
+<a class="brand inlineBlock padding" style="padding-left: 0;" rel="license" title="Licenses for content" href="${confD}pages/about/#license">CC BY-SA 4.0 <sup>*</sup></a>
 <span class="op gray">|</span>
 
-<span class="gray inlineBlock padding" style="padding-right: 0;">Powered by</span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://neocities.org/">Neocities</a>
+<span class="inlineBlock padding op" style="padding-right: 0;">Powered by</span> <a class="brand inlineBlock padding" style="padding-left: 0; padding-right: 0;"  href="https://neocities.org/">Neocities</a>
 
 </div>
 </nav>
