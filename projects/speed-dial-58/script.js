@@ -1,4 +1,4 @@
-// Speed dial v.1.15.0
+// Speed dial v.1.15.1
 //https://developer.mozilla.org/en-US/docs/Web/API/Storage
 
 
@@ -29,7 +29,8 @@ var confSpeedDialDataArr = localStorage.getItem("confSpeedDialData");
 } else {
 var confSpeedDialDataArr = [];
 
-confSpeedDialDataArr.push({"text":"Example.com", "url":"https://www.example.com/"});
+confSpeedDialDataArr.push({"text":"Wikipedia", "url":"https://www.wikipedia.org/"});
+confSpeedDialDataArr.push({"text":"Firefox", "url":"https://www.firefox.com/"});
 
 var confSpeedDialDataArr = JSON.stringify(confSpeedDialDataArr);
 
