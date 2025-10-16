@@ -2037,7 +2037,8 @@ embedServiceList += 'mpd';
 }
 
 if (itemCheck.search(
-`${confSymbolForSplit}jpg|${confSymbolForSplit}svg|${confSymbolForSplit}jpeg|${confSymbolForSplit}png|${confSymbolForSplit}gif|${confSymbolForSplit}img|${confSymbolForSplit}ico`) != -1&&itemCheck.search('/') != -1&&itemCheck.search('/') != -1) {
+`${confSymbolForSplit}webp|${confSymbolForSplit}jpg|${confSymbolForSplit}svg|${confSymbolForSplit}jpeg|${confSymbolForSplit}png|${confSymbolForSplit}gif|${confSymbolForSplit}img|${confSymbolForSplit}ico`
+) != -1&&itemCheck.search('/') != -1&&itemCheck.search('/') != -1) {
 //echo 'test';
 embed2 = `
 <a href="${item}"><img class="img" src="${item}" alt="img"></a>`;
@@ -2572,7 +2573,9 @@ embed2 = `<audio controls autoplay style="width:100%; opacity:0.8"><source src="
 item = `<a class="brand" target="_blank" href="${item}">${item}</a>`;
 }
 
-if (itemCheck.search(`${confSymbolForSplit}svg|${confSymbolForSplit}jpg|${confSymbolForSplit}jpeg|${confSymbolForSplit}png|${confSymbolForSplit}gif|${confSymbolForSplit}img|${confSymbolForSplit}ico`) != -1&&itemCheck.search('/') != -1) {
+if (itemCheck.search(
+`${confSymbolForSplit}webp|${confSymbolForSplit}jpg|${confSymbolForSplit}svg|${confSymbolForSplit}jpeg|${confSymbolForSplit}png|${confSymbolForSplit}gif|${confSymbolForSplit}img|${confSymbolForSplit}ico`
+) != -1&&itemCheck.search('/') != -1&&itemCheck.search('/') != -1) {
 //echo 'test';
 embed2 = `
 <a href="${item}"><img class="img" src="${item}" alt="img"></a>`;
