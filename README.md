@@ -5,7 +5,7 @@
 [![banner](/img/github-banner-settings.png)](/img/screenshot.png)
 
 
-Homepage and start page. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
+Another homepage. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
   
 ---
    
