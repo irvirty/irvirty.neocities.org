@@ -30,5 +30,5 @@ Other:
   
 <!--
 Tags backup:
-html, css, javascript, website, personal-website, homepage, startpage, neocities, search-redirect,
+html, css, javascript, website, personal-website, homepage, startpage, neocities, search-redirect,  static-site,
 -->
