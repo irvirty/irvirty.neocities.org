@@ -2,7 +2,8 @@
 
 
 <!--https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md#-->
-[![banner](/img/github-banner-settings.png)](/img/screenshot.png)
+<!--[![banner](/img/github-banner-settings.png)](/img/screenshot.png)-->
+![banner](/img/github-banner-settings.png)
 
 
 Another homepage. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
@@ -27,3 +28,7 @@ Other:
   
 [Download ZIP](https://github.com/irvirty/irvirty.neocities.org/archive/refs/heads/main.zip)
   
+<!--
+Tags backup:
+html, css, javascript, website, personal-website, homepage, startpage, neocities, search-redirect,
+-->
