@@ -2,8 +2,7 @@
 
 
 <!--https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md#-->
-<!--[![banner](/img/github-banner-settings.png)](/img/screenshot.png)-->
-![banner](/img/github-banner-settings.png)
+[![banner](/img/github-banner-settings.png)](/img/screenshot.png)
 
 
 Another homepage. Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.
