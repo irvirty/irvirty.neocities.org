@@ -548,7 +548,13 @@ fuTag(tagCount);
 
 if (tag != ""){
 let printTag = tag;
-let printTag2 = tag.replaceAll(/#/g, "");
+
+//printTag = printTag.replaceAll(/#/g, "");
+//printTag = printTag.replaceAll(' ', "");
+
+// Neocities
+tag = tag.replaceAll(' ', "");
+
 let printTagUrl = encodeURIComponent(tag.toLowerCase());
 
 printTag = fuMClearText(printTag);
