@@ -291,7 +291,7 @@ getBanner();
 
 <div id="printTags" class="balance notUnderline"></div>
 
-<div class="wrapperSmall small tRight">
+<div class="wrapperSmall small">
 <div><span class="notUnderline" id="printMode"></span></div>
 </div>
 <div id="tagListEditForm"></div>
@@ -562,36 +562,36 @@ printTag = fuMClearText(printTag);
 switch (mode) {
 
 case 'NeocitiesSearch':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + ` neo">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` neo">` + printTag + `</a>,`;
 break;
 
 case 'RandomSearch':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a>,`;
 break;
 
 case 'Google':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a>,`;
 break;
 
 case 'Bing':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a>,`;
 break;
 
 
 case 'Global':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a>,`;
 break;
 
 case 'Random':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + printTag + `</a>,`;
 break;
 
 case 'Update':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="https://neocities.org/browse?sort_by=last_updated&tag=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=last_updated&tag=` + printTagUrl + `">` + printTag + `</a>,`;
 break;
 
 case 'Activity':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + printTag + `</a>,`;
 break;
 
 case 'edit':
@@ -599,15 +599,15 @@ tagListPrint += `<span class="inlineBlock padding">` + printTag + `</span>`;
 break;
 
 case 'Special':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + printTag + `</a>,`;
 break;
 
 case 'New':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + printTag + `</a>,`;
 break;
 
 default:
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `;" href="./search/?q=` + printTagUrl + `">` + printTag + `</a>`;
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + `">` + printTag + `</a>,`;
 
 }
 
