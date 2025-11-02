@@ -281,7 +281,7 @@ getBanner();
 
 
 
-<!-- tag bcloud v.1.0.0 -->
+<!-- tag bcloud v.1.1.0 -->
 
 <aside>
 <div class="wrapper2 tCenter">
@@ -552,8 +552,16 @@ let printTag = tag;
 //printTag = printTag.replaceAll(' ', "");
 
 // Neocities
+if (
+mode === "Special"||
+mode === "Random"||
+mode === "Update"||
+mode === "Activity"||
+mode === "New"
+){
 tag = tag.replaceAll(' ', "");
 printTag = printTag.replaceAll(' ', "");
+}
 
 let printTagUrl = encodeURIComponent(tag.toLowerCase());
 
