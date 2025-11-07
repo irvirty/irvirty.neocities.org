@@ -352,18 +352,18 @@ function tagListCloud(mode){
 let tagModePrint = "";
 
 if (mode == undefined||mode == ""){
-mode = localStorage.getItem("tagModeData");
+mode = localStorage.getItem("tagCloudModeData");
 } else if (mode != "edit"){
-localStorage.setItem("tagModeData", mode);
+localStorage.setItem("tagCloudModeData", mode);
 }
 
 if (mode == null||mode == undefined){ mode = "Special"; }
 
-let tagListSortConf = localStorage.getItem("tagListSortConf");
+let tagCloudListSortConf = localStorage.getItem("tagCloudListSortConf");
 
 let tagListColor = `red orange yellow green blue indigo violet`;
 
-let tagList = localStorage.getItem("tagListData");
+let tagList = localStorage.getItem("tagCloudListData");
 if (tagList == null||tagList == undefined){
 tagList = `
 Example, Keyword, Keyword,
@@ -373,7 +373,7 @@ Example, Keyword, Keyword,
 let arr = fuMSplit(tagList);
 
 /*
-if (tagListSortConf == "sort"){
+if (tagCloudListSortConf == "sort"){
 arr = fuMSort(arr, "", "arr");
 }*/
 
@@ -440,7 +440,7 @@ tagListCountLimited[item[0]] = item[1];
 }
 });
 
-if (tagListSortConf == "sort"){
+if (tagCloudListSortConf == "sort"){
 // sort
 // https://stackoverflow.com/questions/5467129/sort-javascript-object-by-key
 tagListCount = {};
@@ -524,7 +524,7 @@ tagSize = "x-small";
 
 let sortedTags = "";
 //https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
-if (tagListSortConf == "sort"){
+if (tagCloudListSortConf == "sort"){
 sortedTags = Object.entries(tagListCount).sort(Intl.Collator().compare);
 } else {
 sortedTags = Object.entries(tagListCount);
@@ -627,18 +627,18 @@ tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="fon
 document.getElementById("printTags").innerHTML = tagListPrint;
 
 
-modeSwitch(mode, tagList, tagListSortConf);
+modeSwitch(mode, tagList, tagCloudListSortConf);
 
 }
 
 tagListCloud("");
 
-function tagListSortConfSet(item){
-localStorage.setItem("tagListSortConf", item);
+function tagCloudListSortConfSet(item){
+localStorage.setItem("tagCloudListSortConf", item);
 tagListCloud("");
 }
 
-function modeSwitch(mode, tagList, tagListSortConf){
+function modeSwitch(mode, tagList, tagCloudListSortConf){
 let tagModePrint = "";
 let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global`;
 let arr = fuMSplit(tagsModeList, ",");
@@ -655,21 +655,21 @@ tagModePrint += `
 }
 });
 
-if (tagListSortConf == "sort"){
+if (tagCloudListSortConf == "sort"){
 tagModePrint += `
 <span class="op gray">/</span>
-<a class="inlineBlock padding op gray" title="Close" href="#" onclick="tagListSortConfSet('unsort'); return false;">unsort</a>
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="tagCloudListSortConfSet('unsort'); return false;">unsort</a>
 `;
 } else {
 tagModePrint += `
 <span class="op gray">/</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagListSortConfSet('sort'); return false;">sort</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagCloudListSortConfSet('sort'); return false;">sort</a>
 `;
 }
 
 if (mode == "edit"){
 tagModePrint += `
-<a class="inlineBlock padding op gray" title="Close" href="#" onclick="closeTagListData(''); return false;">edit</a>
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="closetagCloudListData(''); return false;">edit</a>
 `;
 } else {
 tagModePrint += `
@@ -684,8 +684,8 @@ if (mode == "edit"){
 document.getElementById("tagListEditForm").innerHTML = `
 <form action="" method="get" class="form-example">
 <textarea id="tagListEditData" rows="5">` + tagList + `</textarea>
-<a class="submit block button padding2 op borderRadius2" href="#" onclick="saveTagListData(); return false;">Save</a>
-<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resetTagListData(); return false;">Reset</a></div>
+<a class="submit block button padding2 op borderRadius2" href="#" onclick="savetagCloudListData(); return false;">Save</a>
+<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resettagCloudListData(); return false;">Reset</a></div>
   </div>
 </form>
 `;
@@ -695,22 +695,22 @@ document.getElementById("tagListEditForm").innerHTML = `
 
 
 
-function saveTagListData(){
+function savetagCloudListData(){
 let data = document.getElementById("tagListEditData").value;
-localStorage.setItem("tagListData", data);
+localStorage.setItem("tagCloudListData", data);
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
 
-function resetTagListData(){
+function resettagCloudListData(){
 if (window.confirm("Are you sure?")) {
-localStorage.removeItem("tagListData")
+localStorage.removeItem("tagCloudListData")
 }
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
 
-function closeTagListData(){
+function closetagCloudListData(){
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
