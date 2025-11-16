@@ -350,18 +350,18 @@ function tagListCloud(mode){
 let tagModePrint = "";
 
 if (mode == undefined||mode == ""){
-mode = localStorage.getItem("tagCloudModeData");
+mode = localStorage.getItem("tagModeData");
 } else if (mode != "edit"){
-localStorage.setItem("tagCloudModeData", mode);
+localStorage.setItem("tagModeData", mode);
 }
 
 if (mode == null||mode == undefined){ mode = "Special"; }
 
-let tagCloudListSortConf = localStorage.getItem("tagCloudListSortConf");
+let tagListSortConf = localStorage.getItem("tagListSortConf");
 
 let tagListColor = `red orange yellow green blue indigo violet`;
 
-let tagList = localStorage.getItem("tagCloudListData");
+let tagList = localStorage.getItem("tagListData");
 if (tagList == null||tagList == undefined){
 tagList = `
 Example, Keyword, Keyword,
@@ -371,7 +371,7 @@ Example, Keyword, Keyword,
 let arr = fuMSplit(tagList);
 
 /*
-if (tagCloudListSortConf == "sort"){
+if (tagListSortConf == "sort"){
 arr = fuMSort(arr, "", "arr");
 }*/
 
@@ -438,7 +438,7 @@ tagListCountLimited[item[0]] = item[1];
 }
 });
 
-if (tagCloudListSortConf == "sort"){
+if (tagListSortConf == "sort"){
 // sort
 // https://stackoverflow.com/questions/5467129/sort-javascript-object-by-key
 tagListCount = {};
@@ -522,7 +522,7 @@ tagSize = "x-small";
 
 let sortedTags = "";
 //https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
-if (tagCloudListSortConf == "sort"){
+if (tagListSortConf == "sort"){
 sortedTags = Object.entries(tagListCount).sort(Intl.Collator().compare);
 } else {
 sortedTags = Object.entries(tagListCount);
@@ -575,6 +575,14 @@ case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a><span class="gray">,</span>`;
 break;
 
+case 'Google':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a><span class="gray">,</span>`;
+break;
+
+case 'Bing':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a><span class="gray">,</span>`;
+break;
+
 
 case 'Global':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a><span class="gray">,</span>`;
@@ -617,20 +625,20 @@ tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="fon
 document.getElementById("printTags").innerHTML = tagListPrint;
 
 
-modeSwitch(mode, tagList, tagCloudListSortConf);
+modeSwitch(mode, tagList, tagListSortConf);
 
 }
 
 tagListCloud("");
 
-function tagCloudListSortConfSet(item){
-localStorage.setItem("tagCloudListSortConf", item);
+function tagListSortConfSet(item){
+localStorage.setItem("tagListSortConf", item);
 tagListCloud("");
 }
 
-function modeSwitch(mode, tagList, tagCloudListSortConf){
+function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Global`;
+let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
@@ -645,21 +653,21 @@ tagModePrint += `
 }
 });
 
-if (tagCloudListSortConf == "sort"){
+if (tagListSortConf == "sort"){
 tagModePrint += `
 <span class="op gray">/</span>
-<a class="inlineBlock padding op gray" title="Close" href="#" onclick="tagCloudListSortConfSet('unsort'); return false;">unsort</a>
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="tagListSortConfSet('unsort'); return false;">unsort</a>
 `;
 } else {
 tagModePrint += `
 <span class="op gray">/</span>
-<a class="inlineBlock padding op brand" href="#" onclick="tagCloudListSortConfSet('sort'); return false;">sort</a>
+<a class="inlineBlock padding op brand" href="#" onclick="tagListSortConfSet('sort'); return false;">sort</a>
 `;
 }
 
 if (mode == "edit"){
 tagModePrint += `
-<a class="inlineBlock padding op gray" title="Close" href="#" onclick="closetagCloudListData(''); return false;">edit</a>
+<a class="inlineBlock padding op gray" title="Close" href="#" onclick="closeTagListData(''); return false;">edit</a>
 `;
 } else {
 tagModePrint += `
@@ -674,8 +682,8 @@ if (mode == "edit"){
 document.getElementById("tagListEditForm").innerHTML = `
 <form action="" method="get" class="form-example">
 <textarea id="tagListEditData" rows="5">` + tagList + `</textarea>
-<a class="submit block button padding2 op borderRadius2" href="#" onclick="savetagCloudListData(); return false;">Save</a>
-<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resettagCloudListData(); return false;">Reset</a></div>
+<a class="submit block button padding2 op borderRadius2" href="#" onclick="saveTagListData(); return false;">Save</a>
+<div class="tRight"><a class="tRight button submit padding2 op red borderRadius2" href="#" onclick="resetTagListData(); return false;">Reset</a></div>
   </div>
 </form>
 `;
@@ -685,22 +693,22 @@ document.getElementById("tagListEditForm").innerHTML = `
 
 
 
-function savetagCloudListData(){
+function saveTagListData(){
 let data = document.getElementById("tagListEditData").value;
-localStorage.setItem("tagCloudListData", data);
+localStorage.setItem("tagListData", data);
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
 
-function resettagCloudListData(){
+function resetTagListData(){
 if (window.confirm("Are you sure?")) {
-localStorage.removeItem("tagCloudListData")
+localStorage.removeItem("tagListData")
 }
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
 
-function closetagCloudListData(){
+function closeTagListData(){
 document.getElementById("tagListEditForm").innerHTML = ``;
 tagListCloud("");
 }
