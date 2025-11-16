@@ -248,12 +248,10 @@ getBanner();
 <input class="searchButtonsItem smaller op tCenter submit borderRadius" type="submit" title="text rse (random search engine)" value="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
-<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="goo" type="submit" title="text goo">Google</button>
-<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="bin" type="submit" title="text bin">Bing</button>
 <!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="sez" type="submit" title="text sez">Seznam</button>-->
 <!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="moj" type="submit" title="text moj">Mojeek</button>-->
-<button class="searchButtonsItem searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="q" type="submit" title="text glo or q">Global</button>
+<!--<button class="searchButtonsItem searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="q" type="submit" title="text glo or q">Global</button>-->
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="text l (first search result)">I'm Feeling Lucky</button>
 <!--<input  class="searchButtonsItem smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
@@ -577,14 +575,6 @@ case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a><span class="gray">,</span>`;
 break;
 
-case 'Google':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
-case 'Bing':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
 
 case 'Global':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a><span class="gray">,</span>`;
@@ -640,7 +630,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagCloudListSortConf){
 let tagModePrint = "";
-let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global`;
+let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Global`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
