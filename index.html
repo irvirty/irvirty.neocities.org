@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Irvirty - Another Homepage</title>
+<title>Irvirty - Another homepage</title>
 
 <meta name="description" content="Search redirect (Neocities), links, a little bit about CSS, virtual world, and other.">
 <meta name="keywords" content="webdesign, webdevelopment, web, design, virtual, world,
@@ -222,7 +222,7 @@ getBanner();
 
 <div class="siteName">
 <h1 class="inlineBlock zero op paddingList uppercase"><a class="brand notUnderline" style="position: relative; z-index: 2;" href="./pages/about/"  title="About">irvirty</a></h1>
-<div class="paddingList small op" style="position: relative; z-index: 3;">Another Homepage</div>
+<div class="paddingList small op" style="position: relative; z-index: 3;">Homepage</div>
 
 <div class="op wrapperSmall3 tRight">
 <div class="pre"><span class="xSmall" title="Status">Status: </span><span class="small"><span class="ico zero medium">🍂</span> Autumn.</span></div>
@@ -248,10 +248,12 @@ getBanner();
 <input class="searchButtonsItem smaller op tCenter submit borderRadius" type="submit" title="text rse (random search engine)" value="Search">
 <!--https://stackoverflow.com/questions/4171664/html-submit-button-different-value-button-text#-->
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="neo" type="submit" title="text neo">Neocities</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="goo" type="submit" title="text goo">Google</button>
+<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="bin" type="submit" title="text bin">Bing</button>
 <!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="mar" type="submit" title="text mar">Marginalia</button>
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="sez" type="submit" title="text sez">Seznam</button>-->
 <!--<button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="moj" type="submit" title="text moj">Mojeek</button>-->
-<!--<button class="searchButtonsItem searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="q" type="submit" title="text glo or q">Global</button>-->
+<button class="searchButtonsItem searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="q" type="submit" title="text glo or q">Global</button>
 <button class="searchButtonsItem smaller op tCenter submit borderRadius" name="q2" value="l" type="submit" title="text l (first search result)">I'm Feeling Lucky</button>
 <!--<input  class="searchButtonsItem smaller op tCenter" type="submit" name="q2" value="l">-->
 </div>
@@ -575,6 +577,15 @@ case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a><span class="gray">,</span>`;
 break;
 
+case 'Google':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a><span class="gray">,</span>`;
+break;
+
+case 'Bing':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a><span class="gray">,</span>`;
+break;
+
+
 case 'Global':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a><span class="gray">,</span>`;
 break;
@@ -629,7 +640,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Global`;
+let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
