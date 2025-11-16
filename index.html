@@ -575,15 +575,6 @@ case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a><span class="gray">,</span>`;
 break;
 
-case 'Google':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
-case 'Bing':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
-
 case 'Global':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a><span class="gray">,</span>`;
 break;
@@ -638,7 +629,7 @@ tagListCloud("");
 
 function modeSwitch(mode, tagList, tagListSortConf){
 let tagModePrint = "";
-let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Google,Bing,Global`;
+let tagsModeList = `Special,Random,Update,Activity,New,RandomSearch,NeocitiesSearch,Global`;
 let arr = fuMSplit(tagsModeList, ",");
 let tagListPrint = `<span class="op">mode:</span>`;
 arr.forEach((val, index) => {
