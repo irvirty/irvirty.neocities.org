@@ -8,7 +8,7 @@ var guestbook2JsonVar =
         "text3": "",
         "url": "",
         "tag": "#guestbook2",
-        "time": 1758807008,
+        "time": 1758817808,
         "rightFooter": ""
     },
     {
@@ -17,7 +17,7 @@ var guestbook2JsonVar =
         "text3": "",
         "url": "",
         "tag": "#guestbook2",
-        "time": 1758795624,
+        "time": 1758806424,
         "rightFooter": ""
     }
 ]

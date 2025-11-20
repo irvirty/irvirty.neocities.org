@@ -18,7 +18,7 @@
 </image>
 
 <item>
-<pubDate>Thu, 02 Oct 2025 05:57:19 +0000</pubDate>
+<pubDate>Thu, 02 Oct 2025 08:57:19 +0000</pubDate>
 <title><![CDATA[I removed the tag cloud again for a cleaner design.
 + You can now enable this in the settings. 
 ]]></title>
@@ -33,7 +33,7 @@ I removed the tag cloud again for a cleaner design.
 </item>
 
 <item>
-<pubDate>Fri, 19 Sep 2025 01:04:18 +0000</pubDate>
+<pubDate>Fri, 19 Sep 2025 04:04:18 +0000</pubDate>
 <title><![CDATA[Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=30]]></link>
@@ -46,7 +46,7 @@ Switching to automatic theme detection for pages (auto.css: dark or light theme)
 </item>
 
 <item>
-<pubDate>Wed, 17 Sep 2025 03:22:35 +0000</pubDate>
+<pubDate>Wed, 17 Sep 2025 06:22:35 +0000</pubDate>
 <title><![CDATA[I removed the tag cloud on the main page again, there is a search form for that.
 + I undeleted and restored it (more faster 1 click). 
 ]]></title>
@@ -61,7 +61,7 @@ I removed the tag cloud on the main page again, there is a search form for that.
 </item>
 
 <item>
-<pubDate>Sun, 14 Sep 2025 14:42:02 +0000</pubDate>
+<pubDate>Sun, 14 Sep 2025 17:42:02 +0000</pubDate>
 <title><![CDATA[The light theme is now set by default. (Because during the day, the dark theme was enabled for the browser or OS dark mode, but the light theme is more suitable).
 +
 Cancelled, returned automatic mode (auto.css) (to have the same theme as the device, to save battery power), plus the theme can be ch]]></title>
@@ -77,7 +77,7 @@ Cancelled, returned automatic mode (auto.css) (to have the same theme as the dev
 </item>
 
 <item>
-<pubDate>Tue, 09 Sep 2025 00:48:15 +0000</pubDate>
+<pubDate>Tue, 09 Sep 2025 03:48:15 +0000</pubDate>
 <title><![CDATA[Brought back the tag cloud on the main page (more convenient). 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=27]]></link>
@@ -90,7 +90,7 @@ Brought back the tag cloud on the main page (more convenient).
 </item>
 
 <item>
-<pubDate>Sun, 07 Sep 2025 06:14:52 +0000</pubDate>
+<pubDate>Sun, 07 Sep 2025 09:14:52 +0000</pubDate>
 <title><![CDATA[Privacy Badger 
  ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=26]]></link>
@@ -103,7 +103,7 @@ https://privacybadger.org/
 </item>
 
 <item>
-<pubDate>Sun, 07 Sep 2025 05:19:49 +0000</pubDate>
+<pubDate>Sun, 07 Sep 2025 08:19:49 +0000</pubDate>
 <title><![CDATA[I removed links that cause "mindless scrolling" (hashtag cloud on the main page) 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=25]]></link>
@@ -116,7 +116,7 @@ I removed links that cause "mindless scrolling" (hashtag cloud on the main page)
 </item>
 
 <item>
-<pubDate>Wed, 19 Feb 2025 16:57:12 +0000</pubDate>
+<pubDate>Wed, 19 Feb 2025 18:57:12 +0000</pubDate>
 <title><![CDATA[The default theme is now only "auto" (light and dark). 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=23]]></link>
@@ -129,7 +129,7 @@ The default theme is now only "auto" (light and dark).
 </item>
 
 <item>
-<pubDate>Mon, 20 Jan 2025 05:09:32 +0000</pubDate>
+<pubDate>Mon, 20 Jan 2025 07:09:32 +0000</pubDate>
 <title><![CDATA[Ctrl+Shift+R, Ctrl+F5 or Shift+F5 - Force a hard refresh page. Refresh a webpage ignoring cache.
 
 If you updated the page on the hosting but don't see any changes. 
@@ -146,7 +146,7 @@ If you updated the page on the hosting but don't see any changes.
 </item>
 
 <item>
-<pubDate>Sat, 14 Dec 2024 01:34:23 +0000</pubDate>
+<pubDate>Sat, 14 Dec 2024 03:34:23 +0000</pubDate>
 <title><![CDATA[Neocities - Site Search 
  ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=21]]></link>
@@ -159,7 +159,7 @@ https://neocities.org/browse/search
 </item>
 
 <item>
-<pubDate>Sat, 14 Dec 2024 01:33:44 +0000</pubDate>
+<pubDate>Sat, 14 Dec 2024 03:33:44 +0000</pubDate>
 <title><![CDATA[Marginalia Search - browse:random 
  ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=20]]></link>
@@ -172,7 +172,7 @@ https://search.marginalia.nu/explore/random
 </item>
 
 <item>
-<pubDate>Sun, 24 Nov 2024 07:56:31 +0000</pubDate>
+<pubDate>Sun, 24 Nov 2024 09:56:31 +0000</pubDate>
 <title><![CDATA[When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pag]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=19]]></link>
 <description>
@@ -184,7 +184,7 @@ When there are a lot of things on the site, then you start thinking about the st
 </item>
 
 <item>
-<pubDate>Tue, 05 Nov 2024 08:40:15 +0000</pubDate>
+<pubDate>Tue, 05 Nov 2024 10:40:15 +0000</pubDate>
 <title><![CDATA[It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=18]]></link>
@@ -197,7 +197,7 @@ It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn
 </item>
 
 <item>
-<pubDate>Sun, 03 Nov 2024 05:34:39 +0000</pubDate>
+<pubDate>Sun, 03 Nov 2024 07:34:39 +0000</pubDate>
 <title><![CDATA[The default is now random all light and all dark themes. 
 ]]></title>
 <link><![CDATA[https://irvirty.neocities.org/pages/microblog2/?id=17]]></link>
@@ -210,7 +210,7 @@ The default is now random all light and all dark themes.
 </item>
 
 <item>
-<pubDate>Thu, 31 Oct 2024 21:55:40 +0000</pubDate>
+<pubDate>Thu, 31 Oct 2024 23:55:40 +0000</pubDate>
 <title><![CDATA[Update:
 ===
 1. Added a tag editing button (function) for the tags list (explore panel) on the main page; tags are stored locally in the browser.
