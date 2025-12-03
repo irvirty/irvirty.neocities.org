@@ -34,6 +34,7 @@ conf["confMenuItemAverageWidth"] = 120;
 conf["confMenuItemAverageWidth"] = 70;
 
 conf["confUserNameInTitleStatus"] = "on"; // on, off
+conf["confUserNameInTitle"] = "";
 
 
 
@@ -168,7 +169,8 @@ return textOrArr.sort(collator.compare);
 // user name in titile
 if (conf["confUserNameInTitleStatus"] == "on"){
 if (document.getElementsByTagName('title')[0] != null){
-document.getElementsByTagName('title')[0].innerHTML += ' / ' + conf["confUsernameUpper"];
+conf["confUserNameInTitle"] = ' / ' + conf["confUsernameUpper"];
+document.getElementsByTagName('title')[0].innerHTML += conf["confUserNameInTitle"];
 }
 }
 
