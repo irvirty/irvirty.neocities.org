@@ -66,7 +66,7 @@ var confData = [
 "confDescription":"For theme if selected auto time (auto-t) in themes option",
 "confName":"confStartNight",
 "confValueDefault":"20",
-"confValueVariant":["18", "20", "20", "21"],
+"confValueVariant":["18", "19", "20", "21"],
 },
 {
 "confTitle":"Background picture",
