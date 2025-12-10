@@ -55,7 +55,7 @@ img = mode;
 buttons = `
 <a class="worldClick" style="top: calc(18% - (var(--worldClickHeight) / 2)); left: calc(64.6% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
 <a class="worldClick" style="top: calc(15% - (var(--worldClickHeight) / 2)); left: calc(40% - (var(--worldClickHeight) / 2));" href="./?q=space.png" title="link"></a>
-
+<a class="worldClick" style="top: calc(80% - (var(--worldClickHeight) / 2)); left: calc(40% - (var(--worldClickHeight) / 2));" target="blank" href="https://en.wikipedia.org/wiki/Curiosity_(rover)" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
