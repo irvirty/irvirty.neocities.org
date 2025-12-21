@@ -37,6 +37,7 @@ buttons = `
 <a class="worldClick" style="top: calc(83% - (var(--worldClickHeight) / 2)); left: calc(57% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
 <a class="worldClick" style="top: calc(35% - (var(--worldClickHeight) / 2)); left: calc(50% - (var(--worldClickHeight) / 2));" href="./?q=mars.png" title="link"></a>
 <a class="worldClick" style="top: calc(15% - (var(--worldClickHeight) / 2)); left: calc(77% - (var(--worldClickHeight) / 2));" href="./?q=sun.png" title="link"></a>
+<a class="worldClick" style="top: calc(53% - (var(--worldClickHeight) / 2)); left: calc(17% - (var(--worldClickHeight) / 2));" target="blank" href="https://en.wikipedia.org/wiki/Black_hole" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
