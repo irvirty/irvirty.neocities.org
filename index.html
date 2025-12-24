@@ -239,7 +239,8 @@ getBanner();
 <!--<form method="GET" action="https://neocities.org/browse" autocomplete="off" role="search">-->
 <form method="GET" action="./search/" autocomplete="off" role="search">
 <!--<form method="GET" action="https://neocities.org/browse/search" autocomplete="off" role="search">-->
-<label class="block op tLeft small" for="q"><span class="bold green">✪</span> <b>Neocities</b> search (redirect, random, <span title="WPM - Words per minute">WPM: <span id="wpm" class="orange">0</span></span>):</label>
+<label class="inlineBlock op tLeft small" for="q"><span class="bold green">✪</span> <b>Neocities</b> search (redirect, random, <span title="WPM - Words per minute">WPM: <span id="wpm" class="orange">0</span></span>):</label>
+<a class="padding floatRight gray xSmall notUnderline" style="padding-right: 0;" href="#clear" onclick="clearQ('q');return false;">[ X ]</a>
 <input id="q" class="borderRadius" type="search" name="q" autofocus="autofocus" placeholder="" autocomplete="off" spellcheck="true">
 
 <!--<input type="hidden" name="sort_by" value="random">-->
@@ -259,6 +260,15 @@ getBanner();
 </div>
 
 </form>
+
+<script>
+function clearQ(q){
+if (document.getElementById(q) != null){
+document.getElementById(q).value = "";
+document.getElementById(q).focus();
+}
+}
+</script>
 
 <div class="margin"></div>
 <span id="seachButtons"></span>
