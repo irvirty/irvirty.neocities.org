@@ -26,7 +26,7 @@ img = mode;
 buttons = `
 <a class="worldClick" style="top: calc(27% - (var(--worldClickHeight) / 2)); left: calc(55% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
 <a class="worldClick" style="top: calc(61% - (var(--worldClickHeight) / 2)); left: calc(5% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
-<a class="worldClick" style="top: calc(52% - (var(--worldClickHeight) / 2)); left: calc(37% - (var(--worldClickHeight) / 2));" target="blank" href="https://www.youtube.com/watch?v=59Q_lhgGANc" title="link"></a>
+<a class="worldClick" style="top: calc(52% - (var(--worldClickHeight) / 2)); left: calc(37% - (var(--worldClickHeight) / 2));" href="./p/music/" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
@@ -37,7 +37,7 @@ buttons = `
 <a class="worldClick" style="top: calc(83% - (var(--worldClickHeight) / 2)); left: calc(57% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
 <a class="worldClick" style="top: calc(35% - (var(--worldClickHeight) / 2)); left: calc(50% - (var(--worldClickHeight) / 2));" href="./?q=mars.png" title="link"></a>
 <a class="worldClick" style="top: calc(15% - (var(--worldClickHeight) / 2)); left: calc(77% - (var(--worldClickHeight) / 2));" href="./?q=sun.png" title="link"></a>
-<a class="worldClick" style="top: calc(53% - (var(--worldClickHeight) / 2)); left: calc(17% - (var(--worldClickHeight) / 2));" href="./p/black-hole" title="link"></a>
+<a class="worldClick" style="top: calc(53% - (var(--worldClickHeight) / 2)); left: calc(17% - (var(--worldClickHeight) / 2));" href="./p/black-hole/" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
@@ -47,6 +47,7 @@ img = mode;
 buttons = `
 <a class="worldClick" style="top: calc(21% - (var(--worldClickHeight) / 2)); left: calc(96% - (var(--worldClickHeight) / 2));" href="./?q=index.png" title="link"></a>
 <a class="worldClick" style="top: calc(80% - (var(--worldClickHeight) / 2)); left: calc(15% - (var(--worldClickHeight) / 2));" href="./?q=space.png" title="link"></a>
+<a class="worldClick" style="top: calc(45% - (var(--worldClickHeight) / 2)); left: calc(45% - (var(--worldClickHeight) / 2));" href="./p/sun/" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
