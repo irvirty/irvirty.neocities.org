@@ -15,7 +15,7 @@
   
 # 🧾 License:  
   
-• Main: Copyright 2025 Irvirty CC BY-SA 4.0  
+• Main: © 2025 Irvirty, license: CC BY-SA 4.0  
 
 Other:  
 • Roboto font: Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic). SIL Open Font License, Version 1.1  
