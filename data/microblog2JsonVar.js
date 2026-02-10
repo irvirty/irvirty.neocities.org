@@ -3,6 +3,16 @@ var microblog2JsonVar =
 
 [
     {
+        "id": "32",
+        "text": "An attempt to change the social network.",
+        "text2": "",
+        "text3": "",
+        "url": "",
+        "tag": "#links #SocialNetwork #about #footer #update",
+        "time": 1770727652,
+        "rightFooter": ""
+    },
+    {
         "id": "31",
         "text": "I removed the tag cloud again for a cleaner design.\r\n+ You can now enable this in the settings.",
         "text2": "",
