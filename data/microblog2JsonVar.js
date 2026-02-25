@@ -4,7 +4,7 @@ var microblog2JsonVar =
 [
     {
         "id": "33",
-        "text": "Trying to fix sorting in tag cloud",
+        "text": "Trying to fix sorting in the tag cloud if the tag has a line break.",
         "text2": "",
         "text3": "",
         "url": "",
