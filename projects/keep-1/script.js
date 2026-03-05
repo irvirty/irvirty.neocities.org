@@ -1225,7 +1225,7 @@ tagListCount = Object.keys(tagListCountLimited).sort().reduce(
 Object.values(tagListCount).forEach(function (x) {
 tagTotal = tagTotal + x;
 });
-tagAverage = tagTotal / Object.values(tagListCount).length;
+tagAverage = Math.floor(tagTotal / Object.values(tagListCount).length);
 
 var tagSize = '';
 var tagColor = '';
@@ -1234,6 +1234,7 @@ function fuTag(tagCount){
 //let tagPercentage = (Math.floor((tagCount*100)/tagTotal)); // from 100%, need rebuild case from 100
 let tagPercentage = (Math.floor((tagCount * 100) / tagAverage)); // over 100%, used average if tag disproportion 1% and 90%
 //console.log(tagPercentage);
+//console.log(tagAverage);
 
 // tag font-size and color
 switch (true) {
@@ -1299,6 +1300,7 @@ tagCount = value;
 
 if (tag != ''){
 fuTag(tagCount);
+
 
 let printTag = tag;
 let printTag2 = tag.replaceAll(/#/g, "");
