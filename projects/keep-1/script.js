@@ -1223,7 +1223,7 @@ tagListCount = Object.keys(tagListCountLimited).sort().reduce(
 /*tagAverage = (Math.min(...Object.values(tagListCount))+Math.max(...Object.values(tagListCount)))/2;
 //console.log(tagAverage);*/
 Object.values(tagListCount).forEach(function (x) {
-tagTotal = tagTotal+x;
+tagTotal = tagTotal + x;
 });
 tagAverage = tagTotal / Object.values(tagListCount).length;
 
@@ -1297,11 +1297,9 @@ const [key, value] = entry;
 tag = key.trim();
 tagCount = value;
 
-
+if (tag != ''){
 fuTag(tagCount);
 
-
-if (tag != ''){
 let printTag = tag;
 let printTag2 = tag.replaceAll(/#/g, "");
 let goTag = encodeURIComponent(tag);
