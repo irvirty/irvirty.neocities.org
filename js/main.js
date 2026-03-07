@@ -423,7 +423,7 @@ document.getElementById("footer").innerHTML = `
 <a class="brand inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social network" href="https://${conf["confUsername"]}.wordpress.com/">WordPress</a>
+<a class="brand inlineBlock padding" title="Social network" href="https://${conf["confUsername"]}.wordpress.com/">WP Blog</a>
 <span class="op gray">|</span>
 
 <a class="brand inlineBlock padding" title="Source code (repository)" href="https://github.com/${conf["confUsername"]}/${conf["confWebsiteUrl"]}">Source Code</a>
