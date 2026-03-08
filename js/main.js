@@ -1,4 +1,4 @@
-// Main.js v.2.4.0
+// Main.js v.2.4.1
 
 if (confD == undefined) { var confD = "/"; }
 
@@ -167,7 +167,7 @@ return textOrArr.sort(collator.compare);
 //alert(fuMSort(["772", " 3",  "6",  "7", "77"], "", "arr"));
 
 // user name in titile
-if (conf["confUserNameInTitleStatus"] == "on"){
+if (conf["confDomainNameInTitleStatus"] == 'on'&&String(window.location.pathname) != "/"){
 if (document.getElementsByTagName('title')[0] != null){
 conf["confUserNameInTitle"] = ' / ' + conf["confUsernameUpper"];
 document.getElementsByTagName('title')[0].innerHTML += conf["confUserNameInTitle"];
