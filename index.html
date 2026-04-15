@@ -293,7 +293,7 @@ getBanner();
 <div id="printTags" class="balance notUnderline"></div>
 
 <div class="wrapperSmall small">
-<div><span class="notUnderline" id="printMode"></span></div>
+<div><span class="notUnderline" id="printMode"></span><span id="tagRandom"></span></div>
 </div>
 <div id="tagListEditForm"></div>
 
@@ -552,6 +552,7 @@ fuTag(tagCount);
 
 if (tag != ""){
 let printTag = tag;
+let printTagRandom = sortedTags[fuMRandom(0, sortedTags.length - 1)][0];
 
 //printTag = printTag.replaceAll(/#/g, "");
 //printTag = printTag.replaceAll(' ', "");
@@ -569,6 +570,7 @@ printTag = printTag.replaceAll(' ', "");
 }
 
 let printTagUrl = encodeURIComponent(tag.toLowerCase());
+let printTagUrlRandom = encodeURIComponent(printTagRandom.toLowerCase());
 
 printTag = fuMClearText(printTag);
 
@@ -576,51 +578,83 @@ switch (mode) {
 
 case 'NeocitiesSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` neo">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="./search/?q=` + printTagUrlRandom + ` neo">randomTag</a>`);
+
 break;
 
 case 'RandomSearch':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` rse">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="./search/?q=` + printTagUrlRandom + ` rse">randomTag</a>`);
+
 break;
 
 case 'Google':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` goo">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="./search/?q=` + printTagUrlRandom + ` goo">randomTag</a>`);
+
 break;
 
 case 'Bing':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` bin">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="./search/?q=` + printTagUrlRandom + ` bin">randomTag</a>`);
+
 break;
 
 
 case 'Global':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + ` q">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="./search/?q=` + printTagUrlRandom + ` q">randomTag</a>`);
+
 break;
 
 case 'Random':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="https://neocities.org/browse?sort_by=random&tag=` + printTagUrlRandom + `">randomTag</a>`);
+
 break;
 
 case 'Update':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=last_updated&tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="https://neocities.org/browse?sort_by=last_updated&tag=` + printTagUrlRandom + `">randomTag</a>`);
+
 break;
 
 case 'Activity':
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/activity?tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="https://neocities.org/activity?tag=` + printTagUrlRandom + `">randomTag</a>`);
+
+break;
+
+case 'Special':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="https://neocities.org/browse?tag=` + printTagUrlRandom + `">randomTag</a>`);
+
+break;
+
+case 'New':
+tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrlRandom + `">randomTag</a>`);
+
 break;
 
 case 'edit':
 tagListPrint += `<span class="inlineBlock padding">` + printTag + `</span>`;
 break;
 
-case 'Special':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
-case 'New':
-tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="https://neocities.org/browse?sort_by=newest&tag=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
-break;
-
 default:
 tagListPrint += `<a class="inlineBlock padding op ` + tagColor + ` ;" style="font-size: ` + tagSize + `; padding-right: 0;" href="./search/?q=` + printTagUrl + `">` + printTag + `</a><span class="gray">,</span>`;
+
+printRandomTag ("tagRandom", `<a class="inlineBlock padding op brand small notUnderline" href="/search/?q=` + printTagUrlRandom + `">randomTag</a>`);
 
 }
 
@@ -729,6 +763,14 @@ document.getElementById("tagListEditForm").innerHTML += `
 
 
 }
+
+
+function printRandomTag(id, text){
+if (document.getElementById("tagRandom") != undefined){
+document.getElementById("tagRandom").innerHTML = text;
+}
+}
+
 
 </script>
 
