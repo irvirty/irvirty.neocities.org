@@ -1,4 +1,4 @@
-// Keep v.4.8.1
+// Keep v.4.9.0
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -790,6 +790,7 @@ if (q != ''){
 //qSearch = String(q.toLowerCase()).replaceAll(/ /g, "|"); //if ((qData).search(qSearch) != -1){}
 //qSearch = decodeURIComponent(q);
 qSearch = (q);
+qSearch = qSearch + " ";
 qSearch = String(qSearch).toLowerCase();
 
 qSearch = (qSearch + ' ').split(' ');
@@ -822,12 +823,14 @@ postText = postText.trim();
 
 qData = String(postText + ' ' + postUrl + ' ' + postText2 + ' ' + postText3 + ' ' + postTag).toLowerCase();
 
+qData = qData + " ";
+
 
 let checkFound = 0;
 
-for (const item3344 of qSearch) {
+for (item3344 of qSearch) {
     // ...use `element`...
-
+item3344 = item3344 + " ";
 // query
 //if ((qData.split(item)).length > 1&&item334 != ''){
 if ((qData.indexOf(item3344)) != -1&&item3344 != ""){
