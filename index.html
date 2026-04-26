@@ -354,9 +354,9 @@ function tagListCloud(mode){
 let tagModePrint = "";
 
 if (mode == undefined||mode == ""){
-mode = localStorage.getItem("tagModeData");
+mode = localStorage.getItem("tagModeData2");
 } else if (mode != "edit"){
-localStorage.setItem("tagModeData", mode);
+localStorage.setItem("tagModeData2", mode);
 }
 
 if (mode == null||mode == undefined){ mode = "Special"; }
