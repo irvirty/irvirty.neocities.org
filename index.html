@@ -361,7 +361,7 @@ localStorage.setItem("tagModeData2", mode);
 
 if (mode == null||mode == undefined){ mode = "Special"; }
 
-let tagListSortConf = localStorage.getItem("tagListSortConf");
+let tagListSortConf = localStorage.getItem("tagListSortConf2");
 
 let tagListColor = `red orange yellow green blue indigo violet`;
 
@@ -673,7 +673,7 @@ modeSwitch(mode, tagList, tagListSortConf);
 tagListCloud("");
 
 function tagListSortConfSet(item){
-localStorage.setItem("tagListSortConf", item);
+localStorage.setItem("tagListSortConf2", item);
 tagListCloud("");
 }
 
