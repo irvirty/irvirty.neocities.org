@@ -26,6 +26,7 @@
 <![CDATA[
 Trying to fix sorting in the tag cloud if the tag has a line break. 
 
+
 ]]>
 </description>
 </item>
@@ -38,6 +39,7 @@ Trying to fix sorting in the tag cloud if the tag has a line break.
 <description>
 <![CDATA[
 An attempt to change the social network. 
+
 
 ]]>
 </description>
@@ -54,6 +56,7 @@ An attempt to change the social network.
 I removed the tag cloud again for a cleaner design.
 + You can now enable this in the settings. 
 
+
 ]]>
 </description>
 </item>
@@ -66,6 +69,7 @@ I removed the tag cloud again for a cleaner design.
 <description>
 <![CDATA[
 Switching to automatic theme detection for pages (auto.css: dark or light theme). If the phone uses a dark theme, then the website can also have a dark theme. 
+
 
 ]]>
 </description>
@@ -81,6 +85,7 @@ Switching to automatic theme detection for pages (auto.css: dark or light theme)
 <![CDATA[
 I removed the tag cloud on the main page again, there is a search form for that.
 + I undeleted and restored it (more faster 1 click). 
+
 
 ]]>
 </description>
@@ -98,6 +103,7 @@ The light theme is now set by default. (Because during the day, the dark theme w
 +
 Cancelled, returned automatic mode (auto.css) (to have the same theme as the device, to save battery power), plus the theme can be changed manually. 
 
+
 ]]>
 </description>
 </item>
@@ -110,6 +116,7 @@ Cancelled, returned automatic mode (auto.css) (to have the same theme as the dev
 <description>
 <![CDATA[
 Brought back the tag cloud on the main page (more convenient). 
+
 
 ]]>
 </description>
@@ -124,6 +131,7 @@ Brought back the tag cloud on the main page (more convenient).
 <![CDATA[
 Privacy Badger 
 https://privacybadger.org/
+
 ]]>
 </description>
 </item>
@@ -137,6 +145,7 @@ https://privacybadger.org/
 <![CDATA[
 I removed links that cause "mindless scrolling" (hashtag cloud on the main page) 
 
+
 ]]>
 </description>
 </item>
@@ -149,6 +158,7 @@ I removed links that cause "mindless scrolling" (hashtag cloud on the main page)
 <description>
 <![CDATA[
 The default theme is now only "auto" (light and dark). 
+
 
 ]]>
 </description>
@@ -167,6 +177,7 @@ Ctrl+Shift+R, Ctrl+F5 or Shift+F5 - Force a hard refresh page. Refresh a webpage
 
 If you updated the page on the hosting but don't see any changes. 
 
+
 ]]>
 </description>
 </item>
@@ -180,6 +191,7 @@ If you updated the page on the hosting but don't see any changes.
 <![CDATA[
 Neocities - Site Search 
 https://neocities.org/browse/search
+
 ]]>
 </description>
 </item>
@@ -193,6 +205,7 @@ https://neocities.org/browse/search
 <![CDATA[
 Marginalia Search - browse:random 
 https://search.marginalia.nu/explore/random
+
 ]]>
 </description>
 </item>
@@ -204,6 +217,7 @@ https://search.marginalia.nu/explore/random
 <description>
 <![CDATA[
 When there are a lot of things on the site, then you start thinking about the structure: different folders for different things, and all this needs to be called somehow, and this is part of SEO. It's difficult at first, and the structure evolves and changes over time, so there will often be many pages with a 404 not found error. 
+
 
 ]]>
 </description>
@@ -217,6 +231,7 @@ When there are a lot of things on the site, then you start thinking about the st
 <description>
 <![CDATA[
 It's a bit strange, but I noticed that Wikipedia uses a comma in the URL. I didn't know that a comma is standard practice for URLs. 
+
 
 ]]>
 </description>
