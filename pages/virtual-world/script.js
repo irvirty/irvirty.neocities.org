@@ -38,6 +38,7 @@ buttons = `
 <a class="worldClick" style="top: calc(35% - (var(--worldClickHeight) / 2)); left: calc(50% - (var(--worldClickHeight) / 2));" href="./?q=mars.png" title="link"></a>
 <a class="worldClick" style="top: calc(15% - (var(--worldClickHeight) / 2)); left: calc(77% - (var(--worldClickHeight) / 2));" href="./?q=sun.png" title="link"></a>
 <a class="worldClick" style="top: calc(53% - (var(--worldClickHeight) / 2)); left: calc(17% - (var(--worldClickHeight) / 2));" href="./p/black-hole/" title="link"></a>
+<a class="worldClick" style="top: calc(46% - (var(--worldClickHeight) / 2)); left: calc(25% - (var(--worldClickHeight) / 2));" href="./p/3iatlas/" title="link"></a>
 `;
 printMyWorld(img, buttons);
 break;
