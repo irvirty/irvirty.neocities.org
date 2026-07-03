@@ -423,9 +423,6 @@ document.getElementById("footer").innerHTML = `
 <a class="yellow inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social" href="https://social.netdynamics.eu/profile/${conf["confUsername"]}">Friendica</a>
-<span class="op gray">|</span>
-
 <a id="fSettings" class="brand inlineBlock padding" title="Settings" href="${confD}pages/settings/">Settings</a>
 <span class="op gray">|</span>
 
