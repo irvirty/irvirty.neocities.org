@@ -130,10 +130,8 @@ fetch(jsonUrl)
     return response.json(); // Returns another promise
   })
   .then(data => {
-if (jsonVar == undefined){
 //console.table(data);
 var jsonVar = data;
-}
 
 // fix main.js
 if (typeof conf == 'object'){
@@ -2862,7 +2860,7 @@ document.getElementById("navOptionQ").value = q;
   })
   .then(undefined, error => {
     console.error('Error:', error);
-  });
+ });
   
   
   
