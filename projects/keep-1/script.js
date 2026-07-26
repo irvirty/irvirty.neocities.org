@@ -1,4 +1,4 @@
-// Keep v.4.9.1
+// Keep v.5.0.0
 // The static version of my offline "keep" PHP script that saves things (links, notes, etc).
 // Inspired by Twitter, Google Keep
 // Not for large data files.
@@ -44,11 +44,11 @@ function fuMClearText2(text){ return text; };
 }
 
 
-function keep(printId, jsonVar, otherClass, scriptDir, keepConfig){
+function keep(printId, jsonUrl, otherClass, scriptDir, keepConfig){
 
 /*
 printId - div id where print content
-jsonVar - JSON (data) in JavaSript variable
+jsonUrl - JSON url
 otherClass - CSS class name for post
 scriptDir - for location link
 keepConfig - additional keep configuration)
@@ -121,42 +121,19 @@ var host = '';
 
 
 
-
-
-// Example of data in the file, fresh example in script.js
-if (jsonVar == undefined||jsonVar == ''){
-
-// file jsonVar.js for embed
-var jsonVar = 
-
-[
-    {
-        "id": 251,
-        "text": "test text",
-        "text2": "test text",
-        "text3": "test text",
-        "url": "https:\/\/example.com",
-        "tag": "#test2 #tag",
-        "time": 1671480576,
-        "rightFooter": ""
-    },
-    {
-        "id": 250,
-        "text": "test text",
-        "text2": "test text",
-        "text3": "test text",
-        "url": "https:\/\/example.com",
-        "tag": "#test #tag",
-        "time": 1668444918,
-        "rightFooter": ""
-
+// start fetch data
+fetch(jsonUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
-];
-// end file jsonVar.js
-
+    return response.json(); // Returns another promise
+  })
+  .then(data => {
+if (jsonVar == undefined){
+//console.table(data);
+var jsonVar = data;
 }
-// new text2, text3 (
-
 
 // fix main.js
 if (typeof conf == 'object'){
@@ -511,7 +488,7 @@ var qSearchNoQuote = qSearch.replaceAll('"', '');
 // s1.1, tag
 if (qSearch[0] == '#'||(qSearch[0] + ' ').indexOf("%23") != -1){
 qData2 = qData.replaceAll(/,/g, ' ');
-if ((qData2 + ' ').indexOf((qSearch + ' ')) >= 0){
+if ((qData2.trim() + " ").indexOf((qSearch.trim() + " ")) >= 0){
 subQListFound.push(qSearch);
 var subQforLight = subQListFound.join(confSymbolForSplit);
 
@@ -576,8 +553,8 @@ qData.indexOf(String(qSearch)) != -1||
 qData.indexOf(String(qSearch23)) != -1||
 qData.indexOf(String(qSearchNoQuote)) != -1
 ){
-if (qData.indexOf(String(qSearch23)) != -1){ qSearch = qSearch23; }
-if (qData.indexOf(String(qSearchNoQuote)) != -1){ qSearch = qSearchNoQuote; }
+if (qData.trim() + " ".indexOf(String(qSearch23.trim() + " ")) != -1){ qSearch = qSearch23; }
+if (qData.trim() + " ".indexOf(String(qSearchNoQuote.trim() + " ")) != -1){ qSearch = qSearchNoQuote; }
 
 //subQListFound.push(subQListFound);
 let qSearchTmp = qSearch.split(" ");
@@ -2880,8 +2857,19 @@ document.getElementById("navOptionQ").value = q;
 }
 
 
+
+// end fetch data
+  })
+  .then(undefined, error => {
+    console.error('Error:', error);
+  });
+  
+  
+  
+  
 }
 // end main all end keep (end all)
+
 
 
 
@@ -2945,4 +2933,9 @@ rangeRedirectUrl += "&q=" + q
 window.location.replace(rangeRedirectUrl,);
 }
 }
+
+
+
+
+
 
