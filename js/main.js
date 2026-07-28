@@ -423,7 +423,7 @@ document.getElementById("footer").innerHTML = `
 <a class="yellow inlineBlock padding" title="RSS Site update" href="https://neocities.org/site/${conf["confUsername"]}.rss">RSS</a>
 <span class="op gray">|</span>
 
-<a class="brand inlineBlock padding" title="Social" href="https://bsky.app/profile/${conf["confUsername"]}.is-local.org">Bluesky</a>
+<a class="brand inlineBlock padding" title="RSS News" href="https://bsky.app/profile/${conf["confUsername"]}.is-local.org">Bluesky</a>
 <span class="op gray">|</span>
 
 <a id="fSettings" class="brand inlineBlock padding" title="Settings" href="${confD}pages/settings/">Settings</a>
