@@ -212,7 +212,7 @@ q = q.trim();
 q = encodeURIComponent(q);
 
 urlList = [
-"https://neocities.org/browse/search?q=" + q,
+"https://neocities.org/search?q=" + q,
 ];
 if (q == ''){
 urlList = [
@@ -234,7 +234,7 @@ q = q.trim();
 q = encodeURIComponent(q);
 
 urlList = [
-"https://neocities.org/browse/search?q=" + q,
+"https://neocities.org/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
 "https://www.bing.com/search?q=" + q + " site:neocities.org&&form=somesite",
 //"https://marginalia-search.com/search?query=" + q + " site:neocities.org",
@@ -267,7 +267,7 @@ q = q.trim();
 q = encodeURIComponent(q);
 
 urlList = [
-"https://neocities.org/browse/search?q=" + q,
+"https://neocities.org/search?q=" + q,
 "https://www.google.com/search?q=" + q + " site:neocities.org",
 "https://www.bing.com/search?q=" + q + " site:neocities.org&form=somesite",
 //"https://marginalia-search.com/search?query=" + q + " site:neocities.org",
